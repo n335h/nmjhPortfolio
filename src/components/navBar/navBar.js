@@ -5,12 +5,22 @@ const Navbar = (props) => {
   const handleAboutClick = () => {
     props.setShowAbout(true);
     props.setShowPortfolio(false);
+    props.setShowContact (false);
+
   };
 
   const handlePortfolioClick = () => {
     props.setShowPortfolio(true);
     props.setShowAbout(false);
+    props.setShowContact (false);
   };
+
+  const handleContactClick = () => {
+    props.setShowContact(true);
+    props.setShowAbout(false);
+    props.setShowPortfolio(false);
+  };
+
 
   const [showNavbar, setShowNavbar] = useState(false);
 
@@ -50,7 +60,8 @@ const Navbar = (props) => {
           </a>
         </li>
         <li>
-          <a href="#contact">contact</a>
+          <a className={props.activePage === "contact" ? "selected" : ""} onClick={handleContactClick}> contact </a>
+          
         </li>
       </ul>
     </nav>

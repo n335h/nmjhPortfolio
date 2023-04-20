@@ -3,11 +3,22 @@ import Navbar from "../navBar/navBar";
 import LandingPage from "../landing/landing";
 import AboutPage from "../about/about";
 import Portfolio from "../portfolio/portfolio";
+import Contact from "../contact/contact";
 import "./App.css";
+
 
 function App() {
   const [showAbout, setShowAbout] = useState(false);
   const [showPortfolio, setShowPortfolio] = useState(false);
+  const [showContact, setShowContact] = useState(false);
+
+  const images = [
+    'https://via.placeholder.com/400x300',
+    'https://via.placeholder.com/400x301',
+    'https://via.placeholder.com/400x302',
+    'https://via.placeholder.com/400x303',
+    'https://via.placeholder.com/400x304',
+  ];
 
   return (
     <div className="App">
@@ -17,9 +28,11 @@ function App() {
         activePage={showAbout ? "about" : showPortfolio ? "portfolio" : ""}
         setShowAbout={setShowAbout}
         setShowPortfolio={setShowPortfolio}
+        setShowContact={setShowContact}
       />
       {showAbout && <AboutPage />}
-      {showPortfolio && <Portfolio />}
+      {showPortfolio && <Portfolio images={images} />}
+      {showContact && <Contact />}
       <img src="https://via.placeholder.com/150" alt="Profile picture" />
       <p>
         Hi there! My name is [Your Name], and I'm a [Your Profession]. Lorem

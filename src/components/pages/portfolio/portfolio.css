@@ -1,0 +1,10 @@
+.portfolio-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 00px;
+    height: 100vh;
+    min-height: 90vh
+  }
+  .portfolio {
+    min-height: 100vh;
+  }

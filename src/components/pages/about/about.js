@@ -18,17 +18,44 @@ const AboutPage = () => {
               alt="Profile picture"
             />
             <p>
-              Hi there! My name is [Your Name], and I'm a [Your
-              Profession]. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam,
-              quis nostrud exercitation ullamco laboris nisi ut
-              aliquip ex ea commodo consequat.
+              Hello! My name is Nich Horishny, and I am a junior full
+              stack developer. I have a strong passion for coding and
+              building web applications. I recently took part in
+              School of Code Cohort 14, where I gained valuable skills
+              and knowledge in software development.
             </p>
             <p>
-              When I'm not working, I enjoy [Your Hobbies or
-              Interests].
+              Prior to becoming a developer, I studied Visual
+              Communication. This background has given me a keen eye
+              for design and user experience, which I incorporate into
+              my coding projects.
             </p>
+            <p>
+              When I'm not coding, you can often find me pursuing my
+              hobbies. Here are a few things I enjoy:
+            </p>
+            {/* <ul>
+              <li>
+                Skateboarding: I love the freedom and creativity that
+                skateboarding brings. It's a great way to stay active
+                and challenge myself.
+              </li>
+              <li>
+                35mm Photography: Capturing moments on film is a hobby
+                I cherish. I enjoy exploring different subjects and
+                experimenting with different techniques.
+              </li>
+              <li>
+                Art: I have a deep appreciation for various forms of
+                art. Whether it's painting, drawing, or visiting
+                galleries, art fuels my creativity and inspires me.
+              </li>
+              <li>
+                Nature: Spending time in nature helps me find peace
+                and clarity. Hiking, camping, and exploring natural
+                landscapes with my border collie are activities I truly enjoy.
+              </li>
+            </ul> */}
             <h2>Languages & Tools</h2>
             <div class="languages">
               <img

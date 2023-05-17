@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './navBar.css';
 import { Link } from 'react-router-dom';
-import github from '../components/assets/github.png';
-import linkedin from '../components/assets/linkedin.png';
+import githubblk from '../assets/githubblk.png';
+import linkedinblk from '../assets/linkedinblk.png';
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,14 +33,24 @@ function NavBar() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="github" src={github} alt="github" />
+          <img
+            className="github"
+            src={githubblk}
+            alt="github"
+            id="iconsNav"
+          />
         </a>
         <a
           href="https://linkedin.com/in/nichhorishny"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img className="linkedin" src={linkedin} alt="linkedin" />
+          <img
+            className="linkedin"
+            src={linkedinblk}
+            alt="linkedin"
+            id="iconsNav"
+          />
         </a>
       </div>
       <div className="menu-toggle" onClick={handleToggleMenu}>

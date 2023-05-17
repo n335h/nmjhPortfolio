@@ -7,9 +7,6 @@ function Footer() {
   return (
     <div className="footer-container">
       <footer className="pageFooter">
-        <p className="footer-text">
-          &copy; 2023 Nicholas Horishny. All rights reserved.
-        </p>
         <div className="logo-container">
           <a
             href="https://github.com/n335h"
@@ -26,6 +23,10 @@ function Footer() {
             <img className="linkedin" src={linkedin} alt="linkedin" />
           </a>
         </div>
+        <hr></hr>
+        <p className="footer-text">
+          &copy; 2023 Nicholas Horishny. All rights reserved.
+        </p>
       </footer>
     </div>
   );

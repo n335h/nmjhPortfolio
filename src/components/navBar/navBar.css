@@ -97,3 +97,17 @@
     transform: rotate(-45deg) translate(2px, -2px);
   }
 }
+#iconsNav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.4;
+  height: 20px;
+  width: 20px;
+}
+#iconsNav:hover{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+}

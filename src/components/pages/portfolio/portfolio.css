@@ -8,3 +8,7 @@
   .portfolio {
     min-height: 100vh;
   }
+
+  .portfolio-gallery {
+    max-width: 90vh;
+  }

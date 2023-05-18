@@ -44,3 +44,26 @@ body{
   background: #eeeeee;
   
 } */
+
+
+.App {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+
+}
+
+#section {
+  scroll-snap-align: start;
+  height: 100vh;
+}
+
+.sectionPortfolio {
+  
+  background-color: #232e3d;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.App::-webkit-scrollbar {
+  display: none;
+}

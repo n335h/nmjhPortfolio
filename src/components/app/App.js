@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from '../navBar/navBar';
 import LandingPage from '../pages/landing/landing';
@@ -6,39 +6,27 @@ import AboutPage from '../pages/about/about';
 import Portfolio from '../pages/portfolio/portfolio';
 import Contact from '../pages/contact/contact';
 import './App.css';
-import footer from '../footer/footer';
+import Footer from '../footer/footer';
 
 function App() {
-  const [showNavbar, setShowNavbar] = useState(false);
-  const [showLandingPage, setShowLandingPage] = useState(true);
-
-  const handleScrollToNavbar = () => {
-    setShowNavbar(true);
-    setShowLandingPage(false);
-  };
-
   return (
     <BrowserRouter>
       <div className="App">
         <header className="App-header"></header>
-        {!showNavbar && (
-          <LandingPage handleScrollToNavbar={handleScrollToNavbar} />
-        )}
-        {showNavbar && (
-          <React.Fragment>
-            <Navbar />
-            <Routes>
-              <Route path="/about" element={<AboutPage />} />
-              <Route path="/portfolio" element={<Portfolio />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/github" link="https://github.com/n335h" />
-              <Route
-                path="/linkedin"
-                link="https://linkedin.com/in/nichhorishny"
-              />
-            </Routes>
-          </React.Fragment>
-        )}
+        <Navbar />
+
+        <div id="section" className="section">
+          <LandingPage />
+        </div>
+        <div id="section" className="sectionAbout">
+          <AboutPage path="/about" href="#about" />
+        </div>
+        <div id="section" className="sectionPortfolio">
+          <Portfolio path="/portfolio" href="#portfolio" />
+        </div>
+        <div id="section" className="sectionContact">
+          <Contact href="#contact" />
+        </div>
       </div>
     </BrowserRouter>
   );

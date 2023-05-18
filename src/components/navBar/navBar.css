@@ -10,8 +10,8 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color: rgb(241, 241, 241);
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  background-color:#232e3d;
+  
 }
 
 .navbar ul {
@@ -28,25 +28,29 @@
 
 .navbar ul li a {
   text-decoration: none;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 .navbar ul li a:hover {
-  color: #0f4ea5;
+  color: #e7d533;
 }
 
 .navbar ul li a.active {
-  color: #232e3d;
+  color: #e7d533 !important;
 }
 
 .menu-toggle {
   display: none;
+  margin-right: auto; /* Add this line */
 }
 
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
     height: auto;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
   }
 
   .navbar ul {
@@ -75,18 +79,19 @@
     align-items: center;
     height: 40px;
     cursor: pointer;
+    padding: 10px 10px;
   }
 
   .menu-toggle .bar {
     width: 25px;
     height: 3px;
-    background-color: black;
+    background-color: #e7d533;
     margin: 3px;
     transition: all 0.3s ease-in-out;
   }
 
   .navbar.open .menu-toggle .bar:first-child {
-    transform: rotate(45deg) translate(4px, 4px);
+    transform: rotate(45deg) translate(10px, 2px);
   }
 
   .navbar.open .menu-toggle .bar:nth-child(2) {
@@ -94,20 +99,6 @@
   }
 
   .navbar.open .menu-toggle .bar:last-child {
-    transform: rotate(-45deg) translate(2px, -2px);
+    transform: rotate(-45deg) translate(11px, -2px);
   }
-}
-#iconsNav{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.4;
-  height: 20px;
-  width: 20px;
-}
-#iconsNav:hover{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  opacity: 0.8;
 }

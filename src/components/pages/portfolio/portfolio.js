@@ -24,7 +24,7 @@ const Portfolio = () => {
           <Carousel images={images} />
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

@@ -12,6 +12,11 @@ const Contact = () => {
         <br />
         <br />
         <h1>get in touch</h1>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
         <form>
           <input
@@ -50,7 +55,6 @@ const Contact = () => {
           <input type="submit" value="Submit!" />
         </form>
       </div>
-      <Footer />
     </div>
   );
 };

@@ -25,39 +25,25 @@ const AboutPage = () => {
               and knowledge in software development.
             </p>
             <p>
-              Prior to becoming a developer, I studied Visual
-              Communication. This background has given me a keen eye
-              for design and user experience, which I incorporate into
-              my coding projects.
+              Prior to delving intot he world of tech, I studied
+              Visual Communication. This background has given me a
+              keen eye for design and user experience, which I
+              incorporate into my coding projects.
             </p>
             <p>
               When I'm not coding, you can often find me pursuing my
               hobbies. Here are a few things I enjoy:
             </p>
-            {/* <ul>
-              <li>
-                Skateboarding: I love the freedom and creativity that
-                skateboarding brings. It's a great way to stay active
-                and challenge myself.
-              </li>
-              <li>
-                35mm Photography: Capturing moments on film is a hobby
-                I cherish. I enjoy exploring different subjects and
-                experimenting with different techniques.
-              </li>
-              <li>
-                Art: I have a deep appreciation for various forms of
-                art. Whether it's painting, drawing, or visiting
-                galleries, art fuels my creativity and inspires me.
-              </li>
-              <li>
-                Nature: Spending time in nature helps me find peace
-                and clarity. Hiking, camping, and exploring natural
-                landscapes with my border collie are activities I truly enjoy.
-              </li>
-            </ul> */}
-            <h2>Languages & Tools</h2>
-            <div class="languages">
+            <br />
+
+            <buttton class="button" href="/contact">
+              Contact me
+            </buttton>
+          </section>
+
+          <div class="languages-container">
+            <h2>Skills</h2>{' '}
+            <section class="languages">
               <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
                 id="icon"
@@ -94,6 +80,16 @@ const AboutPage = () => {
                 alt="nodejs"
               />
               <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain-wordmark.svg"
+                id="icon"
+                alt="postgresql"
+              />
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                id="icon"
+                alt="express"
+              />
+              <img
                 src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
                 id="icon"
                 alt="figma"
@@ -113,58 +109,11 @@ const AboutPage = () => {
                 id="icon"
                 alt="visualstudio"
               />
-            </div>
-          </section>
-          <div class="skills-container">
-            <section class="skills">
-              <h2>Skills</h2>
-              <ul>
-                <li>
-                  <h3>[Skill 1]</h3>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore
-                    et dolore magna aliqua.
-                  </p>
-                </li>
-                <li>
-                  <h3>[Skill 2]</h3>
-                  <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo
-                    consequat.
-                  </p>
-                </li>
-                <li>
-                  <h3>[Skill 3]</h3>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </p>
-                </li>
-                <li>
-                  <h3>[Skill 3]</h3>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </p>
-                </li>
-                <li>
-                  <h3>[Skill 3]</h3>
-                  <p>
-                    Duis aute irure dolor in reprehenderit in
-                    voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur.
-                  </p>
-                </li>
-              </ul>
             </section>
           </div>
         </div>
       </main>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 };

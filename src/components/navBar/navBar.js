@@ -34,48 +34,48 @@ function NavBar() {
       </div>
       <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
         <li>
-          <Link to="/about" href="#about">
+          <a to="/about" href="/#about">
             // about
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/portfolio" href="#portfolio">
+          <a to="/portfolio" href="/#portfolio">
             // portfolio
-          </Link>
+          </a>
         </li>
         <li>
-          <Link to="/contact" href="#contact">
+          <a to="/contact" href="/#contact">
             // contact
-          </Link>
+          </a>
         </li>
-      </ul>
 
-      <div className="logo-container">
-        <a
-          href="https://github.com/n335h"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            className="icon"
-            src={github}
-            alt="github"
-            id="iconsNav"
-          />
-        </a>
-        <a
-          href="https://linkedin.com/in/nichhorishny"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <img
-            className="icon"
-            src={linkedin}
-            alt="linkedin"
-            id="iconsNav"
-          />
-        </a>
-      </div>
+        <div className="logo-container">
+          <a
+            href="https://github.com/n335h"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="icon"
+              src={github}
+              alt="github"
+              id="iconsNav"
+            />
+          </a>
+          <a
+            href="https://linkedin.com/in/nichhorishny"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="icon"
+              src={linkedin}
+              alt="linkedin"
+              id="iconsNav"
+            />
+          </a>
+        </div>
+      </ul>
     </nav>
   );
 }

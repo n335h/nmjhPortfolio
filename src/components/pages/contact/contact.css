@@ -2,10 +2,9 @@
   max-width: 600px;
   margin: 0 auto;
   padding: 20px;
-  height: auto;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 
@@ -27,7 +26,7 @@ textarea {
   font-family: 'Ubuntu', sans-serif;
   display: block;
   margin: 10px;
-  padding: 5px;
+  padding: 10px;
   border: none;
   font-size: 16px;
   width: 100%;
@@ -121,7 +120,6 @@ textarea.question + label > span {
 input[type="submit"] {
   transition: opacity 0.2s ease, background 0.2s ease;
   display: block;
-  opacity: ;
   margin: 10px 0 0 0;
   padding: 10px;
   cursor: pointer;
@@ -130,73 +128,5 @@ input[type="submit"] {
   z-index: 10;
   background-color: #e7d533;
   border-radius: 1px;
-  color: #232e3d;
-  cursor: pointer;
-  font-weight: bold;
-  
-  text-align: center;
-  transition: 200ms;
-
-}
-
-input[type="submit"]:hover {
-  background: #EEE;
-}
-
-input[type="submit"]:active {
-  background: #999;
-}
-
-input.question:valid ~ input[type="submit"],
-textarea.question:valid ~ input[type="submit"] {
-  animation: appear 1s forwards;
-}
-
-input.question:invalid ~ input[type="submit"],
-textarea.question:invalid ~ input[type="submit"] {
-  display: none;
-}
-
-@keyframes appear {
-  100% {
-    opacity: 1;
-  }
-}
-
-/* Media Queries */
-@media (max-width: 768px) {
-  .contact-page {
-    padding: 10px;
-  }
-  
-  input.question,
-  textarea.question {
-    font-size: 24px;
-  }
-  
-  input.question:focus,
-  input.question:valid {
-    padding-top: 20px;
-  }
-  
-  textarea.question:valid,
-  textarea.question:focus {
-    margin-top: 20px;
-  }
-  
-  input.question:focus + label > span,
-  input.question:valid + label > span {
-    top: -60px;
-  }
-  
-  textarea.question:focus + label > span,
-  textarea.question:valid + label > span {
-    top: -80px;
-  }
-  
-  input.question + label > span,
-  textarea.question + label > span {
-    top: -26px;
-    font-size: 14px;
-  }
+  color: #232e
 }

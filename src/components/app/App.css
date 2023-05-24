@@ -44,7 +44,9 @@ body{
   background: #eeeeee;
   
 } */
-
+*{
+  font-family: 'roboto', sans-serif;
+}
 
 .App {
   scroll-snap-type: y mandatory;

@@ -1,75 +1,247 @@
-.carousel {
-    position: relative;
-    max-width: 90vh;
-    margin: 0 auto;
-    text-align: center;
-    margin-bottom: 100px;
-  }
-  
-  .carousel-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: #333;
-    cursor: pointer;
-  }
-  
-  .carousel-button.prev {
-    left: 10px;
-  }
-  
-  .carousel-button.next {
-    right: 10px;
-  }
-  
-  .carousel-image {
-    max-width: 100%;
-    height: auto;
-    margin: 0 auto;
-    display: block;
-    padding: 10px;
-    border: 1px solid #ccc;
-  }
-  
-  .preview-grid {
-    display: flex;
-    justify-content: center;
-    max-width: 100vh;
-    margin-top: 20px;
-  }
-  
-  .preview-image {
-    max-width: 200px;
-    height: 10vh;
-    margin: 0 5px;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.3s ease;
-  }
-  
-  
-  .preview-image.active {
-    opacity: 1;
-  }
-  
-  .preview-image:hover {
-    opacity: 1;
-  }
-  
-  
-  @media screen and (max-width: 600px) {
-    .carousel {
-      max-width: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    .preview-image{
-      display: flex ;
-      flex-direction: column;
-    }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
 
-  }
+
+.main {
+  position: relative;
+  width: 90vw;
+  margin: 0 auto;
+  min-height: 90vh;
+  column-gap: 3rem;
+  display: flex;
+  flex-direction: column;
   
+}
+
+.main > div h1  {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 2.5rem;
+  color: #e7d533;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 3vh 0 0 0;
+  
+}
+.carouselImage{
+  width: 3vh;
+  height: 3vh;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0.6;
+  margin: 0 1vw;
+  z-index: 11;
+}
+.mainGit{
+  width: 10%;
+  height: 15%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0.625rem;
+  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0.6;
+  margin: 0 5%;
+  z-index: 1;
+}
+
+.carouselImage:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.main > div p {
+  line-height: 1.6;
+  color: rgb(255, 255, 255);
+  padding-bottom: 2vh;
+  
+}
+
+.swiper {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  flex-direction: column;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+
+
+}
+.swiper-pagination {
+ 
+}
+
+.swiper-pagination-bullet
+ {
+  background: #c2c2c2;
+  opacity: 0.2;
+  margin: 0 0.5rem;
+  scale: 0.3;
+ }
+
+.swiper-pagination-bullet-active{
+  opacity: 0.6;
+  background: #f1f1f1;
+  scale: 0.4;
+
+}
+.swiper-container-pagination {
+  bottom: 5rem !important;
+  z-index: 10;
+  color: #dadada;
+  width: 20%;
+}
+
+.swiper-slide {
+  width: 20rem;
+  height: 30rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+  scroll-behavior: smooth;
+  transform: scale(0.9); /* Add this line to reduce the size of the slide */
+  opacity: 1; /* Add this line to reduce the opacity of the slide */
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.616);
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+  transition-timing-function: ease-in-out; /* Adjust the timing function as desired */
+}
+
+.swiper-slide-prev,
+.swiper-slide-next {
+ 
+  opacity: 0.3; /* Add this line to reduce the opacity of the previous and next slides */
+}
+
+.swiper-slide-active {
+
+  opacity: 1; /* Add this line to revert the opacity of the active slide */
+  z-index: 1;
+  transform: scale(1); 
+}
+.swiper-slide-prev {
+transform: translateY(0) scale(0.8) ;
+right: -6rem;
+
+
+
+}
+.swiper-slide-prev-prev{
+  transform: translateY(0) scale(0.8) ;
+right: -8rem;
+}
+
+.swiper-slide-next {
+  transform: translateY(0) scale(0.8);
+  left: -6rem;
+}
+.swiper-slide-next-next{
+  transform: translateY(0) scale(0.8) ;
+left: -8rem;
+}
+
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/portfolioSite/blob/main/Images/NFTCard.png?raw=true")
+      no-repeat 40% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/portfolioSite/blob/main/Images/RPS.png?raw=true")
+      no-repeat 50% 40% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/portfolioSite/blob/main/Images/TeslaClone.png?raw=true")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/portfolioSite/blob/main/Images/TeslaClone.png?raw=true")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/portfolioSite/blob/main/Images/TeslaClone.png?raw=true")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+  transform: translate3d(-300px);
+}
+
+@media screen and (min-width: 48rem) {
+  .main {
+    display: flex;
+    align-items: center;
+  }
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+.swiper-container{
+    width: 85%;
+  }
+}
+

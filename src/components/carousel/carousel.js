@@ -55,10 +55,7 @@ const Carousel = () => {
     <div className="main">
       <div>
         <h1>projects</h1>
-        <p>
-          Beauty and mystery are hidden under the sea. Explore with
-          our application to know about Aquatic Animals.
-        </p>
+        <p>This is some info</p>
       </div>
 
       <div className="swiper">

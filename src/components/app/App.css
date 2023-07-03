@@ -55,13 +55,13 @@ body{
 
 }
 
-#section {
+.section {
   scroll-snap-align: start;
   height: 100vh;
 }
 
-.sectionPortfolio {
-  
+.portfolio {
+  height: 100vh;
   background-color: #232e3d;
 }
 
@@ -69,3 +69,4 @@ body{
 .App::-webkit-scrollbar {
   display: none;
 }
+

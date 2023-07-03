@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
-import github from '../assets/github.png';
-import linkedin from '../assets/linkedin.png';
+import GHGrey from '../assets/GHGrey.svg';
+import LIGrey from '../assets/LIGrey.svg';
 
 function Footer() {
   return (
@@ -13,14 +13,14 @@ function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="github" src={github} alt="github" />
+            <img className="github" src={GHGrey} alt="github" />
           </a>
           <a
             href="https://linkedin.com/in/nichhorishny"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="linkedin" src={linkedin} alt="linkedin" />
+            <img className="linkedin" src={LIGrey} alt="linkedin" />
           </a>
         </div>
         <hr></hr>

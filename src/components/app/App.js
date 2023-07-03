@@ -8,6 +8,7 @@ import './App.css';
 import Footer from '../footer/footer';
 
 function App() {
+  
   return (
     <div className="App">
       <Navbar />
@@ -15,16 +16,17 @@ function App() {
       <div id="section" className="section">
         <LandingPage />
       </div>
-      <div id="section" className="sectionAbout">
+
+      <div id="about" href="About" className="section">
         <AboutPage />
       </div>
-      <div id="section" className="sectionPortfolio">
+
+      <div id="portfolio" className="section">
         <Portfolio />
       </div>
-      <div id="section" className="sectionContact">
+      <div id="contact" className="section">
         <Contact />
       </div>
-
     </div>
   );
 }

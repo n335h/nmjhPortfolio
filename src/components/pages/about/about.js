@@ -12,13 +12,13 @@ const AboutPage = () => {
             <br />
             <br />
             <br />
-            <h2>About Me</h2>
+            <h2>Hello!</h2>
             <img
               src="https://via.placeholder.com/150"
               alt="Profile picture"
             />
             <p>
-              Hello! My name is Nich Horishny, and I am a junior full
+               My name is Nich Horishny, I am a junior full
               stack developer. I have a strong passion for coding and
               building web applications. I recently took part in
               School of Code Cohort 14, where I gained valuable skills
@@ -30,10 +30,7 @@ const AboutPage = () => {
               keen eye for design and user experience, which I
               incorporate into my coding projects.
             </p>
-            <p>
-              When I'm not coding, you can often find me pursuing my
-              hobbies. Here are a few things I enjoy:
-            </p>
+    
             <br />
 
             <buttton class="button" href="/contact">

@@ -20,6 +20,16 @@
   
 }
 
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+  align-items: center;
+  width: 50%;
+  padding: 0px 10px; /* Added padding to match previous styles */
+}
+
 .languages-container {
   display: flex;
   justify-content: center;
@@ -31,7 +41,6 @@
 .skills {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   width: 100%;
 }
 

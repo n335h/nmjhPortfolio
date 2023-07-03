@@ -19,7 +19,7 @@
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin: 0;
+  margin: 10rem;
   padding: 0;
   margin-left: auto;
 }
@@ -53,7 +53,7 @@
     height: auto;
     height: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
   }
 
   .navbar ul {
@@ -95,8 +95,10 @@
     border-radius: 10px;
   }
 
-  .navbar.open {
+  .menu.open {
     background-color: #232e3d;
+    height: auto;
+    margin-top: -10px;
   }
 
   .navbar.open .menu-toggle .bar:first-child {
@@ -111,4 +113,39 @@
   .navbar.open .menu-toggle .bar:last-child {
     transform: rotate(-45deg) translate(11px, -2px);
   }
+}
+
+.GH img:nth-child(1){
+  display: block;
+  scale: 1;
+}
+.GH img:nth-child(2){
+  display: none;
+  scale: 1;
+}
+.GH :hover img:nth-child(1){
+  display: none;
+  scale: 1;
+}
+.GH :hover img:nth-child(2){
+  display: block;
+  scale: 1;
+}
+
+
+.LI img:nth-child(1){
+  display: block;
+  scale: 1;
+}
+.LI img:nth-child(2){
+  display: none;
+  scale: 1;
+}
+.LI :hover img:nth-child(1){
+  display: none;
+  scale: 1;
+}
+.LI :hover img:nth-child(2){
+  display: block;
+  scale: 1;
 }

@@ -20,10 +20,18 @@ const LandingPage = ({ handleScrollToNavbar }) => {
               Nicholas Horishny
               <br />
               <h3 className="header-subtitle animate-pop-in">
-              Junior Full-Stack Developer
-            </h3>
+                Junior Full-Stack Developer
+              </h3>
             </h1>
-     
+            <div>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+            </div>
 
             <div
               className="mouse-icon animate-pop-in"

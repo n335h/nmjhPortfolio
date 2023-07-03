@@ -54,7 +54,7 @@ const Carousel = () => {
   return (
     <div className="main">
       <div>
-        <h1>projects</h1>
+        <h1>projects!</h1>
         <p>This is some info</p>
       </div>
 
@@ -141,7 +141,7 @@ const Carousel = () => {
             </div>
           </div>
         </div>
-        <div className="swiper-pagination"></div> 
+        <div className="swiper-pagination"></div>
       </div>
     </div>
   );

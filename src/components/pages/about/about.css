@@ -10,41 +10,76 @@
   font-weight: 900;
   font-size: 2.5rem;
   color: #e7d533;
-  display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   padding: 3vh 0 0 0;
-  flex-direction: column;
+
 
   
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  padding: 0px 10px; /* Added padding to match previous styles */
+}
+
+.profile-pic {
+  height: 40vh;
 }
 
 .about-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: auto;
   align-items: center;
-  width: 50%;
+  margin: auto;
+  /* width: 50%; */
   padding: 0px 10px; /* Added padding to match previous styles */
 }
 
-.languages-container {
+.about-img,
+.about-sec {
+  flex: 1;
+}
+
+.about-img {
+  display: flex;
+  justify-content: center;
+  width: 40%;
+}
+
+.about-img img {
+  height: 40vh;
+}
+
+.about-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+/* .languages-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
   padding: 0px 10px; /* Added padding to match previous styles */
-}
+ */
 
-.skills {
+/* .skills {
   display: flex;
   flex-direction: column;
   width: 100%;
-}
+} */
 
-.languages {
+/* .languages {
   display: flex;
   flex-direction: row;
   margin: 0;
@@ -52,7 +87,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-}
+} */
 
 #icon {
   width: 40px;
@@ -96,4 +131,10 @@
   background-color: #e7d533;
   border-radius: 1px;
   color: #232e
+}
+
+.wave {
+  display: flex;
+  margin: auto;
+  width: 100%;
 }

@@ -4,41 +4,46 @@ import Footer from '../../footer/footer';
 
 const AboutPage = () => {
   return (
-    <div class="about-page">
-      <header></header>
-      <main>
-        <div class="about-container">
-          <section class="about">
-            <br />
-            <br />
-            <br />
-            <h2>Hello!</h2>
-            <img
-              src="https://via.placeholder.com/150"
-              alt="Profile picture"
-            />
-            <p>
-               My name is Nich Horishny, I am a junior full
-              stack developer. I have a strong passion for coding and
-              building web applications. I recently took part in
-              School of Code Cohort 14, where I gained valuable skills
-              and knowledge in software development.
-            </p>
-            <p>
-              Prior to delving intot he world of tech, I studied
-              Visual Communication. This background has given me a
-              keen eye for design and user experience, which I
-              incorporate into my coding projects.
-            </p>
-    
-            <br />
+    <div className="about-page">
+      <div className="about-container">
+        <section className="about">
+          <br />
+          <br />
+          <br />
+          <h2>hello!</h2>
+          <span className="wave">
+            <div className="about-img">
+              <img
+                className="profile-pic"
+                src="https://i.ibb.co/7k8y959/FB-IMG-1688379082823.jpg"
+                alt="Profile"
+              />
+            </div>
+            <div className="about-sec">
+              <p>
+                My name is Nich Horishny, I am a junior full stack
+                developer. I have a strong passion for coding and
+                building web applications. I recently took part in
+                School of Code Cohort 14, where I gained valuable
+                skills and knowledge in software development.
+              </p>
+              <p>
+                Prior to delving intot he world of tech, I studied
+                Visual Communication. This background has given me a
+                keen eye for design and user experience, which I
+                incorporate into my coding projects.
+              </p>
 
-            <buttton class="button" href="/contact">
-              Contact me
-            </buttton>
-          </section>
+              <br />
 
-          <div class="languages-container">
+              <buttton className="button" href="/contact">
+                Contact me
+              </buttton>
+            </div>
+          </span>
+        </section>
+
+        {/* <div class="languages-container">
             <h2>Skills</h2>{' '}
             <section class="languages">
               <img
@@ -107,9 +112,9 @@ const AboutPage = () => {
                 alt="visualstudio"
               />
             </section>
-          </div>
-        </div>
-      </main>
+          </div> */}
+      </div>
+
       {/* <Footer /> */}
     </div>
   );

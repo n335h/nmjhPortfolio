@@ -132,7 +132,7 @@
     transform: translateX(-5px) rotate(-45deg) translate(10px, -4px);
   }
 
-  
+}
 
 
 .GH img:nth-child(1){
@@ -151,7 +151,7 @@
   display: block;
   scale: 1;
 }
-}
+
 
 .LI img:nth-child(1){
   display: block;

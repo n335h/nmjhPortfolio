@@ -42,7 +42,7 @@ function NavBar() {
         </li>
         <li>
           <a to="/portfolio" href="/#portfolio">
-            portfolio
+            projects
           </a>
         </li>
         <li>

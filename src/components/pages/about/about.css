@@ -135,7 +135,7 @@ display: none;
 
 @media screen and (max-width: 550px) {
   .about-img img {
-    max-height: 40vh; /* Update the maximum height for smaller screens */
+    max-height: 30vh; /* Update the maximum height for smaller screens */
   }
   .about-img2 img{
     display: flex;

@@ -47,7 +47,7 @@
 }
 .menu-toggle {
   display: none;
-  margin-right: auto; /* Add this line */
+  margin-left: auto; /* Add this line */
 }
 
 @media screen and (max-width: 600px) {
@@ -57,6 +57,7 @@
     height: 40px;
     display: flex;
     justify-content: space-evenly;
+    
   }
 
   .navbar ul {
@@ -72,6 +73,9 @@
 
   .navbar ul li {
     margin: 10px 0;
+      transition: all 0.3s ease-in-out;
+  font-size: 16px;
+  font-weight: 400;
   }
 
   .navbar ul li a {
@@ -87,18 +91,8 @@
     cursor: pointer;
     padding: 10px 10px;
     transition: all 0.4s ease-in-out; /* Add this line for smoother transition */
+    
   }
-  .menu-toggle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    cursor: pointer;
-    padding: 10px 10px;
-    transition: all 0.4s ease-in-out; /* Add this line for smoother transition */
-  }
-
   .menu-toggle .bar {
     width: 25px;
     height: 3px;
@@ -113,12 +107,14 @@
     position: absolute;
     background-color: #e7d533;
     color: #232e3d;
-    left: 0;
+    right: 0;
     top: 0px;
+    width:50%;
     margin: auto;
     opacity: 1;
     transition: opacity 0.3s ease-in;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    
   }
 
   .navbar.open .menu-toggle .bar:first-child {
@@ -138,7 +134,9 @@
   .navbar ul li a {
     text-decoration: none;
     color: #232e3d;
-    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight:400;
   }
 
 }

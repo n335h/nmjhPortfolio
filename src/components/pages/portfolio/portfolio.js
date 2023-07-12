@@ -2,6 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Footer from '../../footer/footer';
 import Carousel from '../../carousel/carousel';
+import './portfolio.css';
 
 const images = [
   'https://via.placeholder.com/400x300',
@@ -14,17 +15,17 @@ const images = [
 const Portfolio = () => {
   return (
     <div className="portfolio">
-      <div className="portfolio-container">
-        <br />
-        <br />
-        <br />
-        <br />
-
+      <div className="portfolioInfo">
+        <h1 className="swiperTitle">projects!</h1>
+        <p className="swiperP">
+          Slide through to check out my projects!
+        </p>
+      </div>
+      <div className="portfolio-content">
         <div className="portfolio-gallery">
           <Carousel images={images} />
         </div>
       </div>
-      {/* <Footer /> */}
     </div>
   );
 };

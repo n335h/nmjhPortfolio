@@ -23,7 +23,7 @@ function Footer() {
             <img className="linkedin" src={LIGrey} alt="linkedin" />
           </a>
         </div>
-        <hr></hr>
+      
         <p className="footer-text">
           &copy; 2023 Nicholas Horishny. All rights reserved.
         </p>

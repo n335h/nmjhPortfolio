@@ -1,17 +1,24 @@
-/* .portfolio-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 00px;
-    min-height: 90vh
-  }
+
   .portfolio {
-    height: 100vh;
+    margin: auto;
+    padding: 0 1rem;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
   }
 
-  .portfolio-gallery {
-    max-width: 90vh;
-  } */
-
-  .portfolio-container {
-    background-color: #232e3d;
+  @media screen and (min-width: 750px) {
+    .portfolio {
+      margin: auto;
+      padding: 0 1rem;
+      width: 100vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
   }

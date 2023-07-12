@@ -11,13 +11,14 @@ const Contact = () => {
         <br />
         <br />
         <br />
-        <h1>get in touch</h1>
-        <br />
-        <br />
-        <br />
-        <br />
+        <h1>get in touch!</h1>
         <br />
 
+        <p>
+          Don't hesitate to drop me a line using the form below! Let's
+          connect and turn your ideas into reality. Looking forward to
+          hearing from you and creating something awesome together!
+        </p>
         <form>
           <input
             type="text"
@@ -52,7 +53,9 @@ const Contact = () => {
           <label for="msg">
             <span>message</span>
           </label>
-          <input type="submit" value="Submit!" />
+          <button className="submit" value="Submit!">
+            Submit!
+          </button>
         </form>
       </div>
       <Footer />

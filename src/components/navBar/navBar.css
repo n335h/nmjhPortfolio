@@ -5,6 +5,7 @@
   height: 40px;
   transition: all 0.3s ease-in-out;
   font-size: 16px;
+  font-weight: 400;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,7 +20,7 @@
   justify-content: center;
   align-items: center;
   list-style: none;
-  margin: 10rem;
+  margin: 5rem;
   padding: 0;
   margin-left: auto;
 }
@@ -37,10 +38,12 @@
 
 .navbar ul li a:hover {
   color: #e7d533;
+ 
 }
 
 .navbar ul li a.active {
   color: #e7d533 !important;
+  text-decoration: underline;
 }
 .menu-toggle {
   display: none;
@@ -80,7 +83,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 40px;
+    height: auto;
     cursor: pointer;
     padding: 10px 10px;
     transition: all 0.4s ease-in-out; /* Add this line for smoother transition */
@@ -98,21 +101,22 @@
   .menu.open {
     background-color: #232e3d;
     height: auto;
-    margin-top: -10px;
+    margin-top: 22vh;
   }
 
   .navbar.open .menu-toggle .bar:first-child {
-    transform: rotate(45deg) translate(10px, 2px);
+    transform: rotate(45deg) translate(-6px, 8px);
     top: 2px;
   }
-
+  
   .navbar.open .menu-toggle .bar:nth-child(2) {
     opacity: 0;
   }
-
+  
   .navbar.open .menu-toggle .bar:last-child {
-    transform: rotate(-45deg) translate(11px, -2px);
+    transform: rotate(-45deg) translate(-6px, -6px);
   }
+
 }
 
 .GH img:nth-child(1){

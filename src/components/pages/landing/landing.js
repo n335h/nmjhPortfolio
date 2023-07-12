@@ -17,7 +17,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
         <div className="landingmain">
           <div className="header-content">
             <h1 className="header-title animate-pop-in">
-              Nicholas Horishny
+              NICHOLAS HORISHNY
               <br />
               <h3 className="header-subtitle animate-pop-in">
                 Junior Full-Stack Developer

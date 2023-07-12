@@ -6,28 +6,35 @@ import Portfolio from '../pages/portfolio/portfolio';
 import Contact from '../pages/contact/contact';
 import './App.css';
 import Footer from '../footer/footer';
+import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
+import Paprback from '../pages/ProjectPages/paprback';
 
 function App() {
-  
   return (
-    <div className="App">
-      <Navbar />
+    <BrowserRouter>
+      <div className="App">
+        <Navbar />
 
-      <div id="section" className="section">
-        <LandingPage />
-      </div>
+        <div id="section" className="section">
+          <LandingPage />
+        </div>
 
-      <div id="about" href="About" className="section">
-        <AboutPage />
-      </div>
+        <div id="about" href="About" className="section">
+          <AboutPage />
+        </div>
 
-      <div id="portfolio" className="section">
-        <Portfolio />
+        <div id="portfolio" className="section">
+          <Portfolio />
+        </div>
+        <div id="contact" className="section">
+          <Contact />
+        </div>
+
+        <Routes>
+          <Route path="/paprback" />
+        </Routes>
       </div>
-      <div id="contact" className="section">
-        <Contact />
-      </div>
-    </div>
+    </BrowserRouter>
   );
 }
 

@@ -2,59 +2,32 @@
 
 
 .main {
-  position: relative;
   width: 90vw;
-  margin: 0 auto;
-  min-height: 90vh;
-  column-gap: 3rem;
+  margin: auto;
+  min-height: 60vh;
   display: flex;
-  flex-direction: column;
-  
-}
-
-.main > div h1  {
-  text-transform: capitalize;
-  letter-spacing: 0.8px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 900;
-  font-size: 2.5rem;
-  color: #e7d533;
-  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 3vh 0 0 0;
   
-}
-.carouselImage {
-  position: absolute;
-  top: 0;
-  left:0;
-  width: 3vh;
-  height: 3vh;
-  padding: 1rem;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 0.625rem;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  opacity: 0.6;
-  z-index: 11;
+} 
+.githubLink {
+  margin-top: 1vh;
+  margin-left: 1vw;
 }
 
-.mainGit{
-  width: 10%;
-  height: 15%;
-  object-fit: cover;
-  object-position: center;
-  border-radius: 0.625rem;
-  box-shadow: 0 0.625rem 1.25rem rgba(0, 0, 0, 0.2);
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  opacity: 0.6;
-  margin: 0 5%;
-  z-index: 1;
+.slideInfo {
+  /* Remove display: flex */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 100%;
 }
+.slideTitle {
+  color: var(--main-color);
+  align-self: flex-start;
+}
+
 
 .carouselImage:hover {
   opacity: 1;
@@ -67,13 +40,117 @@
   padding-bottom: 2vh;
   
 }
-
-.swiper {
-  width: 80%;
+.swiperTitle{
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin: 0vh auto;
+  padding: 0 0 0 0;
+  color: #e7d533;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  
+}
+
+
+.slideInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  width: 100%;
+  height: 100%;
+
+
+}
+
+.slideHeader {
+  position: relative;
+  display: flex;
+  margin: 0 0 0 0;
+
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.slideTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #c2c2c2;
+  
+}
+.carouselImage {
+
+  width: 3.5vh;
+  height: 3.5vh;
+
+  border-radius: 0.625rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 11;
+}
+
+
+  .liveSite{
+    align-items: center;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    box-sizing: border-box;
+    color: #131313;
+    cursor: pointer;
+    display: inline-flex;
+    fill: #000;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    min-width: 140px;
+    margin: auto;
+    outline: 0;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  .liveSite:focus {
+    color: #171e29;
+  }
+  
+  .liveSite:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+    fill: var(--main-color);;
+  }
+  
+  .liveSite:active {
+    background-color: var(--main-color);;
+    border-color: var(--main-color);;
+    fill: var(--main-color);;
+  }
+  
+  @media (min-width: 768px) {
+    .liveSite{
+      min-width: 170px;
+    }
+  }
+
+
+
+.swiper {
+  width: 50%;
+  display: flex;
+  min-width: 50vw;
+  justify-content: center;
+  align-items: center;
+  margin: 1vw;
   padding: 0 0 0 0;
   flex-direction: column;
 }
@@ -81,11 +158,6 @@
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
   background: #fff;
-
-
-}
-.swiper-pagination {
- 
 }
 
 .swiper-pagination-bullet
@@ -110,25 +182,23 @@
 }
 
 .swiper-slide {
-  width: 20rem;
+  width: 30rem;
   height: 30rem;
   display: flex;
   flex-direction: column;
-  justify-content: end;
-  align-items: self-start;
   scroll-behavior: smooth;
   transform: scale(0.9); /* Add this line to reduce the size of the slide */
   opacity: 1; /* Add this line to reduce the opacity of the slide */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.616);
-  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out; 
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; 
   transition-timing-function: ease-in-out; /* Adjust the timing function as desired */
 }
 
 .swiper-slide-prev,
 .swiper-slide-next {
  
-  opacity: 0.3; /* Add this line to reduce the opacity of the previous and next slides */
+  opacity: 0.1; /* Add this line to reduce the opacity of the previous and next slides */
 }
 
 .swiper-slide-active {
@@ -139,23 +209,23 @@
 }
 .swiper-slide-prev {
 transform: translateY(0) scale(0.8) ;
-right: -6rem;
+right: -15rem;
 
 
 
 }
 .swiper-slide-prev-prev{
   transform: translateY(0) scale(0.8) ;
-right: -8rem;
+right: -15rem;
 }
 
 .swiper-slide-next {
   transform: translateY(0) scale(0.8);
-  left: -6rem;
+  left: -15rem;
 }
 .swiper-slide-next-next{
   transform: translateY(0) scale(0.8) ;
-left: -8rem;
+left: -15rem;
 }
 
 
@@ -168,6 +238,7 @@ left: -8rem;
   margin-bottom: 0.625rem;
   padding: 0 0 0 1.563rem;
   text-transform: uppercase;
+  justify-content: flex-start;
 }
 
 .swiper-slide p {
@@ -177,9 +248,10 @@ left: -8rem;
   padding: 0 1.563rem;
   line-height: 1.6;
   font-size: 0.75rem;
+  justify-content: flex-start;
   display: -webkit-box;
   -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
+  
   overflow: hidden;
 }
 
@@ -194,35 +266,37 @@ left: -8rem;
   display: block;
   opacity: 1;
 }
-
-.swiper-slide--one {
+.swiper-slide--1 {
+  width: 40rem;
+  height: 30rem;
   background: linear-gradient(to top, #161616, #49494910, #86868623),
-    url("https://github.com/n335h/portfolioSite/blob/main/Images/NFTCard.png?raw=true")
-      no-repeat 40% 50% / cover;
+    url("https://github.com/n335h/soc_byteclub_paprback/blob/main/paprback.png?raw=true")
+    no-repeat 50% 50% / cover;
 }
 
-.swiper-slide--two {
+
+.swiper-slide--2 {
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/portfolioSite/blob/main/Images/RPS.png?raw=true")
-      no-repeat 50% 40% / cover;
+    no-repeat 50% 50% / cover;
 }
 
-.swiper-slide--three {
+.swiper-slide--3 {
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/portfolioSite/blob/main/Images/TeslaClone.png?raw=true")
-      no-repeat 50% 50% / cover;
+    no-repeat 50% 50% / cover;
 }
 
-.swiper-slide--four {
+.swiper-slide--4 {
   background: linear-gradient(to top, #161616, #49494910, #86868623),
-    url("https://github.com/n335h/portfolioSite/blob/main/Images/TeslaClone.png?raw=true")
-      no-repeat 50% 50% / cover;
+    url("https://github.com/n335h/portfolioSite/blob/main/Images/NFTCard.png?raw=true")
+    no-repeat 50% 50% / cover;
 }
 
-.swiper-slide--five {
+.swiper-slide--5 {
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/portfolioSite/blob/main/Images/TeslaClone.png?raw=true")
-      no-repeat 50% 50% / cover;
+    no-repeat 50% 50% / cover;
 }
 
 .swiper-3d .swiper-slide-shadow-left,
@@ -248,3 +322,86 @@ left: -8rem;
   }
 }
 
+.swiperP {
+  color: #ffffff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+  .main {
+    width: 90vw;
+    max-height: 80vh;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .swiper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1vw;
+    padding: 0 0 0 0;
+    flex-direction: column;
+  }
+
+  .slideInfo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin:auto;
+    padding: 0 0 0 0;
+    width: 100%;
+    height: 100%;
+    font-size: small;
+  
+  
+  }
+  
+  .slideHeader {
+    position: relative;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .slideTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #c2c2c2;
+    
+  }
+  .main > div p {
+    line-height: 1.6;
+    color: rgb(255, 255, 255);
+    padding-bottom: 2vh;
+    margin: 0;
+    
+  }
+
+}

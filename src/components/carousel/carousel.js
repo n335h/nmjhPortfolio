@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Swiper, { Navigation, Pagination } from 'swiper';
 import 'swiper/swiper.min.css';
 import 'swiper/css/pagination';
@@ -8,6 +8,8 @@ import github from '../assets/github.png';
 Swiper.use([Navigation, Pagination]);
 
 const Carousel = () => {
+  const [activeSlide, setActiveSlide] = useState(0);
+
   useEffect(() => {
     const swiper = new Swiper('.swiper', {
       effect: 'coverflow',
@@ -20,8 +22,8 @@ const Carousel = () => {
         modifier: 6,
         slideShadows: true,
       },
-      loop: true, // Enable continuous loop
-      freeMode: true, // Enable free dragging/swiping
+      loop: true,
+      freeMode: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -46,102 +48,84 @@ const Carousel = () => {
       },
     });
 
+    swiper.on('slideChange', () => {
+      setActiveSlide(swiper.realIndex);
+    });
+
     return () => {
       swiper.destroy();
     };
   }, []);
 
+  const slideData = [
+    {
+      title: 'Paprback',
+      description: 'Week 2 Hackathon - Paprback is a social media platform for book lovers.',
+      githubLink: 'https://github.com/n335h/soc_byteclub_paprback',
+      livesite: 'https://bcpaprback.netlify.app/',
+    },
+    {
+      title: 'Rock Paper Scissors',
+      description: 'Week 1 Hackathon - Rock Paper Scissors Game',
+      githubLink: 'https://github.com/n335h/RPS',
+      livesite: 'https://n335h.github.io/RPS/',
+    },
+    {
+      title: 'Tesla Clone',
+      description: 'Workshop to clone a website',
+      githubLink: 'https://github.com/n335h/TeslaClone',
+      livesite: 'https://n335h.github.io/TeslaClone/',
+    },
+    {
+      title: 'NFT Card',
+      description: 'Frontend Mentor challenges help you improve your coding skills by building realistic projects. Your challenge is to build out this preview card component and get it looking as close to the design as possible. I could any tools to help me complete the challenge',
+      githubLink: 'https://github.com/n335h/NFTCard',
+      livesite: 'https://n335h.github.io/NFTCard/',
+    },
+  ];
+
+  const currentSlide = slideData[activeSlide];
+
   return (
     <div className="main">
-      <div>
-        <h1>projects!</h1>
-        <p>This is some info</p>
-      </div>
-
       <div className="swiper">
         <div className="swiper-wrapper">
-          <div className="swiper-slide swiper-slide--one">
-            <div>
-              <h2>NFT Card</h2>
-              <p>About NFT Card</p>
-              <a href="https://en.wikipedia.org/wiki/Jellyfish">
-                <img
-                  className="carouselImage"
-                  src={github}
-                  href="https://en.wikipedia.org/wiki/Jellyfish"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="githublink"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="swiper-slide swiper-slide--two">
-            <div>
-              <h2>RPS</h2>
-              <p>About RPS</p>
-              <a href="https://n335h.github.io/RPS/">
-                <img
-                  className="carouselImage"
-                  src={github}
-                  href="https://n335h.github.io/RPS/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="githublink"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="swiper-slide swiper-slide--three">
-            <div>
-              <h2>Tesla Clone</h2>
-              <p>About Tesla Clone</p>
-              <a href="https://n335h.github.io/TeslaClone/">
-                <img
-                  className="carouselImage"
-                  src={github}
-                  href="https://n335h.github.io/TeslaClone/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="githublink"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="swiper-slide swiper-slide--four">
-            <div>
-              <h2></h2>
-              <p></p>
-              <a href="">
-                <img
-                  className="carouselImage"
-                  src={github}
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="githublink"
-                />
-              </a>
-            </div>
-          </div>
-          <div className="swiper-slide swiper-slide--five">
-            <div>
-              <h2> </h2>
-              <p></p>
-              <a href="">
-                <img
-                  className="carouselImage"
-                  src={github}
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="githublink"
-                />
-              </a>
-            </div>
-          </div>
+          {slideData.map((slide, index) => (
+            <div
+              key={index}
+              className={`swiper-slide swiper-slide--${index + 1}`}
+            ></div>
+          ))}
         </div>
         <div className="swiper-pagination"></div>
+      </div>
+
+      <div className="slideInfo">
+        <span className="slideHeader">
+          <h2 className="slideTitle">{currentSlide.title}</h2>
+          <a
+            className="githubLink"
+            href={currentSlide.githubLink}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              className="carouselImage"
+              src={github}
+              alt="githublink"
+            />
+          </a>
+        </span>
+        <p>{currentSlide.description}</p>
+
+        <a
+          className="liveSite"
+          href={currentSlide.livesite}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Live Site
+        </a>
       </div>
     </div>
   );

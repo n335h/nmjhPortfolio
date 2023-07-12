@@ -151,7 +151,7 @@
   display: block;
   scale: 1;
 }
-
+}
 
 .LI img:nth-child(1){
   display: block;
@@ -168,5 +168,4 @@
 .LI :hover img:nth-child(2){
   display: block;
   scale: 1;
-}
 }

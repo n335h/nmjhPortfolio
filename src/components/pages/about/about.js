@@ -31,21 +31,22 @@ const AboutPage = () => {
                 </div>
                 <br />
                 <p>
-                  I am Nich, I have a background in Visual
-                  Communication, which has provided me with strong
-                  creative thinking skills. However, for the past five
-                  years, I have been working in HR/TA, gaining
-                  valuable experience in a different field.
-                </p>
+                  I'm Nich, I come from a background in Visual
+                  Communication, but for the past five years, I've
+                  been working within HR.{' '}
+                </p>{' '}
               </span>
 
               <p>
-                Now, I am eager to redirect my creative thinking into
-                the world of Full-Stack Development. I recently
-                completed the School of Code cohort 14 for 2023, which
-                was an immersive program that equipped me with the
-                necessary technical foundation and hands-on experience
-                in Full-Stack Development.
+                Looking for new ways to utilize that creative
+                thinking. I decided to delve on a new journey into the
+                world of tech. Recently, I completed the School of
+                Code cohort 14 for 2023. It was an immersive program
+                that gave me the technical foundation and hands-on
+                experience I need to dive into Full-Stack Development.
+                Now I'm all set to bring my creative skills and tech
+                know-how together for this exciting new adventure.
+                Looking forward to making things happen!
               </p>
 
               <br />

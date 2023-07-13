@@ -117,7 +117,7 @@ display: none;
 
   .about-img2 img{
     display: flex;
-    height: 20rem;
+    height: 15rem;
     border-radius: 10px;
     margin: auto;
     padding: auto;
@@ -137,7 +137,7 @@ display: none;
 
 @media screen and (max-width: 550px) {
   .about-img img {
-    max-height: 30vh; /* Update the maximum height for smaller screens */
+    max-height: 20vh; /* Update the maximum height for smaller screens */
   }
   .about-img2 img{
     display: flex;

@@ -16,6 +16,10 @@ footer {
 .pageFooter {
   width: 100vw;
   background-color: #232e3d;
+  margin: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .footer-container {

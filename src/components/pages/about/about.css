@@ -162,7 +162,7 @@ display: none;
     max-height: 10vh; /* Update the maximum height for smaller screens */
   }
   .about-img2 img{
-    display: flex;
+   float: left;
     height: 15rem;
     border-radius: 10px;
     margin: auto;
@@ -173,19 +173,10 @@ display: none;
   #span.about-secInfo{
     display:flex;
     justify-content: flex-start;
-    align-items: center;
  flex-direction: row;
   
 }
 }
-
-
-
-
-
-
-
-
 
 
 

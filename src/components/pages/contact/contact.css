@@ -9,6 +9,7 @@
   max-width: 40vw;
   margin: auto;
   padding: 20px;
+
   height: 90vh;
   display: flex;
   flex-direction: column;
@@ -29,7 +30,7 @@ form {
   color: #e7d533;
 }
 .contact-page p {
-  text-align: center;
+  text-align: justify;
 
   
 }
@@ -153,7 +154,7 @@ textarea.question + label > span {
     min-width: 140px;
     margin: auto;
     outline: 0;
-    text-align: center;
+    text-align: justify;
     text-decoration: none;
     margin-top: 1vh;
     transition: all .3s;

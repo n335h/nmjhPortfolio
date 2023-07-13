@@ -19,7 +19,7 @@ const AboutPage = () => {
             />
           </div>
           <div className="about-sec">
-            <div className="about-secInfo">
+            <div className="about-secInfo animate-pop-in">
               <h1>hello!</h1>
               <span id="span" className="about-secInfo">
                 <div className="about-img2">
@@ -33,14 +33,14 @@ const AboutPage = () => {
                 <p>
                   I'm Nich, I come from a background in Visual
                   Communication, but for the past five years, I've
-                  been working within HR.    Looking for new ways to utilize that creative
-                thinking. I decided to delve on a new journey into the
-                world of tech.{' '}
+                  been working within HR.
                 </p>{' '}
               </span>
 
               <p>
-              Recently, I completed the School of
+                Looking for new ways to utilize that creative
+                thinking. I decided to delve on a new journey into the
+                world of tech. Recently, I completed the School of
                 Code cohort 14 for 2023. It was an immersive program
                 that gave me the technical foundation and hands-on
                 experience I need to dive into Full-Stack Development.

@@ -141,6 +141,7 @@ display: none;
   }
   .about-img2 img{
     display: flex;
+    height: 15rem;
     border-radius: 10px;
     margin: auto;
     padding: auto;
@@ -153,6 +154,29 @@ display: none;
     align-items: center;
  flex-direction: row;
   }
+}
+
+
+@media screen and (max-width: 450px) {
+  .about-img img {
+    max-height: 10vh; /* Update the maximum height for smaller screens */
+  }
+  .about-img2 img{
+    display: flex;
+    height: 15rem;
+    border-radius: 10px;
+    margin: auto;
+    padding: auto;
+
+   
+  }
+  #span.about-secInfo{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+ flex-direction: row;
+  
+}
 }
 
 

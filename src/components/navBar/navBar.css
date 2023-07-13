@@ -108,28 +108,32 @@
     background-color: #e7d533;
     color: #232e3d;
     right: 0;
-    top: 0px;
-    width:50%;
+    top: 40px;
+    width: 30%;
     margin: auto;
     opacity: 1;
-    transition: opacity 0.3s ease-in;
+    transition: opacity 0.9s ease-in, top 0.5s ease-in-out; /* Added transition for top property */
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    
+    transform: translateY(-100%); /* Initially hide the menu by shifting it above */
   }
-
+  
   .navbar.open .menu-toggle .bar:first-child {
     transform: translateX(-6px) rotate(45deg) translate(10px, 2px);
     top: 2px;
-    background-color: #232e3d;
+    background-color: #e7d533;
   }
-
+  
   .navbar.open .menu-toggle .bar:nth-child(2) {
     opacity: 0;
   }
-
+  
   .navbar.open .menu-toggle .bar:last-child {
     transform: translateX(-5px) rotate(-45deg) translate(10px, -4px);
-    background-color: #232e3d;
+    background-color: #e7d533;
+  }
+  
+  .navbar.open .menu {
+    transform: translateY(0); /* Move the menu down when opened */
   }
   .navbar ul li a {
     text-decoration: none;

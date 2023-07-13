@@ -41,6 +41,7 @@
   align-items: flex-start;
   width: 50vw;
   margin-left: 5rem;
+   text-align: justify;
   font-size: 1rem;
 }
 .about-sec h1 {
@@ -73,7 +74,7 @@
   min-width: 140px;
   margin: auto;
   outline: 0;
-  text-align: center;
+  text-align: justify;
   text-decoration: none;
   transition: all .3s;
   user-select: none;
@@ -97,7 +98,8 @@
     width:70vw;
     font-size: small;
     padding: auto;
-    margin: auto;
+    margin: 0.5rem;
+    text-align: justify;
   }
   
   .about-secInfo {

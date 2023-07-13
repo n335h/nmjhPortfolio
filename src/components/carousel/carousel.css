@@ -368,8 +368,8 @@ left: -15rem;
   .slideInfo {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     margin:auto;
     padding: 0 0 0 0;
     width: 100%;

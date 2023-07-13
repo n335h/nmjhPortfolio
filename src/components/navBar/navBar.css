@@ -14,6 +14,28 @@
   background-color:#232e3d;
   
 }
+.logo-toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 100%;
+}
+.logo {
+  display: none;
+  align-items: center;
+  margin: 2vw;
+  width: 100%;
+  color: #e7d533;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  transition: all 0.3s ease-in-out;
+  flex-direction: row;
+}
 
 .navbar ul {
   display: flex;
@@ -141,6 +163,13 @@
     transition: all 0.3s ease-in-out;
     font-size: 16px;
     font-weight:400;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    margin: 2vw;
+    width: 100%;
+    color: #e7d533;
   }
 
 }

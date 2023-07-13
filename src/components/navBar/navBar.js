@@ -5,6 +5,8 @@ import GHGrey from '../assets/GHGrey.svg';
 import GHYellow from '../assets/GHYellow.svg';
 import LIGrey from '../assets/LIGrey.svg';
 import LIYellow from '../assets/LIYellow.svg';
+import liBlue from '../assets/liBlue.png';
+import ghBlue from '../assets/ghBlue.png';
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,11 +31,18 @@ function NavBar() {
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
-      <div className="menu-toggle" onClick={handleToggleMenu}>
-        <div className="bar"></div>
-        <div className="bar"></div>
-        <div className="bar"></div>
+      <div className="logo-toggle-container">
+        <div className="logo">
+            <h1>nhorishny.</h1>
+        </div>
+
+        <div className="menu-toggle" onClick={handleToggleMenu}>
+          <div className="bar"></div>
+          <div className="bar"></div>
+          <div className="bar"></div>
+        </div>
       </div>
+
       <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
         <li>
           <a to="/about" href="/#about">
@@ -66,7 +75,7 @@ function NavBar() {
               />
               <img
                 className="icon"
-                src={GHYellow}
+                src={ghBlue}
                 alt="github"
                 id="iconsNav"
               />
@@ -86,7 +95,7 @@ function NavBar() {
               />
               <img
                 className="icon"
-                src={LIYellow}
+                src={liBlue}
                 alt="linkedin"
                 id="iconsNav"
               />

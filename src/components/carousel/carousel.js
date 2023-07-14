@@ -60,7 +60,8 @@ const Carousel = () => {
   const slideData = [
     {
       title: 'Paprback',
-      description: 'Week 2 Hackathon - Paprback is a social media platform for book lovers.',
+      description:
+        'Week 2 Hackathon - Paprback is a social media platform for book lovers.',
       githubLink: 'https://github.com/n335h/soc_byteclub_paprback',
       livesite: 'https://bcpaprback.netlify.app/',
     },
@@ -78,9 +79,18 @@ const Carousel = () => {
     },
     {
       title: 'NFT Card',
-      description: 'Frontend Mentor challenges help you improve your coding skills by building realistic projects. Your challenge is to build out this preview card component and get it looking as close to the design as possible. I could any tools to help me complete the challenge',
+      description:
+        'Frontend Mentor challenges help you improve your coding skills by building realistic projects. Your challenge is to build out this preview card component and get it looking as close to the design as possible. I could any tools to help me complete the challenge',
       githubLink: 'https://github.com/n335h/NFTCard',
       livesite: 'https://n335h.github.io/NFTCard/',
+    },
+    {
+      title: 'Open Weather API',
+      description:
+        'Frontend Mentor challenges help you improve your coding skills by building realistic projects. Your challenge is to build out this preview card component and get it looking as close to the design as possible. I could any tools to help me complete the challenge',
+      githubLink:
+        'https://github.com/n335h/ReactWeatherApp/tree/main',
+      livesite: 'https://main--n3335hweather.netlify.app/',
     },
   ];
 

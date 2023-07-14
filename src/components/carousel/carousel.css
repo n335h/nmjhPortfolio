@@ -295,7 +295,7 @@ left: -15rem;
 
 .swiper-slide--5 {
   background: linear-gradient(to top, #161616, #49494910, #86868623),
-    url("https://github.com/n335h/portfolioSite/blob/main/Images/TeslaClone.png?raw=true")
+    url("https://raw.githubusercontent.com/n335h/ReactWeatherApp/main/weatherApp.png")
     no-repeat 50% 50% / cover;
 }
 

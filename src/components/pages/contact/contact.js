@@ -61,7 +61,7 @@ const Contact = () => {
             required
             autocomplete="off"
           />
-          <label for="nme">
+          <label for="name">
             <span>email</span>
           </label>
           <textarea

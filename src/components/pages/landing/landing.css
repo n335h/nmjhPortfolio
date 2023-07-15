@@ -35,12 +35,12 @@
   margin: 0;
   letter-spacing: 0.05em;
   line-height: 1.2;
-  color: var(--main-color);
+  color: var(--test-main);
 }
 
 .header-title,
 .header-subtitle {
-  color: #e7d533;
+  color:var(--test-main);
   
 }
 
@@ -78,7 +78,7 @@
  * Mouse animate icon
 /* ---------------------------------------------- */
 .mouse-icon {
-  border: 2px solid #e7d533;
+  border: 2px solid var(--test-main);
   border-radius: 16px;
   height: 40px;
   width: 24px;

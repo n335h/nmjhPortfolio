@@ -27,7 +27,7 @@ form {
 .contact-page h1 {
   text-align: center;
   margin-bottom: 0px;
-  color: #e7d533;
+  color: var(--test-main);
 }
 .contact-page p {
   text-align: justify;
@@ -117,7 +117,7 @@ textarea.question:valid + label > span {
 
 input.question:valid + label,
 textarea.question:valid + label {
-  border-color: #e7d533;
+  border-color: var(--test-main);
 }
 
 input.question:invalid,
@@ -142,8 +142,8 @@ textarea.question + label > span {
   /* CSS */
   .submit{
     align-items: center;
-    background-color: var(--main-color);
-    border: 2px solid var(--main-color);
+    background-color:var(--test-main);
+    border: 2px solid var(--test-main);
     box-sizing: border-box;
     cursor: pointer;
     display: inline-flex;
@@ -167,9 +167,9 @@ textarea.question + label > span {
   }
   
   .submit:hover {
-    background-color: var(--main-color);
-    border-color: var(--main-color);
-    fill: var(--main-color);;
+    background-color:var(--test-main);
+    border-color: var(--test-main);
+    fill:var(--test-main);
   }
   
   .submit:active {

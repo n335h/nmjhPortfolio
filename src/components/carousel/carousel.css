@@ -45,7 +45,7 @@
   font-weight: 900;
   margin: 0vh auto;
   padding: 0 0 0 0;
-  color: #e7d533;
+  color: var(--test-main);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -100,8 +100,8 @@
 
   .liveSite{
     align-items: center;
-    background-color: var(--main-color);
-    border: 2px solid var(--main-color);
+    background-color: var(--test-main);
+    border: 2px solid var(--test-main);
     box-sizing: border-box;
     color: #131313;
     cursor: pointer;
@@ -125,15 +125,15 @@
   }
   
   .liveSite:hover {
-    background-color: var(--main-color);
-    border-color: var(--main-color);
-    fill: var(--main-color);;
+    background-color: var(--test-main);
+    border-color: var(--test-main);
+    fill: var(--test-main);
   }
   
   .liveSite:active {
-    background-color: var(--main-color);;
-    border-color: var(--main-color);;
-    fill: var(--main-color);;
+    background-color: var(--test-main);
+    border-color: var(--test-main);
+    fill: var(--test-main);
   }
   
   @media (min-width: 768px) {
@@ -295,7 +295,7 @@ left: -15rem;
 
 .swiper-slide--5 {
   background: linear-gradient(to top, #161616, #49494910, #86868623),
-    url("https://raw.githubusercontent.com/n335h/ReactWeatherApp/main/weatherApp.png")
+    url("https://github.com/n335h/ReactWeatherApp/blob/main/weatherApp.png?raw=true")
     no-repeat 50% 50% / cover;
 }
 

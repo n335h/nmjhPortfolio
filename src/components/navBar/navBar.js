@@ -33,7 +33,7 @@ function NavBar() {
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
       <div className="logo-toggle-container">
         <div className="logo">
-            <h1>nhorishny.</h1>
+          <h1>nhorishny.</h1>
         </div>
 
         <div className="menu-toggle" onClick={handleToggleMenu}>
@@ -75,7 +75,7 @@ function NavBar() {
               />
               <img
                 className="icon"
-                src={ghBlue}
+                src={GHYellow}
                 alt="github"
                 id="iconsNav"
               />
@@ -95,7 +95,7 @@ function NavBar() {
               />
               <img
                 className="icon"
-                src={liBlue}
+                src={LIYellow}
                 alt="linkedin"
                 id="iconsNav"
               />

@@ -63,6 +63,7 @@ input.question,
 textarea.question {
   font-size: 18px;
   font-weight: 300;
+  line-height: 40px;
   border-radius: 2px;
   margin: 0;
   border: none;
@@ -103,14 +104,14 @@ textarea.question:focus {
 
 input.question:focus + label > span,
 input.question:valid + label > span {
-  top: -70px;
-  font-size: 13px;
+  top: -80px;
+  font-size: 13wspx;
   color: #dbdbdb;
 }
 
 textarea.question:focus + label > span,
 textarea.question:valid + label > span {
-  top: -100px;
+  top: -130px;
   font-size: 13px;
   color: #e9e9e9;
 }
@@ -132,6 +133,7 @@ textarea.question + label > span {
   position: absolute;
   color: #8F8F8F;
   font-size: 12px;
+  top: -36px;
   left: 0px;
   z-index: -1;
   transition: top 0.2s ease, font-size 0.2s ease, color 0.2s ease;

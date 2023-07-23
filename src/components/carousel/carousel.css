@@ -58,12 +58,13 @@
 .slideInfo {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   margin: 0 0 0 0;
   padding: 0 0 0 0;
   width: 100%;
   height: 100%;
+  min-height: 30vh;
 
 
 }
@@ -283,19 +284,13 @@ left: -15rem;
 
 .swiper-slide--3 {
   background: linear-gradient(to top, #161616, #49494910, #86868623),
-    url("https://github.com/n335h/portfolioSite/blob/main/Images/TeslaClone.png?raw=true")
+    url("https://github.com/n335h/portfolioSite/blob/main/Images/NFTCard.png?raw=true")
     no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--4 {
   background: linear-gradient(to top, #161616, #49494910, #86868623),
-    url("https://github.com/n335h/portfolioSite/blob/main/Images/NFTCard.png?raw=true")
-    no-repeat 50% 50% / cover;
-}
-
-.swiper-slide--5 {
-  background: linear-gradient(to top, #161616, #49494910, #86868623),
-    url("https://github.com/n335h/ReactWeatherApp/blob/main/weatherApp.png?raw=true")
+    url("https://github.com/n335h/ReactWeatherApp/blob/main/Screenshot%202023-07-17%20135541.png?raw=true")
     no-repeat 50% 50% / cover;
 }
 

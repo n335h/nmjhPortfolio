@@ -33,6 +33,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
               <br></br>
               <br></br>
             </div>
+          
 
             <div
               className="mouse-icon animate-pop-in"

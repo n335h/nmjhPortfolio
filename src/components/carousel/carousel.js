@@ -61,21 +61,16 @@ const Carousel = () => {
     {
       title: 'Paprback',
       description:
-        'Week 2 Hackathon - Paprback is a social media platform for book lovers.',
+        'Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. Embracing the power of technologythis innovative app empowers users to easily exchange books with fellow enthusiasts, fostering a vibrant and sustainable reading community. ',
       githubLink: 'https://github.com/n335h/soc_byteclub_paprback',
       livesite: 'https://bcpaprback.netlify.app/',
     },
     {
       title: 'Rock Paper Scissors',
-      description: 'Week 1 Hackathon - Rock Paper Scissors Game',
+      description:
+        'Rock Paper Scissors. Friday Hackathon for School of Code built with HTML, CSS and JavaScript using DOM manipulation.',
       githubLink: 'https://github.com/n335h/RPS',
       livesite: 'https://n335h.github.io/RPS/',
-    },
-    {
-      title: 'Tesla Clone',
-      description: 'Workshop to clone a website',
-      githubLink: 'https://github.com/n335h/TeslaClone',
-      livesite: 'https://n335h.github.io/TeslaClone/',
     },
     {
       title: 'NFT Card',
@@ -87,7 +82,7 @@ const Carousel = () => {
     {
       title: 'Open Weather API',
       description:
-        'This is a weather app that uses the Open Weather API to fetch weather data for a city that the user inputs, this calls upon two seperate APIs, current weather data and forcast weather data, for the 12 hour forecast data. The app is built with React and uses the Axios library to make the API call.',
+        'Weather app that uses the Open Weather API to fetch weather data for a city that the user inputs, this calls upon two seperate APIs, current weather data and forcast weather data, for the 12 hour forecast data. The app is built with React and uses the Axios library to make the API call.',
       githubLink:
         'https://github.com/n335h/ReactWeatherApp/tree/main',
       livesite: 'https://main--nhweatherapi.netlify.app/',

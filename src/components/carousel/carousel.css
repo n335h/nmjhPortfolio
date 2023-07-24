@@ -168,7 +168,7 @@
 .swiper-pagination-bullet-active{
   opacity: 0.6;
   background: #f1f1f1;
-  transform: scaleY(0.4) ScaleX(0.4);
+  transform: scaleY(0.45) ScaleX(0.45);
 
 }
 .swiper-container-pagination {

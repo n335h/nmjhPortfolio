@@ -2,29 +2,31 @@ import React from 'react';
 // import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import './contact.css';
 import Footer from '../../footer/footer';
-import { useState } from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  const [status, setStatus] = useState('Submit');
-  const handleSubmit = async (e) => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    setStatus('Sending...');
-    const { name, email, message } = e.target.elements;
-    let details = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
-    };
-    let response = await fetch('http://localhost:5000/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json;charset=utf-8',
-      },
-      body: JSON.stringify(details),
-    });
-    setStatus('Submit');
-    let result = await response.json();
-    alert(result.status);
+
+    emailjs
+      .sendForm(
+        'service_pkd2rcg',
+        'template_dd9hxhc',
+        form.current,
+        '5zGhg0yEoqXwH93ki'
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log('success');
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
   return (
     <div className="contact-container">
@@ -41,10 +43,10 @@ const Contact = () => {
           connect and turn your ideas into reality. Looking forward to
           hearing from you and creating something awesome together!
         </p>
-        <form onSubmit={handleSubmit}>
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
-            name="name"
+            name="user_name"
             class="question"
             id="name"
             required
@@ -54,14 +56,14 @@ const Contact = () => {
             <span>name</span>
           </label>
           <input
-            type="text"
-            name="email"
+            type="email"
+            name="user_email"
             class="question"
             id="nme"
             required
             autocomplete="off"
           />
-          <label for="name">
+          <label for="email">
             <span>email</span>
           </label>
           <textarea
@@ -75,8 +77,12 @@ const Contact = () => {
           <label for="message">
             <span>message</span>
           </label>
-          <button className="submit" value="Submit!">
-            {status}
+          <button
+            className="submit"
+            value="Submit!"
+            onClick={sendEmail}
+          >
+            Submit!
           </button>
         </form>
       </div>

@@ -86,17 +86,7 @@
   color: #c2c2c2;
   
 }
-.carouselImage {
 
-  width: 3.5vh;
-  height: 3.5vh;
-
-  border-radius: 0.625rem;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-  opacity: 0.6;
-  z-index: 11;
-}
 
 
   .liveSite{
@@ -135,14 +125,21 @@
     fill: var(--test-main);
   }
   
-  @media (min-width: 768px) {
-    .liveSite{
-      min-width: 170px;
-    }
-  }
 
 
+/* ///////////////////////////////////////////////////////// Swiper  CSS  */
 
+.carouselImage {
+
+  width: 3.5vh;
+  height: 3.5vh;
+
+  border-radius: 0.625rem;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 11;
+}
 .swiper {
   width: 50%;
   display: flex;
@@ -164,14 +161,14 @@
   background: #acacac;
   opacity: 0.2;
   margin: 0 0.5rem;
-  transform: scaleY(0.4) ScaleX(0.4);
+  transform: scaleY(0.3) ScaleX(0.3);
  
  }
 
 .swiper-pagination-bullet-active{
   opacity: 0.6;
   background: #f1f1f1;
-  transform: scaleY(0.5) ScaleX(0.5);
+  transform: scaleY(0.4) ScaleX(0.4);
 
 }
 .swiper-container-pagination {
@@ -298,46 +295,14 @@ left: -15rem;
   background-image: none;
   transform: translate3d(-300px);
 }
-
-@media screen and (min-width: 48rem) {
-  .main {
-    display: flex;
-    align-items: center;
-  }
-  .bg,
-  .bg2 {
-    opacity: 0.1;
-  }
-}
-
-@media screen and (max-width: 93.75rem) {
-.swiper-container{
-    width: 80%;
-  }
-}
-
 .swiperP {
   color: #ffffff;
 }
 
 
+/* //////////////////////////////////////////////////////// Media Queries */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
   .main {
     width: 90vw;
     max-height: 80vh;
@@ -378,6 +343,7 @@ left: -15rem;
     display: flex;
     margin: 0;
     padding: 0;
+    width:100%;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
@@ -406,3 +372,30 @@ left: -15rem;
   display: flex;
 }
 }
+
+
+
+@media screen and (min-width: 48rem) {
+  .main {
+    display: flex;
+    align-items: center;
+  }
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (max-width: 93.75rem) {
+.swiper-container{
+    width: 80%;
+  }
+}
+
+
+@media (min-width: 768px) {
+  .liveSite{
+    min-width: 170px;
+  }
+}
+

@@ -22,6 +22,7 @@ const Contact = () => {
         (result) => {
           console.log(result.text);
           console.log('success');
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);

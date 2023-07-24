@@ -1,9 +1,9 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, {useRef } from 'react';
 import './landing.css';
 
 
 const LandingPage = ({ handleScrollToNavbar }) => {
-  const [showMouseIcon, setShowMouseIcon] = useState(true);
+ 
   const landingRef = useRef(null);
 
   const handleMouseIconClick = () => {

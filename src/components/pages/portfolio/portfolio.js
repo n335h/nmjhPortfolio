@@ -1,6 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
-import Footer from '../../footer/footer';
 import Carousel from '../../carousel/carousel';
 import './portfolio.css';
 

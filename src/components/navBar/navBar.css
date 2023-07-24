@@ -22,7 +22,7 @@
   width: 100%;
 }
 .logo {
-  display: none;
+ 
   align-items: center;
   margin: 2vw;
   width: 100%;
@@ -179,48 +179,42 @@ nav {
     font-size: 16px;
     font-weight:400;
   }
-  .logo {
-    display: flex;
-    align-items: center;
-    margin: 2vw;
-    width: 100%;
-    color: var(--test-main);
-  }
+
 
 }
 
 
 .GH img:nth-child(1){
   display: block;
-  scale: 1;
+  transform: scale(1);
 }
 .GH img:nth-child(2){
   display: none;
-  scale: 1;
+  transform: scale(1);
 }
 .GH :hover img:nth-child(1){
   display: none;
-  scale: 1;
+  transform: scale(1);
 }
 .GH :hover img:nth-child(2){
   display: block;
-  scale: 1;
+  transform: scale(1);
 }
 
 
 .LI img:nth-child(1){
   display: block;
-  scale: 1;
+  transform: scale(1);
 }
 .LI img:nth-child(2){
   display: none;
-  scale: 1;
+  transform: scale(1);
 }
 .LI :hover img:nth-child(1){
   display: none;
-  scale: 1;
+  transform: scale(1);
 }
 .LI :hover img:nth-child(2){
   display: block;
-  scale: 1;
+  transform: scale(1);
 }

@@ -159,8 +159,6 @@ textarea.question + label > span {
     text-decoration: none;
     margin-top: 1vh;
     transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
   }
   .submit:focus {

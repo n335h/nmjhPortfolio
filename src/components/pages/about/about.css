@@ -77,10 +77,10 @@
   text-align: justify;
   text-decoration: none;
   transition: all .3s;
-  user-select: none;
-  -webkit-user-select: none;
   touch-action: manipulation;
 }
+
+
 .buttonAbout {
   display:flex;
   justify-content: center;

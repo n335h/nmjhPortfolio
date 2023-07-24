@@ -28,10 +28,9 @@ function NavBar() {
 
   return (
     <nav className={`navbar ${isMenuOpen ? 'open' : ''}`}>
+    
       <div className="logo-toggle-container">
-        <div className="logo">
-          <h1>nhorishny.</h1>
-        </div>
+      
 
         <div className="menu-toggle" onClick={handleToggleMenu}>
           <div className="bar"></div>

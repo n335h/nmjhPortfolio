@@ -1,6 +1,5 @@
 import React from 'react';
 import './about.css';
-import Footer from '../../footer/footer';
 
 const AboutPage = () => {
   return (
@@ -32,18 +31,14 @@ const AboutPage = () => {
                 <br />
                 <p>
                   I'm Nich, I come from a background in Visual
-                  Communication, but for the past five years, I've
-                  been working within HR. Looking for new ways to
-                  utilize that creative thinking.
-                  <br />I decided to delve on a new journey into the
-                  world of tech. Recently, I completed the School of
-                  Code cohort 14 for 2023. It was an immersive program
-                  that gave me the technical foundation and hands-on
-                  experience I need to dive into Full-Stack
-                  Development. Now I'm all set to bring my creative
-                  skills and tech know-how together for this exciting
-                  new adventure. Looking forward to making things
-                  happen!
+                  Communication and have just completed the School of
+                  Code Bootcamp. It was an immersive program that gave
+                  me the technical foundation and hands-on experience
+                  needed to dive into Full-Stack Development. needed
+                  to dive into Full-Stack Development. <br></br>{' '}
+                  <br></br>Now I'm all set to bring my creative skills
+                  and tech know-how together for this exciting new
+                  adventure. Looking forward to making things happen!
                 </p>
               </span>
               <br />

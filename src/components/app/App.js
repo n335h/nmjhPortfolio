@@ -5,9 +5,8 @@ import AboutPage from '../pages/about/about';
 import Portfolio from '../pages/portfolio/portfolio';
 import Contact from '../pages/contact/contact';
 import './App.css';
-import Footer from '../footer/footer';
-import { BrowserRouter, Link, Route, Routes } from 'react-router-dom';
-import Paprback from '../pages/ProjectPages/paprback';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+
 
 function App() {
   return (

@@ -1,12 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import './navBar.css';
-import { Link } from 'react-router-dom';
 import GHGrey from '../assets/GHGrey.svg';
 import GHYellow from '../assets/GHYellow.svg';
 import LIGrey from '../assets/LIGrey.svg';
 import LIYellow from '../assets/LIYellow.svg';
-import liBlue from '../assets/liBlue.png';
-import ghBlue from '../assets/ghBlue.png';
 
 function NavBar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

@@ -117,8 +117,6 @@
     text-align: center;
     text-decoration: none;
     transition: all .3s;
-    user-select: none;
-    -webkit-user-select: none;
     touch-action: manipulation;
   }
   .liveSite:focus {
@@ -163,16 +161,17 @@
 
 .swiper-pagination-bullet
  {
-  background: #c2c2c2;
+  background: #acacac;
   opacity: 0.2;
   margin: 0 0.5rem;
-  scale: 0.3;
+  transform: scaleY(0.4) ScaleX(0.4);
+ 
  }
 
 .swiper-pagination-bullet-active{
   opacity: 0.6;
   background: #f1f1f1;
-  scale: 0.4;
+  transform: scaleY(0.5) ScaleX(0.5);
 
 }
 .swiper-container-pagination {
@@ -311,9 +310,9 @@ left: -15rem;
   }
 }
 
-@media screen and (min-width: 93.75rem) {
+@media screen and (max-width: 93.75rem) {
 .swiper-container{
-    width: 85%;
+    width: 80%;
   }
 }
 
@@ -399,4 +398,11 @@ left: -15rem;
     
   }
 
+}
+@media screen and (max-width: 450px) {
+.swiper-slide {
+  width: 22rem;
+  height: 22rem;
+  display: flex;
+}
 }

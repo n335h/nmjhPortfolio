@@ -34,16 +34,16 @@ const AboutPage = () => {
                   Communication and have just completed the School of
                   Code Bootcamp. It was an immersive program that gave
                   me the technical foundation and hands-on experience
-                  needed to dive into Full-Stack Development. needed
-                  to dive into Full-Stack Development. <br></br>{' '}
-                  <br></br>Now I'm all set to bring my creative skills
-                  and tech know-how together for this exciting new
-                  adventure. Looking forward to making things happen!
+                  needed to dive into Full-Stack Development.{' '}
+                  <br></br> <br></br>Now I'm all set to bring my
+                  creative skills and tech know-how together for this
+                  exciting new adventure. Looking forward to making
+                  things happen!
                 </p>
               </span>
               <br />
-              <div className='skills'>
-          <h1>Skills</h1>
+              <div className="skills">
+                {/*           
   <ul>
     <li class="skill">HTML</li>
     <li class="skill">CSS</li>
@@ -53,17 +53,15 @@ const AboutPage = () => {
     <li class="skill">Express</li>
     <li class="skill">PostgreSQL</li>
     <li class="skill">Typescript</li>
-  </ul>
-          </div>
+  </ul> */}
+              </div>
               <div className="buttonAbout">
                 <a className="button" href="/#contact">
                   Contact me
                 </a>
               </div>
             </div>
-
           </div>
-  
         </div>
       </section>
     </div>

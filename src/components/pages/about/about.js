@@ -42,13 +42,28 @@ const AboutPage = () => {
                 </p>
               </span>
               <br />
+              <div className='skills'>
+          <h1>Skills</h1>
+  <ul>
+    <li class="skill">HTML</li>
+    <li class="skill">CSS</li>
+    <li class="skill">JavaScript</li>
+    <li class="skill">React</li>
+    <li class="skill">Node.js</li>
+    <li class="skill">Express</li>
+    <li class="skill">PostgreSQL</li>
+    <li class="skill">Typescript</li>
+  </ul>
+          </div>
               <div className="buttonAbout">
                 <a className="button" href="/#contact">
                   Contact me
                 </a>
               </div>
             </div>
+
           </div>
+  
         </div>
       </section>
     </div>

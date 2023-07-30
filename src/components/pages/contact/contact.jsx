@@ -48,34 +48,34 @@ const Contact = () => {
           <input
             type="text"
             name="user_name"
-            class="question"
+            className="question"
             id="name"
             required
-            autocomplete="off"
+            autoComplete="off"
           />
-          <label for="name">
+          <label htmlFor="name">
             <span>name</span>
           </label>
           <input
             type="email"
             name="user_email"
-            class="question"
-            id="nme"
+            className="question"
+            id="email"
             required
-            autocomplete="off"
+            autoComplete="off"
           />
-          <label for="email">
+          <label htmlFor="email">
             <span>email</span>
           </label>
           <textarea
             name="message"
             rows="2"
-            class="question"
+            className="question"
             id="message"
             required
-            autocomplete="off"
+            autoComplete="off"
           ></textarea>
-          <label for="message">
+          <label htmlFor="message">
             <span>message</span>
           </label>
           <button

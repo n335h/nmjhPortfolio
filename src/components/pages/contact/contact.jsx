@@ -40,9 +40,9 @@ const Contact = () => {
         <br />
 
         <p>
-          Don't hesitate to drop me a line using the form below! Let's
-          connect and turn your ideas into reality. Looking forward to
-          hearing from you and creating something awesome together!
+          Feel free to contact me using the form below! Looking
+          forward to hearing from you and creating something awesome
+          together!
         </p>
         <form ref={form} onSubmit={sendEmail}>
           <input

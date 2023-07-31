@@ -27,7 +27,17 @@ const LandingPage = ({ handleScrollToNavbar }) => {
                 Junior Full-Stack Developer
               </h3>
             </div>
+            <a href="#portfolio" className="btn animate-pop-in">
+              <button className="btn">projects</button>
+            </a>
             <div>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
               <br></br>
               <br></br>
               <br></br>

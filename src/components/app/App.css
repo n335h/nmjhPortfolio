@@ -56,9 +56,37 @@ button {
 
 
   button {
-    width: 90vw;
-    padding: 1rem 20rem;
+    width: 30vw;
+    padding: 1rem 1rem;
   }
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700;800&display=swap");
+
+button {
+align-items: center;
+background-color: var(--test-main);
+border: 2px solid var(--test-main);
+box-sizing: border-box;
+color: #131313;
+cursor: pointer;
+display: inline-flex;
+font-weight:00;
+height: 48px;
+justify-content: center;
+line-height: 24px;
+min-width: 140px;
+margin: auto;
+margin-top: 2rem;
+margin-bottom: 2rem;
+outline: 0;
+text-align: center;
+text-decoration: none;
+transition: all .3s;
+touch-action: manipulation;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(-0.5rem);
+}

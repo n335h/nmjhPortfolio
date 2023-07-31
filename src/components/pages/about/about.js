@@ -3,30 +3,31 @@ import './about.css';
 export default function AboutSection() {
   return (
     <div className="AboutContainer">
-      <div className="AboutTitle">
+      <div className="AboutTitle .scroll-in-animation">
         <h1>hello!</h1>
       </div>
       <div className="AboutSection">
         <div className="AboutSection-Left">
           <h2>about me</h2>
-          <p className="MyStory">
+          <p className="aboutme">
             I'm Nich, I come from a background in Visual Communication
             and have just completed the School of Code Bootcamp.
           </p>
-          <p className="MyStory">
+          <p className="aboutme">
             It was an immersive program that gave me the technical
             foundation and hands-on experience needed to dive into
             Full-Stack Development.
           </p>
-          <p className="MyStory">
+          <p className="aboutme">
             Now I'm all set to bring my creative skills and tech
             know-how together for this exciting new adventure.
           </p>
-          <p className="MyStory">
+          <p className="aboutme">
             Looking forward to making things happen!
           </p>
-
-          <button className="ContactButton">CONTACT</button>
+          <a href="/#contact">
+            <button className="ContactButton">CONTACT</button>
+          </a>
         </div>
         <div className="AboutSection-Right">
           <h2>skills</h2>

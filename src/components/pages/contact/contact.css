@@ -166,10 +166,11 @@ textarea.question + label > span {
   }
   
   .submit:hover {
-    background-color:var(--test-main);
-    border-color: var(--test-main);
-    fill:var(--test-main);
-  }
+    
+    cursor: pointer;
+    transform: translateY(-0.5rem);
+  
+}
   
   .submit:active {
     background-color: var(--main-color);;

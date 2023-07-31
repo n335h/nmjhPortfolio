@@ -5,6 +5,7 @@
   justify-content: center;
   margin-bottom: 10rem;
   height: 90vh;
+  
 }
 
 .AboutSection {
@@ -15,7 +16,7 @@
   width: 50vw
 }
 
-.MyStory {
+.aboutme {
   font-family: "Source Sans 3", sans-serif;
   font-weight: 400;
   font-size: 1.2rem;
@@ -35,7 +36,9 @@ color: var(--test-main);
   margin-bottom: 1rem;
   color: #333333;
 }
-
+.scroll-in-animation {
+  visibility: hidden; /* Hide the element initially */
+}
 .AboutTitle {
   display: flex;
   justify-content: center;
@@ -76,28 +79,7 @@ color: var(--test-main);
   color: #333333;
 }
 
-.ContactButton {
-  align-items: center;
-  background-color: var(--test-main);
-  border: 2px solid var(--test-main);
-  box-sizing: border-box;
-  color: #131313;
-  cursor: pointer;
-  display: inline-flex;
-  fill: #000;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  min-width: 140px;
-  margin: auto;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  outline: 0;
-  text-align: center;
-  text-decoration: none;
-  transition: all .3s;
-  touch-action: manipulation;
-}
+
 
 .ContactButton:hover {
   cursor: pointer;
@@ -117,6 +99,9 @@ color: var(--test-main);
 
 .SkillItem:hover {
   background-color: var(--test-main);
+  scale: 1.1;
+  color: #ffffff;
+  font-weight: 700;
 }
 
 /* Media Query for Mobile Devices */
@@ -153,6 +138,8 @@ color: var(--test-main);
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 80vh;
+    margin-top: 5rem;
    
   }
 
@@ -170,8 +157,9 @@ color: var(--test-main);
   .AboutContainer h1 {
    margin: 0;
    margin-left: auto;
+   margin-bottom: 0;
     }
-    .MyStory {
+    .aboutme {
       font-size: 1rem; 
      
     }

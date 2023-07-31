@@ -1,71 +1,47 @@
-import React from 'react';
 import './about.css';
 
-const AboutPage = () => {
+export default function AboutSection() {
   return (
-    <div className="about-page">
-      {/* <div className="about-title">
-        <h2>hello!</h2>
-      </div> */}
+    <div className="AboutContainer">
+      <div className="AboutTitle">
+        <h1>hello!</h1>
+      </div>
+      <div className="AboutSection">
+        <div className="AboutSection-Left">
+          <h2>about me</h2>
+          <p className="MyStory">
+            I'm Nich, I come from a background in Visual Communication
+            and have just completed the School of Code Bootcamp.
+          </p>
+          <p className="MyStory">
+            It was an immersive program that gave me the technical
+            foundation and hands-on experience needed to dive into
+            Full-Stack Development.
+          </p>
+          <p className="MyStory">
+            Now I'm all set to bring my creative skills and tech
+            know-how together for this exciting new adventure.
+          </p>
+          <p className="MyStory">
+            Looking forward to making things happen!
+          </p>
 
-      <section className="about">
-        <div className="about-container">
-          <div className="about-img">
-            <img
-              className="profile-pic"
-              src="https://i.ibb.co/7k8y959/FB-IMG-1688379082823.jpg"
-              alt="Profile"
-            />
-          </div>
-          <div className="about-sec">
-            <div className="about-secInfo animate-pop-in">
-              <h1>hello!</h1>
-              <span id="span" className="about-secInfo">
-                <div className="about-img2">
-                  <img
-                    className="profile-pic"
-                    src="https://i.ibb.co/7k8y959/FB-IMG-1688379082823.jpg"
-                    alt="Profile"
-                  />
-                </div>
-                <br />
-                <p>
-                  I'm Nich, I come from a background in Visual
-                  Communication and have just completed the School of
-                  Code Bootcamp. It was an immersive program that gave
-                  me the technical foundation and hands-on experience
-                  needed to dive into Full-Stack Development.{' '}
-                  <br></br> <br></br>Now I'm all set to bring my
-                  creative skills and tech know-how together for this
-                  exciting new adventure. Looking forward to making
-                  things happen!
-                </p>
-              </span>
-              <br />
-              <div className="skills">
-                {/*           
-  <ul>
-    <li class="skill">HTML</li>
-    <li class="skill">CSS</li>
-    <li class="skill">JavaScript</li>
-    <li class="skill">React</li>
-    <li class="skill">Node.js</li>
-    <li class="skill">Express</li>
-    <li class="skill">PostgreSQL</li>
-    <li class="skill">Typescript</li>
-  </ul> */}
-              </div>
-              <div className="buttonAbout">
-                <a className="button" href="/#contact">
-                  Contact me
-                </a>
-              </div>
-            </div>
+          <button className="ContactButton">CONTACT</button>
+        </div>
+        <div className="AboutSection-Right">
+          <h2>skills</h2>
+          <div className="AboutSection-Right-Top">
+            <p className="SkillItem">HTML</p>
+            <p className="SkillItem">CSS</p>
+            <p className="SkillItem">JavaScript</p>
+            <p className="SkillItem">React</p>
+            <p className="SkillItem">Node.js</p>
+            <p className="SkillItem">Express</p>
+            <p className="SkillItem">Git</p>
+            <p className="SkillItem">GitHub</p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   );
-};
-
-export default AboutPage;
+}

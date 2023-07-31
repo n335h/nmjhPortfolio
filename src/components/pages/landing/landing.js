@@ -1,5 +1,9 @@
 import React, { useRef } from 'react';
 import './landing.css';
+import AboutPage from '../about/about';
+import Portfolio from '../portfolio/portfolio';
+import Contact from '../contact/contact';
+import Footer from '../../footer/footer';
 
 const LandingPage = ({ handleScrollToNavbar }) => {
   const landingRef = useRef(null);
@@ -15,11 +19,10 @@ const LandingPage = ({ handleScrollToNavbar }) => {
       <header>
         <div className="landingmain">
           <div className="header-content">
-            <div className="header-content-inner">
+            <div className="hero">
               <h1 className="header-title animate-pop-in">
-                NICH HORISHNY
+                NICHOLAS HORISHNY
               </h1>
-
               <h3 className="header-subtitle animate-pop-in">
                 Junior Full-Stack Developer
               </h3>
@@ -43,6 +46,16 @@ const LandingPage = ({ handleScrollToNavbar }) => {
           </div>
         </div>
       </header>
+      <div id="about" href="About" className="section">
+        <AboutPage />
+      </div>
+
+      <div id="portfolio" className="section">
+        <Portfolio />
+      </div>
+      <div id="contact" className="section">
+        <Contact />
+      </div>
     </div>
   );
 };

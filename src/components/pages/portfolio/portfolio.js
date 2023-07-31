@@ -12,17 +12,14 @@ const images = [
 
 const Portfolio = () => {
   return (
-    <div className="portfolio">
-      <div className="portfolioInfo">
-        <h1 className="swiperTitle">projects!</h1>
-        <p className="swiperP">
-          Slide through to check out my projects!
-        </p>
+    <div className="ProjectContainer">
+      <div className="ProjectTitle">
+        <h1>projects!</h1>
+        
       </div>
-      <div className="portfolio-content">
-        <div className="portfolio-gallery">
-          <Carousel images={images} />
-        </div>
+      
+      <div className="ProjectsSection">
+        <Carousel images={images} />
       </div>
     </div>
   );

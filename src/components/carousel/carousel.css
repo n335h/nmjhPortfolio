@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
-
+.slideTitle h2 {
+  margin: 0; /* Remove the default margin on h2 elements */
+}
 
 .main {
   width: 80vw;
@@ -23,9 +25,9 @@
   align-items: flex-start;
   height: 100%;
 }
-.slideTitle {
+.slideTitle h2 {
   color: var(--main-color);
-  align-self: flex-start;
+  font-size: 2rem;
 }
 
 
@@ -54,6 +56,10 @@
   font-family: "Roboto", sans-serif;
   
 }
+.githubLink {
+  margin: 0;
+  padding: 0;
+}
 
 
 .slideInfo {
@@ -71,23 +77,18 @@
 }
 
 .slideHeader {
-  position: relative;
   display: flex;
-  margin: 0 0 0 0;
-  padding: 0 0 0 0;
+  margin: 0;
+  padding: 0;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 .slideTitle {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
   color: #c2c2c2;
-  
 }
-
 
 
   .liveSite{
@@ -131,15 +132,14 @@
 /* ///////////////////////////////////////////////////////// Swiper  CSS  */
 
 .carouselImage {
-
   width: 3vh;
   height: 3vh;
-
   border-radius: 0.625rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
   opacity: 0.6;
   z-index: 11;
+  margin-left: 1rem; /* Add some left margin to create space between the h2 and the image */
 }
 .swiper {
   width: 50%;

@@ -18,17 +18,7 @@ function App() {
           <LandingPage />
         </div>
 
-        <div id="about" href="About" className="section">
-          <AboutPage />
-        </div>
-
-        <div id="portfolio" className="section">
-          <Portfolio />
-        </div>
-        <div id="contact" className="section">
-          <Contact />
-        </div>
-
+       
         <Routes>
           <Route path="/paprback" />
         </Routes>

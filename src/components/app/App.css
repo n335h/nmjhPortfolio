@@ -1,23 +1,64 @@
-*{
-  font-family: 'roboto', sans-serif;
+
+/* Hide vertical scrollbar for webkit-based browsers (Chrome, Safari) */
+.App::-webkit-scrollbar {
+  width: 0;
 }
 
+/* Hide vertical scrollbar for other browsers (Firefox, Edge, etc.) */
+/* Hide vertical scrollbar for other browsers (Firefox, Edge, etc.) */
 .App {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  height: 100vh;
-  max-width: 100%;
-
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Edge */
+  overflow: -moz-scrollbars-none; /* For other browsers with scrollbar support */
+  overflow-y: scroll; /* To enable scrolling */
+}
+html {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
-.section {
-  scroll-snap-align: start;
-  height: 100vh;
-  max-width: 100%;
+h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 2rem;
 }
 
-.portfolio {
-  height: 100vh;
-  background-color: var(--secondary-color);
+h1 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 3rem;
 }
+
+p,
+li {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 1.2rem;
+  justify-content: justify;
+}
+
+button {
+  max-width: 30rem;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 420px) {
+  html {
+    font-size: 50%;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h1 {
+    font-size: 6rem;
+  }
+
+
+
+  button {
+    width: 90vw;
+    padding: 1rem 20rem;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;700;800&display=swap");

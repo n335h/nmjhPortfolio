@@ -2,9 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
+  height: 60px;
   transition: all 0.3s ease-in-out;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   position: fixed;
   top: 0;
@@ -55,19 +55,9 @@ nav {
 
 .navbar ul li a {
 
-    transition: all .5s cubic-bezier(0,0,.23,1);
-      text-decoration: none;
-      text-decoration: none;
-      color: rgb(255, 255, 255);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-image: linear-gradient(90deg,var(--test-main),var(--test-main) 50%,#fff 0);
-      background-size: 200% 100%;
-      background-position: 100%;
-      color: #ffffff;
-      text-align: left;
-      font-weight: 500;
-   
+text-decoration: none;
+      font-size: 1.5rem;
+   color: rgb(221, 221, 221);
      
     &:hover {
           background-position: 0;

@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 80vh;
   text-align: center;
@@ -26,6 +26,7 @@
   background-color: #232e3d;
   height: 100vh;
 }
+
 .landingmain {
   background-color: #232e3d;
   height: 100vh;
@@ -50,12 +51,13 @@
   padding-bottom: 0vh;
 }
 .landing-page h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1.2;
   color: #e2e2e2;
-  padding-bottom: 0vh;
+  padding: 0 0 0 0;
+  margin: 0;
 }
 .header-title {
   display: flex;
@@ -117,7 +119,7 @@
 .mouse-icon {
   border: 2px solid var(--test-main);
   border-radius: 16px;
-  height: 3.5rem;
+  height: 2.5rem;
   width: 1.5rem;
   left: 50%;
   transform: translateX(-50%);

@@ -149,6 +149,7 @@ nav {
     top: 40px;
     width: 30%;
     margin: auto;
+    padding-bottom: 1vh;
     opacity: 1;
     transition: opacity 0.9s ease-in, top 0.5s ease-in-out; /* Added transition for top property */
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);

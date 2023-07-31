@@ -2,9 +2,9 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
-  height: 95vh;
+  height: 80vh;
   text-align: center;
   font-size: 18px;
   margin: 0;
@@ -15,20 +15,34 @@
   background-color: #232e3d;
   height: 100vh;
 }
-
+.landingmain {
+  background-color: #232e3d;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
 
 
 .landing-page h1 {
   font-size: 3rem;
   font-weight: 700;
-  margin: 0;
+  margin-top: 20vh;
   letter-spacing: 0.05em;
   line-height: 1.2;
   color: #e2e2e2;
-  margin:25vh;
+  margin:10vh;
   padding-bottom: 0vh;
 }
-
+.header-title {
+  margin-top: 10vh;
+}
 .landing-page h3 {
   font-size: 1.5rem;
   font-weight:300;
@@ -80,11 +94,8 @@
 .mouse-icon {
   border: 2px solid var(--test-main);
   border-radius: 16px;
-  height: 40px;
+  height: 42px;
   width: 24px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -124,13 +135,13 @@
   background: #ffffff;
   width: 4px;
   height: 4px;
+  margin: 0 auto;
   top: 0px;
-  margin-left: auto;
-  margin-right: auto;
+
 }
  @-webkit-keyframes drop {
   0% {
-    top: 0px;
+    top: 10px;
     opacity: 0;
   }
   30% {
@@ -144,15 +155,15 @@
 }
 @keyframes drop {
   0% {
-    top: -10px;
+    top:10px;
     opacity: 0;
   }
   30% {
-    top: 5px;
+    top: 20px;
     opacity: 1;
   }
   100% {
-    top: 15px;
+    top: 25px;
     opacity: 0;
   }
 } 
@@ -187,3 +198,24 @@
     width: 100vw;
   }
 }
+@media screen and (max-height: 600px) {
+   
+  .header-content {
+    height: 100vh;
+    justify-content: space-between;
+
+
+ 
+  }
+  .landing-page {
+    height: 100vh;
+   
+  }
+
+
+  .wheel {
+    height: 40vh;
+    width: 24px;
+  }
+}
+

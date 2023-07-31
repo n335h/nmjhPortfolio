@@ -39,7 +39,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  width: 50vw;
+  width: 30vw;
   margin-left: 5rem;
    text-align: justify;
   font-size: 1rem;
@@ -96,7 +96,7 @@
   
   .about-sec p {
     width:70vw;
-    font-size: small;
+    font-size: 1rem;
     padding: auto;
     text-align: justify;
   }
@@ -202,3 +202,12 @@ ul {
   margin: 0;
   padding: 0;
 }
+/* 
+@media screen and (max-height: 780px) {
+  .about-sec p {
+    width:40vw;
+    font-size: 1.1rem;
+    padding: auto;
+    text-align: justify;
+  }
+} */

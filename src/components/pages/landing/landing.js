@@ -1,9 +1,7 @@
-import React, {useRef } from 'react';
+import React, { useRef } from 'react';
 import './landing.css';
 
-
 const LandingPage = ({ handleScrollToNavbar }) => {
- 
   const landingRef = useRef(null);
 
   const handleMouseIconClick = () => {
@@ -17,13 +15,15 @@ const LandingPage = ({ handleScrollToNavbar }) => {
       <header>
         <div className="landingmain">
           <div className="header-content">
-            <h1 className="header-title animate-pop-in">
-              NICHOLAS HORISHNY
-              <br />
+            <div className="header-content-inner">
+              <h1 className="header-title animate-pop-in">
+                NICH HORISHNY
+              </h1>
+
               <h3 className="header-subtitle animate-pop-in">
                 Junior Full-Stack Developer
               </h3>
-            </h1>
+            </div>
             <div>
               <br></br>
               <br></br>
@@ -33,7 +33,6 @@ const LandingPage = ({ handleScrollToNavbar }) => {
               <br></br>
               <br></br>
             </div>
-          
 
             <div
               className="mouse-icon animate-pop-in"

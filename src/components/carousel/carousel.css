@@ -2,7 +2,7 @@
 
 
 .main {
-  width: 90vw;
+  width: 80vw;
   margin: auto;
   min-height: 60vh;
   display: flex;
@@ -42,6 +42,7 @@
 }
 .swiperTitle{
   font-size: 2.5rem;
+
   font-weight: 900;
   margin: 0vh auto;
   padding: 0 0 0 0;
@@ -131,8 +132,8 @@
 
 .carouselImage {
 
-  width: 3.5vh;
-  height: 3.5vh;
+  width: 3vh;
+  height: 3vh;
 
   border-radius: 0.625rem;
   transition: 0.3s ease-in-out;
@@ -365,10 +366,10 @@ left: -15rem;
   }
 
 }
-@media screen and (max-width: 450px) {
+@media screen and (max-height: 700px) {
 .swiper-slide {
-  width: 22rem;
-  height: 22rem;
+  width: 20rem;
+  height: 18rem;
   display: flex;
 }
 }

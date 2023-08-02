@@ -26,7 +26,7 @@ export default function AboutSection() {
             Looking forward to making things happen!
           </p>
           <a href="/#contact">
-            <button className="ContactButton">CONTACT</button>
+            <button className="ContactButton">contact</button>
           </a>
         </div>
         <div className="AboutSection-Right">

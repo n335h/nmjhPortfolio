@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10rem;
+  margin-bottom:0;
   height: 100vh;
   
 }
@@ -132,7 +132,7 @@ color: var(--test-main);
 }
 
 
-@media (max-width: 790px) {
+@media (max-width: 1000px) {
   .AboutSection {
     flex-direction: column;
     align-items: center;
@@ -142,11 +142,17 @@ color: var(--test-main);
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    height: 100vh;
     margin-top: 5rem;
    
   }
-
+  .AboutTitle {
+    display: flex;
+    justify-content: flex-start;
+    
+    
+    
+  }
   .AboutSection-Right {
 
     margin:0;
@@ -160,8 +166,11 @@ color: var(--test-main);
   }
   .AboutContainer h1 {
    margin: 0;
-   margin-left: auto;
+   margin-left: 0;
    margin-bottom: 0;
+   align-items: flex-start;
+
+   
     }
     .aboutme {
       font-size: 1rem; 

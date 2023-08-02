@@ -83,7 +83,7 @@ const Contact = () => {
             value="Submit!"
             onClick={sendEmail}
           >
-            Submit!
+            submit!
           </button>
         </form>
       </div>

@@ -11,6 +11,7 @@
   -ms-overflow-style: none; /* For Edge */
   overflow: -moz-scrollbars-none; /* For other browsers with scrollbar support */
   overflow-y: scroll; /* To enable scrolling */
+  scroll-snap-type: y mandatory;
 }
 html {
   font-family: "Source Sans 3", sans-serif;
@@ -70,6 +71,7 @@ border: 2px solid var(--test-main);
 box-sizing: border-box;
 color: #ffffff;
 font-weight: 700;
+border-radius: 5px;
 cursor: pointer;
 display: inline-flex;
 font-weight:00;

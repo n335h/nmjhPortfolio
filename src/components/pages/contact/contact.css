@@ -185,15 +185,8 @@ textarea.question + label > span {
     .submit{
       min-width: 170px;
     }
-    .contact-page h1 {
-      text-align: flex-start;
-      margin-bottom: 0px;
-      color: var(--test-main);
-      width: 80vw;
-     
-    
-    }
-  }
+
+}
   @media screen and (max-width: 700px) {
     input,
     span,
@@ -214,11 +207,20 @@ textarea.question + label > span {
       height: 100vh;
       display: flex;
       flex-direction: column;
-      align-items: center;
+      
     }
+    
 
     form {
       width: 90vw;
     }
-
+    .contact-page h1 {
+      display: flex;
+    justify-content:  flex-start;
+      margin-bottom: 0px;
+      color: var(--test-main);
+      width: 90vw;
+     
+    
+  }
   }

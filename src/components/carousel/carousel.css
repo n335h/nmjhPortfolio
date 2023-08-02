@@ -11,7 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-top: 6vh;
+  margin-top: 2vh;
   
 } 
 .githubLink {
@@ -33,10 +33,10 @@
   padding: 0;
   color: #c2c2c2;
   font-size: 1.2rem;
-  font-weight: 400;
   line-height: 1.6;
   margin-top: 2vh;
 }
+
 .slideTitle h2 {
   color: var(--main-color);
   font-size: 2rem;
@@ -289,8 +289,9 @@
   align-items: center;
   justify-content: center;
   background-color: var(--secondary-color);
-  height: 105vh;
+  height: 100vh;
   width: 100vw;
+ 
 }
 
 .ProjectTitle {
@@ -300,10 +301,11 @@
   font-weight: 800;
   font-size: 5rem;
   width: 90vw;
+  margin-top:5vh;
+  margin-bottom:2vh;
 }
 .ProjectTitle h1 {
   color: var(--test-main);
-  margin-bottom: 2vh;
 }
 
 .ProjectsSection {
@@ -338,8 +340,8 @@
     padding: 0 0 0 0;
     width: 100%;
     height: 100%;
-    font-size: small;
-    margin-top: 5vh;
+    font-size: 1rem;
+    margin-top: 1vh;
   
   
   }
@@ -371,7 +373,8 @@
     color: rgb(255, 255, 255);
     padding-bottom: 1vh;
     margin: 0;
-    height:vh;
+    font-size: 1rem;
+    
     
   }
   a.liveSite{
@@ -403,7 +406,7 @@
 }
 .ProjectTitle h1 {
   color: var(--test-main);
-  margin-bottom: 2vh;
+ margin-bottom: 0;
 }
 
 }

@@ -61,7 +61,7 @@ const Carousel = () => {
     {
       title: 'paprback',
       description:
-        'Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. Embracing the power of technologythis innovative app empowers users to easily exchange books with fellow enthusiasts, fostering a vibrant and sustainable reading community. ',
+        'Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. Embracing the power of technology this innovative app empowers users to easily exchange books with fellow enthusiasts, fostering a vibrant and sustainable reading community. ',
       githubLink: 'https://github.com/n335h/soc_byteclub_paprback',
       livesite: 'https://bcpaprback.netlify.app/',
     },
@@ -86,11 +86,10 @@ const Carousel = () => {
 
   return (
     <div className="ProjectContainer">
+      <div className="ProjectTitle">
+        <h1>projects!</h1>
+      </div>
       <div className="main">
-        <div className="ProjectTitle">
-          <h1>projects!</h1>
-        </div>
-
         <div className="swiper">
           <div className="swiper-wrapper">
             {slideData.map((slide, index) => (

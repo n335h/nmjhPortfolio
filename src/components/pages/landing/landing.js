@@ -16,13 +16,13 @@ const LandingPage = ({ handleScrollToNavbar }) => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
-  const [delta, setDelta] = useState(120 - Math.random() * 100); // Used to determine how fast a letter is typed
+  const [delta, setDelta] = useState(100); // Used to determine how fast a letter is typed
   const toRotate = [
     'Software Developer',
     'Full-Stack Developer',
     'UI/UX Developer',
   ];
-  const period = 2000; // Amount of transition time of each word
+  const period = 1000; // Amount of transition time of each word
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -45,11 +45,11 @@ const LandingPage = ({ handleScrollToNavbar }) => {
     }
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setDelta(400);
+      setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
-      setDelta(500);
+      setDelta(100);
     }
   };
 

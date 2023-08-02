@@ -25,10 +25,10 @@ form {
 }
 
 .contact-page h1 {
-  text-align: flex-start;
+  text-align: center;
   margin-bottom: 0px;
   color: var(--test-main);
-  width: 90vw;
+ 
 
 }
 .contact-page p {
@@ -168,10 +168,10 @@ textarea.question + label > span {
   }
   
   .submit:hover {
-    
-    cursor: pointer;
-    transform: translateY(-0.5rem);
-  
+    background-color: var(--test-main);
+    scale: 1.1;
+    color: #ffffff;
+    font-weight: 700;
 }
   
   .submit:active {
@@ -180,9 +180,18 @@ textarea.question + label > span {
     fill: var(--main-color);;
   }
   
-  @media (min-width: 768px) {
+
+  @media (min-width: 800px) {
     .submit{
       min-width: 170px;
+    }
+    .contact-page h1 {
+      text-align: flex-start;
+      margin-bottom: 0px;
+      color: var(--test-main);
+      width: 80vw;
+     
+    
     }
   }
   @media screen and (max-width: 700px) {

@@ -1,9 +1,10 @@
 .slideTitle h2 {
   margin: 0; /* Remove the default margin on h2 elements */
+  width: 30vw;
 }
 
 .main {
-  width: 80vw;
+  width: 60vw;
   margin: auto;
   min-height: 60vh;
   display: flex;
@@ -23,6 +24,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   height: 100%;
+  width: 30vw;
 }
 
 .slideInfo p {
@@ -32,11 +34,13 @@
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 1.6;
-
+  width: 30vw;
 }
 .slideTitle h2 {
   color: var(--main-color);
   font-size: 2rem;
+  margin-top: 2vh;
+
 }
 
 
@@ -87,6 +91,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  width: 30vw;
 }
 .slideTitle {
   display: flex;
@@ -121,8 +126,10 @@
   
   .liveSite:hover {
     
-      cursor: pointer;
-      transform: translateY(-0.5rem);
+    background-color: var(--test-main);
+    scale: 1.1;
+    color: #ffffff;
+    font-weight: 700;
     
   }
   
@@ -146,16 +153,7 @@
   z-index: 11;
   margin-left: 1rem; /* Add some left margin to create space between the h2 and the image */
 }
-.swiper {
-  width: 50%;
-  display: flex;
-  min-width: 50vw;
-  justify-content: center;
-  align-items: center;
-  margin: 1vw;
-  padding: 0 0 0 0;
-  flex-direction: column;
-}
+
 
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
@@ -181,16 +179,16 @@
   bottom: 5rem !important;
   z-index: 10;
   color: #dadada;
-  width: 20%;
+  width: 20%; /* You can adjust this width as per your design */
 }
 
 .swiper-slide {
-  width: 30rem;
-  height: 30rem;
+  height: 100vh; /* Set height to take the full height of the viewport */
+  width: 100%;
   display: flex;
   flex-direction: column;
   scroll-behavior: smooth;
-  transform: scale(0.9); /* Add this line to reduce the size of the slide */
+  transform: scale(0.5); /* Add this line to reduce the size of the slide */
   opacity: 1; /* Add this line to reduce the opacity of the slide */
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.616);
@@ -206,29 +204,29 @@
 
 .swiper-slide-active {
 
-  opacity: 1; /* Add this line to revert the opacity of the active slide */
   z-index: 1;
-  transform: scale(1); 
+  transform: scale(1);
+  width: 100vw; /* Set width to take the full width of the viewport */
 }
 .swiper-slide-prev {
-transform: translateY(0) scale(0.8) ;
-right: -15rem;
+transform: translateY(0) scale(0) ;
+right: -50rem;
 
 
 
 }
 .swiper-slide-prev-prev{
-  transform: translateY(0) scale(0.8) ;
-right: -15rem;
+  transform: translateY(0) scale(0) ;
+right: -50rem;
 }
 
 .swiper-slide-next {
-  transform: translateY(0) scale(0.8);
-  left: -15rem;
+  transform: translateY(0) scale(0);
+  left: -50rem;
 }
 .swiper-slide-next-next{
-  transform: translateY(0) scale(0.8) ;
-left: -15rem;
+  transform: translateY(0) scale(0) ;
+left: -50rem;
 }
 
 
@@ -268,10 +266,11 @@ left: -15rem;
 .swiper-slide-active div {
   display: block;
   opacity: 1;
+  
 }
 .swiper-slide--1 {
-  width: 40rem;
-  height: 30rem;
+  width: 60vw; /* Set width to take the full width of the viewport */
+  height: 60vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/soc_byteclub_paprback/blob/main/paprback.png?raw=true")
     no-repeat 50% 50% / cover;
@@ -279,18 +278,16 @@ left: -15rem;
 
 
 .swiper-slide--2 {
+  width: 60vw; /* Set width to take the full width of the viewport */
+  height: 60vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/portfolioSite/blob/main/Images/RPS.png?raw=true")
     no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--3 {
-  background: linear-gradient(to top, #161616, #49494910, #86868623),
-    url("https://github.com/n335h/portfolioSite/blob/main/Images/NFTCard.png?raw=true")
-    no-repeat 50% 50% / cover;
-}
-
-.swiper-slide--4 {
+  width: 60vw; /* Set width to take the full width of the viewport */
+  height: 60vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/ReactWeatherApp/blob/main/Screenshot%202023-07-17%20135541.png?raw=true")
     no-repeat 50% 50% / cover;
@@ -304,11 +301,25 @@ left: -15rem;
 .swiperP {
   color: #ffffff;
 }
+.swiper {
+  width: 70%;
+  margin:0 3vw;
+  display: flex;
+  min-width: 30vw;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0 0 0;
+  flex-direction: column;
+}
 
 
 /* //////////////////////////////////////////////////////// Media Queries */
 
 @media screen and (max-width: 1000px) {
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
   .main {
     width: 90vw;
     max-height: 80vh;
@@ -317,17 +328,6 @@ left: -15rem;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-
-
-  .swiper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1vw;
-    padding: 0 0 0 0;
-    flex-direction: column;
   }
 
   .slideInfo {
@@ -371,90 +371,6 @@ left: -15rem;
   }
 
 }
-@media screen and (max-height: 700px) {
-.swiper-slide {
-  width: 20rem;
-  height: 18rem;
-  display: flex;
-}
-}
 
 
 
-@media screen and (min-width: 48rem) {
-  .main {
-    display: flex;
-    align-items: center;
-  }
-  .bg,
-  .bg2 {
-    opacity: 0.1;
-  }
-}
-
-@media screen and (max-width: 93.75rem) {
-.swiper-container{
-    width: 80%;
-  }
-}
-
-
-@media (min-width: 768px) {
-  .liveSite{
-    min-width: 170px;
-  }
-}
-
-/* 
-@media screen and (max-height: 600px) {
-  .swiper-slide {
-    
-    height: 60vh;
-    display: flex;
-  }
-  .main {
-    width: 80vw;
-    max-height: 80vh;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .swiper {
-   height: 60vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1vw;
-    padding: 0 0 0 0;
-    flex-direction: column;
-  }
-  .slideInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin:auto;
-    padding: 0 0 0 0;
-    width: 100%;
-    font-size: extra-small;
-  
-  
-
-  }
-  .swiper-slide p {
-    color: #dadada;
-    font-family: "Roboto", sans-serif;
-    font-weight: 300;
-    padding: 0 1.563rem;
-    line-height: 1.6;
-    font-size: 0.4rem;
-    justify-content: flex-start;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    
-    overflow: hidden;
-  }
-} */

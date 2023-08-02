@@ -41,6 +41,8 @@ export default function AboutSection() {
             <p className="SkillItem">Git</p>
             <p className="SkillItem">GitHub</p>
           </div>
+        
+          
         </div>
       </div>
     </div>

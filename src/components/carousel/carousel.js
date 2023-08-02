@@ -34,16 +34,16 @@ const Carousel = () => {
       },
       breakpoints: {
         640: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         1024: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         1560: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
       },
     });
@@ -73,20 +73,13 @@ const Carousel = () => {
       livesite: 'https://n335h.github.io/RPS/',
     },
     {
-      title: 'NFT Card',
-      description:
-        'Frontend Mentor challenges help you improve your coding skills by building realistic projects. Your challenge is to build out this preview card component and get it looking as close to the design as possible. I could any tools to help me complete the challenge',
-      githubLink: 'https://github.com/n335h/NFTCard',
-      livesite: 'https://n335h.github.io/NFTCard/',
-    },
-    {
       title: 'Open Weather API',
       description:
         'Weather app that uses the Open Weather API to fetch weather data for a city that the user inputs, this calls upon two seperate APIs, current weather data and forcast weather data, for the 12 hour forecast data. The app is built with React and uses the Axios library to make the API call.',
       githubLink:
         'https://github.com/n335h/ReactWeatherApp/tree/main',
       livesite: 'https://main--nhweatherapi.netlify.app/',
-    },
+    }
   ];
 
   const currentSlide = slideData[activeSlide];

@@ -69,10 +69,11 @@ text-decoration: none;
   color: var(--test-main); 
 }
 
-.navbar ul li a.active {
+.navbar ul li a:active {
   color: var(--test-main) !important;
-  text-decoration: underline;
+
 }
+
 .menu-toggle {
   display: none;
   margin-left: auto; /* Add this line */

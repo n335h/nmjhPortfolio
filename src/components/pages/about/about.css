@@ -34,7 +34,6 @@ color: var(--test-main);
   font-weight: 500;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  margin-top: 1rem;
   color: #cecece;
 }
 .scroll-in-animation {
@@ -92,7 +91,7 @@ color: var(--test-main);
 
 .SkillItem {
   background-color: #ebebeb;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.5rem;
   border-radius: 5px;
   margin: 0rem;
   font-family: "Source Sans 3", sans-serif;

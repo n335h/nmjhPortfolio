@@ -22,7 +22,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
     'Full-Stack Developer',
     'UI/UX Developer',
   ];
-  const period = 1000; // Amount of transition time of each word
+  const period = 2000; // Amount of transition time of each word
 
   useEffect(() => {
     let ticker = setInterval(() => {

@@ -25,9 +25,11 @@ form {
 }
 
 .contact-page h1 {
-  text-align: center;
+  text-align: flex-start;
   margin-bottom: 0px;
   color: var(--test-main);
+  width: 90vw;
+
 }
 .contact-page p {
   text-align: justify;

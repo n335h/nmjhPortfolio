@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 10rem;
-  height: 90vh;
+  height: 80vh;
   
 }
 
@@ -34,7 +34,7 @@ color: var(--test-main);
   font-weight: 700;
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #333333;
+  color: #acacac;
 }
 .scroll-in-animation {
   visibility: hidden; /* Hide the element initially */
@@ -46,6 +46,7 @@ color: var(--test-main);
   font-weight: 800;
   font-size: 5rem;
   margin: 0;
+  width: 90vw;
   
   
 }

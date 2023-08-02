@@ -199,10 +199,10 @@ textarea.question + label > span {
       padding: 10px;
       border: none;
       font-size: 1rem;
-      width: 90vw;
+      width: 85vw;
     }
     .contact-page {
-      max-width: 90vw;
+      max-width: 85vw;
       margin: auto;
       padding: 20px;
       height: 100vh;
@@ -218,14 +218,14 @@ textarea.question + label > span {
     }
 
     form {
-      width: 90vw;
+      width: 85vw;
     }
     .contact-page h1 {
       display: flex;
     justify-content:  flex-start;
       margin-bottom: 0px;
       color: var(--test-main);
-      width: 90vw;
+      width: 85vw;
      
     
   }

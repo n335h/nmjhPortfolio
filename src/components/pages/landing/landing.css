@@ -25,14 +25,14 @@
 .landing-page {
   background-color: var(--secondary-color);
   height: 100vh;
- 
+
 }
 .section {
   scroll-snap-align: start;
   
 }
 .landingmain {
-  background-color: var(--secondary-color);
+  
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -43,6 +43,7 @@
   font-size: 18px;
   margin: 0;
   padding: 0;
+  
 }
 
 

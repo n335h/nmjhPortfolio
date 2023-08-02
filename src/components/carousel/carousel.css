@@ -351,17 +351,23 @@ left: -50rem;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+   
     color: #c2c2c2;
     
+  }
+  span.slideHeader {
+    margin-bottom: 1vh;
   }
   .main > div p {
     line-height: 1.6;
     color: rgb(255, 255, 255);
-    padding-bottom: 2vh;
+    padding-bottom: 1vh;
     margin: 0;
     
   }
-
+  a.liveSite{
+  margin-left: 0;
+}
 }
 
 

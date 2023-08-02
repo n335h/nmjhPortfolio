@@ -122,7 +122,7 @@ const Carousel = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Live Site
+          live site
         </a>
       </div>
     </div>

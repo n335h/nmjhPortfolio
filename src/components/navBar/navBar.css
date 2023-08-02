@@ -11,7 +11,7 @@
   left: 0;
   width: 100vw;
   z-index: 100;
-  background-color:#232e3d;
+  background-color:var(--secondary-color);
   
 }
 .logo-toggle-container {

@@ -4,8 +4,8 @@
   /* Global Colours */
 
   --main-color: #ddcb2a;
-  --secondary-color: #232e3d;
-  --background-color: #f9f9f9;
+  --secondary-color: #1b1d24;;
+  --background-color: #c7c7c7;
   --text-color: #222222;
   --test-main: #ddcb2a;
 
@@ -46,9 +46,5 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  
 }

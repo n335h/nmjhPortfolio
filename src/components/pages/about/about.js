@@ -8,7 +8,6 @@ export default function AboutSection() {
       </div>
       <div className="AboutSection">
         <div className="AboutSection-Left">
-          <h2>about me</h2>
           <p className="aboutme">
             I'm Nich, I come from a background in Visual Communication
             and have just completed the School of Code Bootcamp.
@@ -38,12 +37,7 @@ export default function AboutSection() {
             <p className="SkillItem">React</p>
             <p className="SkillItem">Node.js</p>
             <p className="SkillItem">Express</p>
-            <p className="SkillItem">ThunderClient</p>
-            <p className="SkillItem">Postman</p>
-            <p className="SkillItem">Netlify</p>
-            <p className="SkillItem">Heroku</p>
             <p className="SkillItem">Figma</p>
-            <p className="SkillItem">Auth0</p>
             <p className="SkillItem">Git</p>
             <p className="SkillItem">GitHub</p>
           </div>

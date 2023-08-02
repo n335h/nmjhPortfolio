@@ -23,7 +23,7 @@
   
 }
 .landing-page {
-  background-color: #232e3d;
+  background-color: var(--secondary-color);
   height: 100vh;
  
 }
@@ -32,7 +32,7 @@
   
 }
 .landingmain {
-  background-color: #232e3d;
+  background-color: var(--secondary-color);
   height: 100vh;
   width: 100vw;
   display: flex;

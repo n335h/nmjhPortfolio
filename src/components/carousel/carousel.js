@@ -85,45 +85,51 @@ const Carousel = () => {
   const currentSlide = slideData[activeSlide];
 
   return (
-    <div className="main">
-      <div className="swiper">
-        <div className="swiper-wrapper">
-          {slideData.map((slide, index) => (
-            <div
-              key={index}
-              className={`swiper-slide swiper-slide--${index + 1}`}
-            ></div>
-          ))}
+    <div className="ProjectContainer">
+      <div className="main">
+        <div className="ProjectTitle">
+          <h1>projects!</h1>
         </div>
-        <div className="swiper-pagination"></div>
-      </div>
 
-      <div className="slideInfo">
-        <span className="slideHeader">
-          <h2 className="slideTitle">{currentSlide.title}</h2>
+        <div className="swiper">
+          <div className="swiper-wrapper">
+            {slideData.map((slide, index) => (
+              <div
+                key={index}
+                className={`swiper-slide swiper-slide--${index + 1}`}
+              ></div>
+            ))}
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
+
+        <div className="slideInfo">
+          <span className="slideHeader">
+            <h2 className="slideTitle">{currentSlide.title}</h2>
+            <a
+              className="githubLink"
+              href={currentSlide.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="carouselImage"
+                src={github}
+                alt="githublink"
+              />
+            </a>
+          </span>
+          <p>{currentSlide.description}</p>
+
           <a
-            className="githubLink"
-            href={currentSlide.githubLink}
+            className="liveSite"
+            href={currentSlide.livesite}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="carouselImage"
-              src={github}
-              alt="githublink"
-            />
+            live site
           </a>
-        </span>
-        <p>{currentSlide.description}</p>
-
-        <a
-          className="liveSite"
-          href={currentSlide.livesite}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          live site
-        </a>
+        </div>
       </div>
     </div>
   );

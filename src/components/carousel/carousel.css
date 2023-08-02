@@ -183,7 +183,10 @@
   box-shadow: rgba(0, 0, 0, 0.616);
   transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; 
   transition-timing-function: ease-in-out; /* Adjust the timing function as desired */
+  background-size: cover;
+  background-position: center;
 }
+
 
 .swiper-slide-prev,
 .swiper-slide-next {
@@ -195,30 +198,8 @@
 
   z-index: 1;
   transform: scale(1);
-  width: 100vw; /* Set width to take the full width of the viewport */
-height:40vh;
-}
-.swiper-slide-prev {
-transform: translateY(0) scale(0) ;
-right: -50rem;
-
-
 
 }
-.swiper-slide-prev-prev{
-  transform: translateY(0) scale(0) ;
-right: -50rem;
-}
-
-.swiper-slide-next {
-  transform: translateY(0) scale(0);
-  left: -50rem;
-}
-.swiper-slide-next-next{
-  transform: translateY(0) scale(0) ;
-left: -50rem;
-}
-
 
 .swiper-slide h2 {
   color: #fff;
@@ -302,6 +283,33 @@ left: -50rem;
   padding: 0 0 0 0;
   flex-direction: column;
 }
+.ProjectContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--secondary-color);
+  height: 105vh;
+  width: 100vw;
+}
+
+.ProjectTitle {
+  display: flex;
+  justify-content: center;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 800;
+  font-size: 5rem;
+  width: 90vw;
+}
+.ProjectTitle h1 {
+  color: var(--test-main);
+  margin-bottom: 2vh;
+}
+
+.ProjectsSection {
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
 
 
 /* //////////////////////////////////////////////////////// Media Queries */
@@ -309,11 +317,11 @@ left: -50rem;
 @media screen and (max-width: 1000px) {
   .swiper {
     width: 100%;
-    height: 100%;
+    height: 80vh;
   }
   .main {
     width: 90vw;
-    max-height: 80vh;
+    height: 90vh;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -363,11 +371,41 @@ left: -50rem;
     color: rgb(255, 255, 255);
     padding-bottom: 1vh;
     margin: 0;
+    height:vh;
     
   }
   a.liveSite{
   margin-left: 0;
 }
+.swiper-slide--1 {
+  width: 60vw; /* Set width to take the full width of the viewport */
+  height: 40vh; /* Set height to take the full height of the viewport */
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/soc_byteclub_paprback/blob/main/paprback.png?raw=true")
+    no-repeat 50% 50% / fill;
+}
+
+
+.swiper-slide--2 {
+  width: 60vw; /* Set width to take the full width of the viewport */
+  height: 40vh; /* Set height to take the full height of the viewport */
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/portfolioSite/blob/main/Images/RPS.png?raw=true")
+    no-repeat 50% 50% / fill;
+}
+
+.swiper-slide--3 {
+  width: 60vw; /* Set width to take the full width of the viewport */
+  height:40vh; /* Set height to take the full height of the viewport */
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/ReactWeatherApp/blob/main/Screenshot%202023-07-17%20135541.png?raw=true")
+    no-repeat 50% 50% / fill;
+}
+.ProjectTitle h1 {
+  color: var(--test-main);
+  margin-bottom: 2vh;
+}
+
 }
 
 

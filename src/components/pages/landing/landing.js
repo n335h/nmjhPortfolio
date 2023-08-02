@@ -1,7 +1,8 @@
 import React, { useRef, useEffect, useState } from 'react';
 import './landing.css';
 import AboutPage from '../about/about';
-import Portfolio from '../portfolio/portfolio';
+
+import Carousel from '../../carousel/carousel';
 import Contact from '../contact/contact';
 import Footer from '../../footer/footer';
 
@@ -13,6 +14,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
       handleScrollToNavbar();
     }
   };
+
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -30,6 +32,19 @@ const LandingPage = ({ handleScrollToNavbar }) => {
     }, delta);
     return () => clearInterval(ticker);
   }, [text]);
+
+  useEffect(() => {
+    // Call the reveal function on the initial load to reveal elements already in the viewport.
+    reveal();
+
+    // Add the event listener to call the reveal function on scroll.
+    window.addEventListener('scroll', reveal);
+
+    // Clean up the event listener on component unmount.
+    return () => {
+      window.removeEventListener('scroll', reveal);
+    };
+  }, []);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -52,6 +67,22 @@ const LandingPage = ({ handleScrollToNavbar }) => {
       setDelta(100);
     }
   };
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal');
+
+    for (var i = 0; i < reveals.length; i++) {
+      var windowHeight = window.innerHeight;
+      var elementTop = reveals[i].getBoundingClientRect().top;
+      var elementVisible = 100; // Adjust this value as needed
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
 
   return (
     <div className="landing-page" ref={landingRef}>
@@ -86,6 +117,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
               <br></br>
               <br></br>
               <br></br>
+              <br></br>
             </div>
 
             <div
@@ -102,7 +134,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
       </div>
 
       <div id="portfolio" className="section">
-        <Portfolio />
+        <Carousel />
       </div>
       <div id="contact" className="section">
         <Contact />

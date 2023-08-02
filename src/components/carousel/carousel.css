@@ -94,7 +94,7 @@
     border: 2px solid var(--test-main);
     box-sizing: border-box;
     color: #ffffff;
-  font-weight: 700;
+  font-weight: 500;
     cursor: pointer;
     border-radius: 5px;
     display: inline-flex;
@@ -167,14 +167,12 @@
 
 }
 .swiper-container-pagination {
-  bottom: 5rem !important;
   z-index: 10;
   color: #dadada;
   width: 20%; /* You can adjust this width as per your design */
 }
 
 .swiper-slide {
-  height: 100vh; /* Set height to take the full height of the viewport */
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -198,6 +196,7 @@
   z-index: 1;
   transform: scale(1);
   width: 100vw; /* Set width to take the full width of the viewport */
+height:40vh;
 }
 .swiper-slide-prev {
 transform: translateY(0) scale(0) ;
@@ -261,7 +260,7 @@ left: -50rem;
 }
 .swiper-slide--1 {
   width: 60vw; /* Set width to take the full width of the viewport */
-  height: 60vh; /* Set height to take the full height of the viewport */
+  height: 50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/soc_byteclub_paprback/blob/main/paprback.png?raw=true")
     no-repeat 50% 50% / cover;
@@ -270,7 +269,7 @@ left: -50rem;
 
 .swiper-slide--2 {
   width: 60vw; /* Set width to take the full width of the viewport */
-  height: 60vh; /* Set height to take the full height of the viewport */
+  height: 50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/portfolioSite/blob/main/Images/RPS.png?raw=true")
     no-repeat 50% 50% / cover;
@@ -278,7 +277,7 @@ left: -50rem;
 
 .swiper-slide--3 {
   width: 60vw; /* Set width to take the full width of the viewport */
-  height: 60vh; /* Set height to take the full height of the viewport */
+  height:50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/ReactWeatherApp/blob/main/Screenshot%202023-07-17%20135541.png?raw=true")
     no-repeat 50% 50% / cover;
@@ -294,6 +293,7 @@ left: -50rem;
 }
 .swiper {
   width: 70%;
+  height: auto;
   margin:0 3vw;
   display: flex;
   min-width: 30vw;

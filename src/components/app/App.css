@@ -70,7 +70,7 @@ background-color: var(--test-main);
 border: 2px solid var(--test-main);
 box-sizing: border-box;
 color: #ffffff;
-font-weight: 700;
+font-weight: 500;
 border-radius: 5px;
 cursor: pointer;
 display: inline-flex;

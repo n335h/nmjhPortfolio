@@ -30,7 +30,7 @@ export default function AboutSection() {
           </a>
         </div>
         <div className="AboutSection-Right">
-          <h2>skills</h2>
+          <h2>skills & tools</h2>
           <div className="AboutSection-Right-Top">
             <p className="SkillItem">HTML</p>
             <p className="SkillItem">CSS</p>
@@ -38,11 +38,15 @@ export default function AboutSection() {
             <p className="SkillItem">React</p>
             <p className="SkillItem">Node.js</p>
             <p className="SkillItem">Express</p>
+            <p className="SkillItem">ThunderClient</p>
+            <p className="SkillItem">Postman</p>
+            <p className="SkillItem">Netlify</p>
+            <p className="SkillItem">Heroku</p>
+            <p className="SkillItem">Figma</p>
+            <p className="SkillItem">Auth0</p>
             <p className="SkillItem">Git</p>
             <p className="SkillItem">GitHub</p>
           </div>
-        
-          
         </div>
       </div>
     </div>

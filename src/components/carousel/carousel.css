@@ -11,6 +11,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 6vh;
   
 } 
 .githubLink {
@@ -91,7 +92,8 @@
     background-color: var(--test-main);
     border: 2px solid var(--test-main);
     box-sizing: border-box;
-    color: #131313;
+    color: #ffffff;
+  font-weight: 700;
     cursor: pointer;
     display: inline-flex;
     fill: #000;

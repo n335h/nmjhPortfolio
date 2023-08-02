@@ -120,7 +120,7 @@ text-decoration: none;
     cursor: pointer;
     padding: 10px 10px;
     transition: all 0.4s ease-in-out; /* Add this line for smoother transition */
-    
+    margin-right: 2vw;
   }
   .menu-toggle .bar {
     width: 25px;
@@ -130,6 +130,7 @@ text-decoration: none;
     transition: all 0.4s ease-in-out;
     border-radius: 10px;
     z-index: 7;
+   
   }
 
   .menu.open {

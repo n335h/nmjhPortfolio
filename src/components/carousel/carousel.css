@@ -404,7 +404,7 @@
 }
 .ProjectTitle h1 {
   color: var(--test-main);
- margin-bottom: 0;
+ margin-bottom: 2vh;
 }
 
 

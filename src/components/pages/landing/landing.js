@@ -20,7 +20,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(100); // Used to determine how fast a letter is typed
   const toRotate = [
-    'Software Developer',
+    'Software Engineer',
     'Full-Stack Developer',
     'UI/UX Developer',
   ];

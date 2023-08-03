@@ -70,7 +70,7 @@ const Carousel = () => {
       description:
         'Rock Paper Scissors. Friday Hackathon for School of Code built with HTML, CSS and JavaScript using DOM manipulation.',
       githubLink: 'https://github.com/n335h/RPS',
-      livesite: 'https://n335h.github.io/RPS/',
+      livesite: 'https://nhrps.netlify.app',
     },
     {
       title: 'open weather API',

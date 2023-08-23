@@ -2,10 +2,11 @@ import React from 'react';
 // import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import './contact.css';
 import Footer from '../../footer/footer';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
+  const [messageSent, setMessageSent] = useState(false);
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -23,6 +24,9 @@ const Contact = () => {
           console.log(result.text);
           console.log('success');
           form.current.reset();
+          setMessageSent(true); // Set the state to true when message is successfully sent
+          // After a few seconds, reset the message status to false
+          setTimeout(() => setMessageSent(false), 5000);
         },
         (error) => {
           console.log(error.text);
@@ -86,6 +90,7 @@ const Contact = () => {
             submit!
           </button>
         </form>
+        {messageSent && <div className="overlay">Message sent!</div>}
       </div>
       <Footer />
     </div>

@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   height: 80vh;
   text-align: center;
@@ -23,21 +23,27 @@
   
 }
 .landing-page {
-  background-color: #232e3d;
+  background-color: var(--secondary-color);
   height: 100vh;
+
+}
+.section {
+  scroll-snap-align: start;
+  
 }
 .landingmain {
-  background-color: #232e3d;
+  
   height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-end ;
   align-items: center;
   text-align: center;
   font-size: 18px;
   margin: 0;
   padding: 0;
+  
 }
 
 
@@ -50,12 +56,13 @@
   padding-bottom: 0vh;
 }
 .landing-page h2 {
-  font-size: 4rem;
+  font-size: 2rem;
   font-weight: 700;
   letter-spacing: 0.05em;
   line-height: 1.2;
   color: #e2e2e2;
-  padding-bottom: 0vh;
+  padding: 0 0 0 0;
+  margin: 0;
 }
 .header-title {
   display: flex;
@@ -78,13 +85,37 @@
 .header-title,
 .header-subtitle {
   color:var(--test-main);
+
+}
+.header-subtitle {
+  display: flex;
+align-items: center;
+  flex-direction: row;
+  justify-content: center;
   
+}
+
+.wrap {
+  margin: 0;
+  padding: 0;
+  width:auto;
+  font-size: 1.5rem;
+  font-weight:300;
+  margin: 0;
+  letter-spacing: 0.05em;
+  line-height: 1.2;
+  color: var(--test-main);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    margin-left: 5px;
+
 }
 
 
 
 .animate-pop-in {
-  animation: pop-in .6s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
+  animation: pop-in .9s cubic-bezier(0, 0.9, 0.3, 1.2) forwards;
   opacity: 0;
 }
 
@@ -94,6 +125,9 @@
 
 .header-title {
   animation-delay: .8s;
+}
+.btn {
+  animation-delay: 2s;
 }
 
 .header-subtitle {
@@ -117,7 +151,7 @@
 .mouse-icon {
   border: 2px solid var(--test-main);
   border-radius: 16px;
-  height: 3.5rem;
+  height: 2.5rem;
   width: 1.5rem;
   left: 50%;
   transform: translateX(-50%);
@@ -242,3 +276,13 @@
   }
 }
 
+/* .reveal{
+ 
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 2s all ease;
+}
+.reveal.active{
+  transform: translateY(0);
+  opacity: 1;
+} */

@@ -34,16 +34,16 @@ const Carousel = () => {
       },
       breakpoints: {
         640: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         768: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         1024: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
         1560: {
-          slidesPerView: 2,
+          slidesPerView: 1,
         },
       },
     });
@@ -59,28 +59,21 @@ const Carousel = () => {
 
   const slideData = [
     {
-      title: 'Paprback',
+      title: 'paprback',
       description:
-        'Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. Embracing the power of technologythis innovative app empowers users to easily exchange books with fellow enthusiasts, fostering a vibrant and sustainable reading community. ',
+        'Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. Embracing the power of technology this innovative app empowers users to easily exchange books with fellow enthusiasts, fostering a vibrant and sustainable reading community. ',
       githubLink: 'https://github.com/n335h/soc_byteclub_paprback',
       livesite: 'https://bcpaprback.netlify.app/',
     },
     {
-      title: 'Rock Paper Scissors',
+      title: 'rock paper scissors',
       description:
         'Rock Paper Scissors. Friday Hackathon for School of Code built with HTML, CSS and JavaScript using DOM manipulation.',
       githubLink: 'https://github.com/n335h/RPS',
-      livesite: 'https://n335h.github.io/RPS/',
+      livesite: 'https://nhrps.netlify.app',
     },
     {
-      title: 'NFT Card',
-      description:
-        'Frontend Mentor challenges help you improve your coding skills by building realistic projects. Your challenge is to build out this preview card component and get it looking as close to the design as possible. I could any tools to help me complete the challenge',
-      githubLink: 'https://github.com/n335h/NFTCard',
-      livesite: 'https://n335h.github.io/NFTCard/',
-    },
-    {
-      title: 'Open Weather API',
+      title: 'open weather API',
       description:
         'Weather app that uses the Open Weather API to fetch weather data for a city that the user inputs, this calls upon two seperate APIs, current weather data and forcast weather data, for the 12 hour forecast data. The app is built with React and uses the Axios library to make the API call.',
       githubLink:
@@ -92,45 +85,50 @@ const Carousel = () => {
   const currentSlide = slideData[activeSlide];
 
   return (
-    <div className="main">
-      <div className="swiper">
-        <div className="swiper-wrapper">
-          {slideData.map((slide, index) => (
-            <div
-              key={index}
-              className={`swiper-slide swiper-slide--${index + 1}`}
-            ></div>
-          ))}
-        </div>
-        <div className="swiper-pagination"></div>
+    <div className="ProjectContainer">
+      <div className="ProjectTitle">
+        <h1>projects!</h1>
       </div>
+      <div className="main">
+        <div className="swiper">
+          <div className="swiper-wrapper">
+            {slideData.map((slide, index) => (
+              <div
+                key={index}
+                className={`swiper-slide swiper-slide--${index + 1}`}
+              ></div>
+            ))}
+          </div>
+          <div className="swiper-pagination"></div>
+        </div>
 
-      <div className="slideInfo">
-        <span className="slideHeader">
-          <h2 className="slideTitle">{currentSlide.title}</h2>
+        <div className="slideInfo">
+          <span className="slideHeader">
+            <h2 className="slideTitle">{currentSlide.title}</h2>
+            <a
+              className="githubLink"
+              href={currentSlide.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                className="carouselImage"
+                src={github}
+                alt="githublink"
+              />
+            </a>
+          </span>
+          <p>{currentSlide.description}</p>
+
           <a
-            className="githubLink"
-            href={currentSlide.githubLink}
+            className="liveSite"
+            href={currentSlide.livesite}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img
-              className="carouselImage"
-              src={github}
-              alt="githublink"
-            />
+            live site
           </a>
-        </span>
-        <p>{currentSlide.description}</p>
-
-        <a
-          className="liveSite"
-          href={currentSlide.livesite}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Live Site
-        </a>
+        </div>
       </div>
     </div>
   );

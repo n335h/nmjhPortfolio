@@ -1,35 +1,63 @@
-import React from 'react';
 import './styles.css';
 import GHGrey from '../assets/GHGrey.svg';
+import GHYellow from '../assets/GHYellow.svg';
 import LIGrey from '../assets/LIGrey.svg';
+import LIYellow from '../assets/LIYellow.svg';
 
-function Footer() {
+export default function Footer() {
   return (
-    <div className="footer-container">
-      <footer className="pageFooter">
-        <div className="logo-container">
-          <a
-            href="https://github.com/n335h"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="github" src={GHGrey} alt="github" />
-          </a>
-          <a
-            href="https://linkedin.com/in/nichhorishny"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img className="linkedin" src={LIGrey} alt="linkedin" />
-          </a>
+    <div className="FooterContainer">
+      <div className="FooterTop">
+        <div className="FooterLinks">
+       .
+          <div className="logo-container">
+            <div className="GH">
+              <a
+                href="https://github.com/n335h"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="icon"
+                  src={GHGrey}
+                  alt="github"
+                  id="iconsNav"
+                />
+                <img
+                  className="icon"
+                  src={GHYellow}
+                  alt="github"
+                  id="iconsNav"
+                />
+              </a>
+            </div>
+            <div className="LI">
+              <a
+                href="https://linkedin.com/in/nichhorishny"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img
+                  className="icon"
+                  src={LIGrey}
+                  alt="linkedin"
+                  id="iconsNav"
+                />
+                <img
+                  className="icon"
+                  src={LIYellow}
+                  alt="linkedin"
+                  id="iconsNav"
+                />
+              </a>
+            </div>
+          </div>
         </div>
-      
-        <p className="footer-text">
-          &copy; 2023 Nicholas Horishny. All rights reserved.
-        </p>
-      </footer>
+      </div>
+     
+      <div className="Footer">
+        <p> © Nich Horishny 2023</p>
+      </div>
     </div>
   );
 }
-
-export default Footer;

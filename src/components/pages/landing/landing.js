@@ -22,7 +22,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
   const toRotate = [
     'Software Engineer',
     'Full-Stack Developer',
-    'UI/UX Developer',
+    
   ];
   const period = 2000; // Amount of transition time of each word
 

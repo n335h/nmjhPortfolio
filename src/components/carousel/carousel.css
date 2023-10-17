@@ -47,7 +47,7 @@
 
 .carouselImage:hover {
   opacity: 1;
-  transform: scale(1.1);
+  transform: scale(1);
 }
 
 
@@ -239,7 +239,15 @@
   opacity: 1;
   
 }
+
 .swiper-slide--1 {
+  width: 60vw; /* Set width to take the full width of the viewport */
+  height: 50vh; /* Set height to take the full height of the viewport */
+  background: linear-gradient(to top, #161616, #49494910, #86868623),
+    url("https://github.com/n335h/portfolioSite/blob/main/doggyStuff.png?raw=true")
+    no-repeat 50% 50% / cover;
+}
+.swiper-slide--2 {
   width: 60vw; /* Set width to take the full width of the viewport */
   height: 50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
@@ -248,7 +256,7 @@
 }
 
 
-.swiper-slide--2 {
+.swiper-slide--3 {
   width: 60vw; /* Set width to take the full width of the viewport */
   height: 50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
@@ -256,7 +264,7 @@
     no-repeat 50% 50% / cover;
 }
 
-.swiper-slide--3 {
+.swiper-slide--4 {
   width: 60vw; /* Set width to take the full width of the viewport */
   height:50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),

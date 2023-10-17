@@ -29,7 +29,7 @@ export default function AboutSection() {
           </a>
         </div>
         <div className="AboutSection-Right">
-          <h2>skills & tools</h2>
+          <h2>Tech Stack</h2>
           <div className="AboutSection-Right-Top">
             <p className="SkillItem">HTML</p>
             <p className="SkillItem">CSS</p>
@@ -38,8 +38,10 @@ export default function AboutSection() {
             <p className="SkillItem">Node.js</p>
             <p className="SkillItem">Express</p>
             <p className="SkillItem">Figma</p>
-            <p className="SkillItem">Git</p>
-            <p className="SkillItem">GitHub</p>
+            <p className="SkillItem">PostgreSQL</p>
+            <p className="SkillItem">TypeScript</p>
+            <p className="SkillItem">Jest</p>
+            <p className="SkillItem">Playwright</p>
           </div>
         </div>
       </div>

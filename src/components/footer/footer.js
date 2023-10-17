@@ -9,7 +9,7 @@ export default function Footer() {
     <div className="FooterContainer">
       <div className="FooterTop">
         <div className="FooterLinks">
-       .
+      
           <div className="logo-container">
             <div className="GH">
               <a
@@ -55,9 +55,6 @@ export default function Footer() {
         </div>
       </div>
      
-      <div className="Footer">
-        <p> © Nich Horishny 2023</p>
-      </div>
     </div>
   );
 }

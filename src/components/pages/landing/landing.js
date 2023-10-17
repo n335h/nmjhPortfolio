@@ -4,7 +4,6 @@ import AboutPage from '../about/about';
 
 import Carousel from '../../carousel/carousel';
 import Contact from '../contact/contact';
-import Footer from '../../footer/footer';
 
 const LandingPage = ({ handleScrollToNavbar }) => {
   const landingRef = useRef(null);
@@ -21,8 +20,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
   const [delta, setDelta] = useState(100); // Used to determine how fast a letter is typed
   const toRotate = [
     'Software Engineer',
-    'Full-Stack Developer',
-    
+    'Full-Stack Developer'
   ];
   const period = 2000; // Amount of transition time of each word
 

@@ -1,9 +1,7 @@
 import React from 'react';
 import Navbar from '../navBar/navBar';
 import LandingPage from '../pages/landing/landing';
-import AboutPage from '../pages/about/about';
 
-import Contact from '../pages/contact/contact';
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 

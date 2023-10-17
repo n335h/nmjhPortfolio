@@ -59,6 +59,14 @@ const Carousel = () => {
 
   const slideData = [
     {
+      title: 'doggyStuff',
+      description:
+        'Personal project WIP- DoggyStuff is a personalized dog food subscription service that tailors nutrition to your dogs unique needs. They offer a convenient online platform where you can create a customized meal plan for your furry friend',
+      githubLink:
+        'https://github.com/n335h/doggystuff',
+      livesite: 'https://doggystuff.netlify.app/',
+    },
+    {
       title: 'paprback',
       description:
         'Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. Embracing the power of technology this innovative app empowers users to easily exchange books with fellow enthusiasts, fostering a vibrant and sustainable reading community. ',

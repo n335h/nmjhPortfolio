@@ -7,13 +7,13 @@
   font-size: 1rem;
   font-weight: 400;
   position: fixed;
-  top: 0;
   left: 0;
   width: 100vw;
   z-index: 100;
-  background-color:var(--secondary-color);
+  background-color:transparent;
   
 }
+
 .logo-toggle-container {
   display: flex;
   align-items: center;
@@ -78,7 +78,9 @@ text-decoration: none;
   display: none;
   margin-left: auto; /* Add this line */
 }
-
+.navY {
+  color: var(--secondary-color);
+}
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
@@ -178,36 +180,30 @@ text-decoration: none;
 
 
 .GH img:nth-child(1){
-  display: block;
-  transform: scale(1);
+  display: flex;
+  
 }
 .GH img:nth-child(2){
   display: none;
-  transform: scale(1);
 }
 .GH :hover img:nth-child(1){
   display: none;
-  transform: scale(1);
 }
 .GH :hover img:nth-child(2){
-  display: block;
-  transform: scale(1);
+  display: flex;
 }
 
 
 .LI img:nth-child(1){
-  display: block;
-  transform: scale(1);
+  display: flex;
 }
 .LI img:nth-child(2){
   display: none;
-  transform: scale(1);
 }
 .LI :hover img:nth-child(1){
   display: none;
-  transform: scale(1);
+
 }
 .LI :hover img:nth-child(2){
-  display: block;
-  transform: scale(1);
+  display: flex;
 }

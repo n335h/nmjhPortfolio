@@ -38,17 +38,17 @@ function NavBar() {
 
       <ul className={`menu ${isMenuOpen ? 'open' : ''}`}>
         <li>
-          <a to="/about" href="/#about">
+          <a to="/about" href="#about">
             about
           </a>
         </li>
         <li>
-          <a to="/portfolio" href="/#portfolio">
+          <a to="/portfolio" href="#portfolio">
             projects
           </a>
         </li>
         <li>
-          <a to="/contact" href="/#contact">
+          <a to="/contact" href="#contact">
             contact
           </a>
         </li>

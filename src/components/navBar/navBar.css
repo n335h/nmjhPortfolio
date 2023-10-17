@@ -10,7 +10,7 @@
   left: 0;
   width: 100vw;
   z-index: 100;
-  background-color:transparent;
+  background-color:var(--secondary-color);
   
 }
 

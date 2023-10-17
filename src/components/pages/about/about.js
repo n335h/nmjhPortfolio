@@ -29,7 +29,7 @@ export default function AboutSection() {
           </a>
         </div>
         <div className="AboutSection-Right">
-          <h2>Tech Stack</h2>
+          <h2>tech stack</h2>
           <div className="AboutSection-Right-Top">
             <p className="SkillItem">HTML</p>
             <p className="SkillItem">CSS</p>
@@ -42,6 +42,9 @@ export default function AboutSection() {
             <p className="SkillItem">TypeScript</p>
             <p className="SkillItem">Jest</p>
             <p className="SkillItem">Playwright</p>
+            <p className="SkillItem">Git</p>
+            <p className="SkillItem">Heroku</p>
+            <p className="SkillItem">Netlify</p>
           </div>
         </div>
       </div>

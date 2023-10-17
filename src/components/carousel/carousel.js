@@ -70,7 +70,7 @@ const Carousel = () => {
     {
       title: 'paprback',
       description:
-        'SoC 14 Final Group Project - Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. Embracing the power of technology this innovative app empowers users to easily exchange books with fellow enthusiasts, fostering a vibrant and sustainable reading community. ',
+        'SoC 14 Final Group Project - Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. ',
     techStack: 'React.js, PostgreSQL, Jest, CSS, Netlify',
         githubLink: 'https://github.com/n335h/soc_byteclub_paprback',
       livesite: 'https://bcpaprback.netlify.app/',

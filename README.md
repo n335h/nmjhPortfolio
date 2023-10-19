@@ -1,3 +1,22 @@
+
+# Portfolio
+
+My personal portfolio 
+
+
+# Deployed Site 
+[https://doggystuff.netlify.app/](https://www.nhorishny.dev/)
+
+# Tech Stack
+React.js, HTML, CSS, Heroku
+
+Additional tech : 
+Browser Router, Swiper,  Email js
+
+
+
+_____________________________________________________________________________________________________________________________________________________
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

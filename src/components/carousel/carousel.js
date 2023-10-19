@@ -59,7 +59,7 @@ const Carousel = () => {
 
   const slideData = [
     {
-      title: 'doggyStuff',
+      title: 'doggyStuff - Pair Project',
       description:
         'Side project WIP- DoggyStuff is a personalized dog food subscription service that tailors nutrition to your dogs unique needs. They offer a convenient online platform where you can create a customized meal plan for your furry friend',
       techStack: 'React.tsx, Supabase, CSS, Netlify',
@@ -67,8 +67,8 @@ const Carousel = () => {
         'https://github.com/n335h/doggystuff',
       livesite: 'https://doggystuff.netlify.app/',
     },
-    {
-      title: 'paprback',
+    {   
+      title: 'paprback - Group Project (5)',
       description:
         'SoC 14 Final Group Project - Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. ',
     techStack: 'React.js, PostgreSQL, Jest, CSS, Netlify',
@@ -76,15 +76,15 @@ const Carousel = () => {
       livesite: 'https://bcpaprback.netlify.app/',
     },
     {
-      title: 'rock paper scissors',
+      title: 'rock paper scissors - Solo Hackathon',
       description:
-        'Rock Paper Scissors. Friday Hackathon for School of Code built with HTML, CSS and JavaScript using DOM manipulation.',
+        'Friday Hackathon for School of Code originally built with HTML, CSS and JavaScript. Which I have then rebuilt and added additional functionality using React.',
       techStack: 'HTML, CSS, React.js , Node.js',
         githubLink: 'https://github.com/n335h/RPS',
       livesite: 'https://nhrps.netlify.app',
     },
     {
-      title: 'open weather API',
+      title: 'open weather API - Solo Project',
       description:
         'Weather app that uses the Open Weather API to fetch weather data for a city that the user inputs, this calls upon two seperate APIs, current weather data and forcast weather data, for the 12 hour forecast data. The app is built with React and uses the Axios library to make the API call.',
       techStack: 'React.js, Axios, CSS, Netlify',

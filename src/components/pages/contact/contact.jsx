@@ -1,7 +1,6 @@
 import React from 'react';
 // import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import './contact.css';
-import Footer from '../../footer/footer';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
@@ -92,8 +91,7 @@ const Contact = () => {
         </form>
         {messageSent && <div className="overlay">Message sent!</div>}
       </div>
- 
-    </div>
+y    </div>
   );
 };
 export default Contact;

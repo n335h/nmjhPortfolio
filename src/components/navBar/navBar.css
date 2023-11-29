@@ -21,6 +21,13 @@
   margin: auto;
   width: 100%;
 }
+.logo-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0;
+  width:5vw;
+}
 .logo {
  
   align-items: center;
@@ -181,22 +188,27 @@ text-decoration: none;
 /* social icons navbar */
 
 .GH img:nth-child(1){
-  display: flex;
+  scale:1;
+  width: 1vw;
   filter: invert(98%) sepia(96%) saturate(6%) hue-rotate(85deg) brightness(107%) contrast(98%);
   
 }
 .GH :hover img:nth-child(1){
-  display: flex;
+  scale: 1;
+  width: 1vw;
   filter: invert(82%) sepia(70%) saturate(3986%) hue-rotate(338deg) brightness(92%) contrast(87%);
 }
 
 
 
 .LI img:nth-child(1){
-  display: flex;
+  scale: 1;
+  width: 1vw;
   filter: invert(98%) sepia(96%) saturate(6%) hue-rotate(85deg) brightness(107%) contrast(98%);
 }
 .LI :hover img:nth-child(1){
+  scale: 1;
+  width: 1vw;
   filter: invert(82%) sepia(70%) saturate(3986%) hue-rotate(338deg) brightness(92%) contrast(87%);
 }
 

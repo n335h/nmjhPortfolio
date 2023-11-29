@@ -68,12 +68,6 @@ function NavBar() {
                 alt="github"
                 id="iconsNav"
               />
-              {/* <img
-                className="icon"
-                src={GHYellow}
-                alt="github"
-                id="iconsNav"
-              /> */}
             </a>
           </div>
           <div className="LI">
@@ -88,12 +82,6 @@ function NavBar() {
                 alt="linkedin"
                 id="iconsNav"
               />
-              {/* <img
-                className="icon"
-                src={LIYellow}
-                alt="linkedin"
-                id="iconsNav"
-              /> */}
             </a>
           </div>
         </div>

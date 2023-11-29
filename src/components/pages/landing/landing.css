@@ -254,6 +254,10 @@ align-items: center;
     font-size: 2rem;
     width: 100vw;
   }
+  .landing-page h3 {
+    font-size: 1.2rem;
+    width: 100vw;
+  }
 }
 @media screen and (max-height: 600px) {
    
@@ -275,7 +279,12 @@ align-items: center;
     width: 24px;
   }
 }
+@media screen and (max-width: 500px) {
+.landing-page h2 {
+  font-size: 1.3rem;
 
+}
+}
 /* .reveal{
  
   transform: translateY(150px);

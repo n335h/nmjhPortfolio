@@ -9,8 +9,7 @@ export default function AboutSection() {
       <div className="AboutSection">
         <div className="AboutSection-Left">
           <p className="aboutme">
-            I'm Nich, I come from a background in Visual Communication
-            and have just completed the School of Code Bootcamp.
+          I'm Nich, a recent graduate in Full-Stack Development from the School of Code.
           </p>
           <p className="aboutme">
             It was an immersive program that gave me the technical

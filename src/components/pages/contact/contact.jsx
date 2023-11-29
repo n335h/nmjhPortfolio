@@ -92,7 +92,7 @@ const Contact = () => {
         </form>
         {messageSent && <div className="overlay">Message sent!</div>}
       </div>
-      <Footer />
+ 
     </div>
   );
 };

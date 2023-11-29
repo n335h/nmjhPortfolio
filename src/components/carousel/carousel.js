@@ -62,7 +62,7 @@ const Carousel = () => {
       title: 'doggyStuff - Pair Project',
       description:
         'Side project WIP- DoggyStuff is a personalized dog food subscription service that tailors nutrition to your dogs unique needs. They offer a convenient online platform where you can create a customized meal plan for your furry friend',
-      techStack: 'React.tsx, Supabase, CSS, Netlify',
+      techStack: 'TypeScript, React, Router, CSS, Figma, Supabase, Netlify',
         githubLink:
         'https://github.com/n335h/doggystuff',
       livesite: 'https://doggystuff.netlify.app/',
@@ -71,14 +71,14 @@ const Carousel = () => {
       title: 'paprback - Group Project (5)',
       description:
         'SoC 14 Final Group Project - Paprback, the community-focused book swapping app, the outcome of our final project of the School of Code! Paprbacks primary mission is to connect book lovers and revolutionize the way books are shared and cherished. ',
-    techStack: 'React.js, PostgreSQL, Jest, CSS, Netlify',
+    techStack: 'JavaScript, CSS, Node JS, Express, Jest, Netlify, Render, ElephantSQL',
         githubLink: 'https://github.com/n335h/soc_byteclub_paprback',
       livesite: 'https://bcpaprback.netlify.app/',
     },
     {
       title: 'rock paper scissors - Solo Hackathon',
       description:
-        'Friday Hackathon for School of Code originally built with HTML, CSS and JavaScript. Which I have then rebuilt and added additional functionality using React.',
+        'Friday Hackathon for School of Code originally built with HTML, CSS and vanilla JavaScript with dom manipulation. I have since rebuilt in React and added additional functionality.',
       techStack: 'HTML, CSS, React.js , Node.js',
         githubLink: 'https://github.com/n335h/RPS',
       livesite: 'https://nhrps.netlify.app',

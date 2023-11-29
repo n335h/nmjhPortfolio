@@ -3,11 +3,11 @@
 
   /* Global Colours */
 
-  --main-color: #ddcb2a;
-  --secondary-color: #232e3d;;
+  --main-color: #ddb02a;
+  --secondary-color: rgb(29, 36, 48);;
   --background-color: #c7c7c7;
   --text-color: #222222;
-  --test-main: #ddcb2a;
+  --test-main: #ddb02a;
 
   /* Global Font Sizes */
 

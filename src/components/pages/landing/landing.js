@@ -14,22 +14,6 @@ const LandingPage = ({ handleScrollToNavbar }) => {
     }
   };
 
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(100); // Used to determine how fast a letter is typed
-  const toRotate = [
-    'Software Engineer',
-    'Full-Stack Developer'
-  ];
-  const period = 2000; // Amount of transition time of each word
-
-  useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
-    return () => clearInterval(ticker);
-  }, [text]);
 
   useEffect(() => {
     // Call the reveal function on the initial load to reveal elements already in the viewport.
@@ -44,27 +28,7 @@ const LandingPage = ({ handleScrollToNavbar }) => {
     };
   }, []);
 
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting
-      ? fullText.substring(0, text.length - 1)
-      : fullText.substring(0, text.length + 1);
 
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta((prevDelta) => prevDelta / 2);
-    }
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setDelta(100);
-    }
-  };
 
   function reveal() {
     var reveals = document.querySelectorAll('.reveal');
@@ -89,11 +53,11 @@ const LandingPage = ({ handleScrollToNavbar }) => {
           <div className="header-content">
             <div className="hero">
               <h1 className="header-title animate-pop-in">
-                NICHOLAS HORISHNY
+                nicholas horishny
               </h1>
               <h3 className="header-subtitle animate-pop-in">
-                {'Junior '}
-                <span className="header-subtitle wrap">{text}</span>
+                junior full stack developer
+              
               </h3>
             </div>
             <a href="#portfolio" className="btn animate-pop-in">

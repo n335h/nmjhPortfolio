@@ -170,7 +170,7 @@ text-decoration: none;
   }
   .navbar ul li a {
     text-decoration: none;
-    color:white all 0.3s ease-in-out;
+    color:#fcfcfc all 0.3s ease-in-out;
     font-size: 16px;
     font-weight:400;
   }
@@ -178,32 +178,25 @@ text-decoration: none;
 
 }
 
+/* social icons navbar */
 
 .GH img:nth-child(1){
   display: flex;
+  filter: invert(98%) sepia(96%) saturate(6%) hue-rotate(85deg) brightness(107%) contrast(98%);
   
 }
-.GH img:nth-child(2){
-  display: none;
-}
 .GH :hover img:nth-child(1){
-  display: none;
-}
-.GH :hover img:nth-child(2){
   display: flex;
+  filter: invert(82%) sepia(70%) saturate(3986%) hue-rotate(338deg) brightness(92%) contrast(87%);
 }
+
 
 
 .LI img:nth-child(1){
   display: flex;
-}
-.LI img:nth-child(2){
-  display: none;
+  filter: invert(98%) sepia(96%) saturate(6%) hue-rotate(85deg) brightness(107%) contrast(98%);
 }
 .LI :hover img:nth-child(1){
-  display: none;
+  filter: invert(82%) sepia(70%) saturate(3986%) hue-rotate(338deg) brightness(92%) contrast(87%);
+}
 
-}
-.LI :hover img:nth-child(2){
-  display: flex;
-}

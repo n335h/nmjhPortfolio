@@ -1,3 +1,4 @@
+/* Base styles for navbar */
 .navbar {
   display: flex;
   justify-content: center;
@@ -10,39 +11,25 @@
   left: 0;
   width: 100%;
   z-index: 100;
-  background-color:var(--secondary-color);
-  
+  background-color: var(--secondary-color);
 }
 
-.logo-toggle-container {
+.logo-toggle-container,
+.logo-container {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: auto;
   width: 100%;
 }
-.logo-container{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0;
-}
+
 .logo {
- 
   align-items: center;
   margin: 2vw;
   width: 100%;
   color: var(--test-main);
 }
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40px;
-  transition: all 0.3s ease-in-out;
-  flex-direction: row;
-}
 
+/* Styles for navigation links */
 .navbar ul {
   display: flex;
   justify-content: center;
@@ -54,38 +41,31 @@ nav {
 
 .navbar ul li {
   margin: 0 10px;
-  justify-content: center;
-  align-items: center;
 }
 
 .navbar ul li a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: rgb(221, 221, 221);
 
-text-decoration: none;
-      font-size: 1.5rem;
-   color: rgb(221, 221, 221);
-     
-    &:hover {
-          background-position: 0;
-      color: #0300e2;
-    }
+  &:hover {
+    background-position: 0;
+    color: #0300e2;
   }
-
-.navbar ul li a:hover {
-  color: var(--test-main); 
 }
 
+.navbar ul li a:hover,
 .navbar ul li a:active {
-  color: var(--test-main) !important;
-
+  color: var(--test-main);
 }
 
+/* Styles for menu toggle */
 .menu-toggle {
   display: none;
-  margin-left: auto; /* Add this line */
+  margin-left: auto;
 }
-.navY {
-  color: var(--secondary-color);
-}
+
+/* Responsive styles */
 @media screen and (max-width: 600px) {
   .navbar {
     flex-direction: column;
@@ -93,7 +73,6 @@ text-decoration: none;
     height: 40px;
     display: flex;
     justify-content: space-evenly;
-    
   }
 
   .navbar ul {
@@ -109,13 +88,18 @@ text-decoration: none;
 
   .navbar ul li {
     margin: 10px 0;
-      transition: all 0.3s ease-in-out;
-  font-size: 16px;
-  font-weight: 400;
+    transition: all 0.3s ease-in-out;
+    font-size: 16px;
+    font-weight: 400;
   }
 
   .navbar ul li a {
     text-align: center;
+    text-decoration: none;
+    color: #fcfcfc;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
   }
 
   .menu-toggle {
@@ -126,18 +110,18 @@ text-decoration: none;
     height: auto;
     cursor: pointer;
     padding: 10px 10px;
-    transition: all 0.4s ease-in-out; /* Add this line for smoother transition */
+    transition: all 0.4s ease-in-out;
     margin-right: 2vw;
   }
+
   .menu-toggle .bar {
     width: 25px;
     height: 3px;
-    background-color:var(--test-main);
+    background-color: var(--test-main);
     margin: 3px;
     transition: all 0.4s ease-in-out;
     border-radius: 10px;
     z-index: 7;
-   
   }
 
   .menu.open {
@@ -150,61 +134,45 @@ text-decoration: none;
     margin: auto;
     padding-bottom: 1vh;
     opacity: 1;
-    transition: opacity 0.9s ease-in, top 0.5s ease-in-out; /* Added transition for top property */
+    transition: opacity 0.9s ease-in, top 0.5s ease-in-out;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
-    transform: translateY(-100%); /* Initially hide the menu by shifting it above */
+    transform: translateY(-100%);
   }
-  
+
   .navbar.open .menu-toggle .bar:first-child {
     transform: translateX(-6px) rotate(45deg) translate(10px, 2px);
     top: 2px;
     background-color: var(--test-main);
   }
-  
+
   .navbar.open .menu-toggle .bar:nth-child(2) {
     opacity: 0;
   }
-  
+
   .navbar.open .menu-toggle .bar:last-child {
     transform: translateX(-5px) rotate(-45deg) translate(10px, -4px);
     background-color: var(--test-main);
   }
-  
+
   .navbar.open .menu {
-    transform: translateY(0); /* Move the menu down when opened */
-  }
-  .navbar ul li a {
-    text-decoration: none;
-    color:#fcfcfc all 0.3s ease-in-out;
-    font-size: 16px;
-    font-weight:400;
+    transform: translateY(0);
   }
 
-
+  .navbar ul li a:hover {
+    color: var(--test-main);
+  }
 }
 
-/* social icons navbar */
-
-.GH img:nth-child(1){
+/* Styles for social icons navbar */
+.GH img:nth-child(1),
+.LI img:nth-child(1) {
   filter: invert(98%) sepia(96%) saturate(6%) hue-rotate(85deg) brightness(107%) contrast(98%);
   display: flex;
 }
-.GH :hover img:nth-child(1){
+
+.GH :hover img:nth-child(1),
+.LI :hover img:nth-child(1) {
   display: flex;
-
-  filter: invert(82%) sepia(70%) saturate(3986%) hue-rotate(338deg) brightness(92%) contrast(87%);
-}
-
-
-
-.LI img:nth-child(1){
-
-  display: flex;
-  filter: invert(98%) sepia(96%) saturate(6%) hue-rotate(85deg) brightness(107%) contrast(98%);
-}
-.LI :hover img:nth-child(1){
-  display: flex;
-
   filter: invert(82%) sepia(70%) saturate(3986%) hue-rotate(338deg) brightness(92%) contrast(87%);
 }
 
@@ -213,15 +181,11 @@ text-decoration: none;
   height: 20px;
   width: 20px;
   opacity: 0.6;
-
 }
 
-.logo-container  img:hover {
+.logo-container img:hover {
   margin: 0 5px;
   height: 25px;
   width: 25px;
   opacity: 1;
-
-  
-  
 }

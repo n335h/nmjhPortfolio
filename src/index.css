@@ -19,23 +19,6 @@
   --text-r: 1.6rem;
   --text-sr: 1.4rem;
   --text-s: 1.2rem;
-  --text-xs:1rem;
-
-  /* Global Margins */
-
-  --margin-top: 1.6rem;
-  --margin-left: 1rem;
-  --margin-right: 1rem;
-  --margin-bottom: 1.6rem;
-  --margin: 1rem 5vw;
-
-  /* Global Padding */
-
-  --padding-left: 5vw;
-  --padding-right: 5vw;
-  --padding-top: 2vw;
-  --padding: 1rem 5vw;
-
 }
 
 

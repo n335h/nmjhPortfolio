@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import './contact.css';
 import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';

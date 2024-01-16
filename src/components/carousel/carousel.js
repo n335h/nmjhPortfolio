@@ -70,7 +70,7 @@ const Carousel = () => {
 			description:
 				'Side project WIP- DoggyStuff is a personalized dog food subscription service that tailors nutrition to your dogs unique needs. They offer a convenient online platform where you can create a customized meal plan for your furry friend',
 			techStack:
-				'TypeScript, React, Router, CSS, Figma, Supabase, Netlify',
+				'TypeScript, React, Router, Supabase, Netlify, React Testing Library, Jest',
 			githubLink:
 				'https://github.com/n335h/doggystuff',
 			livesite: 'https://doggystuff.netlify.app/',

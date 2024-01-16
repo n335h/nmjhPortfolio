@@ -1,8 +1,4 @@
-import React, {
-	useRef,
-	useEffect,
-	useState,
-} from 'react';
+import React, { useRef, useEffect } from 'react';
 import './landing.css';
 import AboutPage from '../about/about';
 
@@ -69,7 +65,7 @@ const LandingPage = ({
 								nicholas horishny
 							</h1>
 							<h3 className='header-subtitle animate-pop-in'>
-								junior full stack developer
+								junior software developer
 							</h3>
 						</div>
 						<a
@@ -79,24 +75,7 @@ const LandingPage = ({
 								projects
 							</button>
 						</a>
-						<div>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-							<br></br>
-						</div>
+						<div></div>
 
 						<div
 							className='mouse-icon animate-pop-in'

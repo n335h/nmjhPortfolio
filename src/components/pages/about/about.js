@@ -9,15 +9,16 @@ export default function AboutSection() {
 			<div className='AboutSection'>
 				<div className='AboutSection-Left'>
 					<p className='aboutme'>
-						I'm Nich, a recent graduate in
-						Full-Stack Development from the School
-						of Code.
+						I’m a Junior Software Developer
+						trained with a focus on Full Stack
+						Development.
 					</p>
 					<p className='aboutme'>
-						It was an immersive program that gave
-						me the technical foundation and
-						hands-on experience needed to dive
-						into Full-Stack Development.
+						During my young developer journey I’ve
+						primarily focused on React,
+						JavaScript, Typescript, PostgreSQL,
+						Node.JS and testing with Playwright,
+						Supertest and Jest.
 					</p>
 					<p className='aboutme'>
 						Now I'm all set to bring my creative
@@ -45,7 +46,7 @@ export default function AboutSection() {
 						<p className='SkillItem'>React</p>
 						<p className='SkillItem'>Node.js</p>
 						<p className='SkillItem'>Express</p>
-						<p className='SkillItem'>Figma</p>
+						<p className='SkillItem'>EJS</p>
 						<p className='SkillItem'>
 							PostgreSQL
 						</p>
@@ -57,7 +58,7 @@ export default function AboutSection() {
 							Playwright
 						</p>
 						<p className='SkillItem'>Git</p>
-						<p className='SkillItem'>Heroku</p>
+						<p className='SkillItem'>REST API</p>
 						<p className='SkillItem'>Netlify</p>
 					</div>
 				</div>

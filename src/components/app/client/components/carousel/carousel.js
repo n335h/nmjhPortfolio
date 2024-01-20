@@ -9,7 +9,6 @@ import Swiper, {
 import 'swiper/swiper.min.css';
 import 'swiper/css/pagination';
 import './carousel.css';
-import github from '../assets/github.png';
 
 Swiper.use([Navigation, Pagination]);
 
@@ -109,27 +108,26 @@ const Carousel = () => {
 	const currentSlide = slideData[activeSlide];
 
 	return (
-		<div className='ProjectContainer'>
-			<div className='ProjectTitle'>
-				<h1>projects!</h1>
-			</div>
-			<div className='main'>
-				<div className='swiper'>
+		<div className='ProjectContainer bg-gray-200 dark:bg-zinc-900 py-16'>
+			<div className='main flex items-center justify-center'>
+				<div className='swiper w-full max-w-2xl'>
 					<div className='swiper-wrapper'>
 						{slideData.map((slide, index) => (
 							<div
 								key={index}
 								className={`swiper-slide swiper-slide--${
 									index + 1
-								}`}></div>
+								}`}>
+								{/* Your slide content */}
+							</div>
 						))}
 					</div>
 					<div className='swiper-pagination'></div>
 				</div>
 
-				<div className='slideInfo'>
+				<div className='slideInfo ml-4'>
 					<span className='slideHeader'>
-						<h2 className='slideTitle'>
+						<h2 className='slideTitle text-2xl font-bold'>
 							{currentSlide.title}
 						</h2>
 						<a
@@ -139,20 +137,22 @@ const Carousel = () => {
 							rel='noopener noreferrer'>
 							<img
 								className='carouselImage'
-								src={github}
+								src={''} // Add your GitHub image source
 								alt='githublink'
 							/>
 						</a>
 					</span>
-					<p>{currentSlide.description}</p>
-					<div className='techStack'>
-						<h3 className='techStack'>
+					<p className='text-gray-700'>
+						{currentSlide.description}
+					</p>
+					<div className='techStack mt-4'>
+						<h3 className='text-lg font-semibold'>
 							tech stack
 						</h3>
 						<p>{currentSlide.techStack}</p>
 					</div>
 					<a
-						className='liveSite'
+						className='liveSite mt-4 text-indigo-600 underline'
 						href={currentSlide.livesite}
 						target='_blank'
 						rel='noopener noreferrer'>

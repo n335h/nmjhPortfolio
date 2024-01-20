@@ -1,140 +1,5 @@
-.slideTitle h2 {
-  margin: 0; /* Remove the default margin on h2 elements */
-  width: 30vw;
-}
-
-.main {
-  width: 60vw;
-  min-height: 60vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-
-  
-} 
-.techStack {
-  width: 100%;
-  margin-top: 1rem;
-  font-weight: 500;
-}
-.githubLink {
-  margin-top: 1vh;
-  margin-left: 1vw;
-}
-
-.slideInfo {
-  /* Remove display: flex */
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
- 
-}
-
-.slideInfo p {
-  margin: 0;
-  padding: 0;
-  color: #c2c2c2;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  margin-top: 2vh;
-}
-
-.slideTitle h2 {
-  color: var(--main-color);
-  font-size: 2rem;
-  margin-top: 2vh;
-
-}
 
 
-.carouselImage:hover {
-  opacity: 1;
-  transform: scale(1);
-}
-
-
-.swiperTitle{
-  font-size: 2.5rem;
-
-  font-weight: 900;
-  margin: 0vh auto;
-  padding: 1rem;
-  color: var(--test-main);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  letter-spacing: 0.8px;
-
-  
-}
-.githubLink {
-  margin: 0;
-  padding: 0;
-}
-
-
-
-.slideHeader {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: center;
-  width: 30vw;
-}
-.slideTitle {
-  display: flex;
-  align-items: center;
-  color: #c2c2c2;
-}
-
-
-  .liveSite{
-    align-items: center;
-    background-color: var(--test-main);
-    border: 2px solid var(--test-main);
-    box-sizing: border-box;
-    color: #ffffff;
-  font-weight: 500;
-    cursor: pointer;
-    border-radius: 5px;
-    display: inline-flex;
-    fill: #000;
-    height: 48px;
-    justify-content: center;
-    line-height: 24px;
-    min-width: 140px;
-    margin: 0;
-    margin-top: 2vh;
-    outline: 0;
-    text-align: center;
-    text-decoration: none;
-    transition: all .3s;
-    touch-action: manipulation;
-  }
-  .liveSite:focus {
-    color: #171e29;
-  }
-  
-  .liveSite:hover {
-    
-    background-color: var(--test-main);
-    scale: 1.1;
-    color: #ffffff;
-    font-weight: 700;
-    
-  }
-  
-  .liveSite:active {
-    background-color: var(--test-main);
-    border-color: var(--test-main);
-    fill: var(--test-main);
-  }
-  
 
 
 /* ///////////////////////////////////////////////////////// Swiper  CSS  */
@@ -177,26 +42,12 @@
   width: 20%; /* You can adjust this width as per your design */
 }
 
-.swiper-slide {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  scroll-behavior: smooth;
-  transform: scale(0.5); /* Add this line to reduce the size of the slide */
-  opacity: 1; /* Add this line to reduce the opacity of the slide */
-  border-radius: 5px;
-  box-shadow: rgba(0, 0, 0, 0.616);
-  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out; 
-  transition-timing-function: ease-in-out; /* Adjust the timing function as desired */
-  background-size: cover;
-  background-position: center;
-}
 
 
 .swiper-slide-prev,
 .swiper-slide-next {
  
-  opacity: 0.1; /* Add this line to reduce the opacity of the previous and next slides */
+  opacity: 0.1; 
 }
 
 .swiper-slide-active {
@@ -206,38 +57,6 @@
 
 }
 
-.swiper-slide h2 {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 1.4;
-  margin-bottom: 0.625rem;
-  padding: 0 0 0 1.563rem;
-  text-transform: uppercase;
-  justify-content: flex-start;
-}
-
-.swiper-slide p {
-  color: #dadada;
-  font-family: "Roboto", sans-serif;
-  font-weight: 300;
-  padding: 0 1.563rem;
-  line-height: 1.6;
-  font-size: 0.75rem;
-  justify-content: flex-start;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  
-  overflow: hidden;
-}
-
-
-.swiper-slide div {
-  display: none;
-  opacity: 0;
-  padding-bottom: 0.625rem;
-}
 
 .swiper-slide-active div {
   display: block;
@@ -285,7 +104,7 @@
 .swiperP {
   color: #ffffff;
 }
-.swiper {
+/* .swiper {
   width: 70%;
   height: auto;
   margin:0 3vw;
@@ -296,36 +115,7 @@
   padding: 0 0 0 0;
   flex-direction: column;
 }
-.ProjectContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--secondary-color);
-  height: 100vh;
-  width: 100%;
- 
-}
-
-.ProjectTitle {
-  display: flex;
-  justify-content: center;
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 800;
-  font-size: 5rem;
-  width: 90vw;
-  margin-top:5vh;
-  
-}
-.ProjectTitle h1 {
-  color: var(--test-main);
-}
-
-.ProjectsSection {
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-}
-
+ */
 
 /* //////////////////////////////////////////////////////// Media Queries */
 
@@ -421,13 +211,4 @@
 }
 
 
-}
-
-
-
-@media screen and (max-width: 500px)
-{
-.slideTitle h2 {
-    font-size: 1.5rem;
-  }
 }

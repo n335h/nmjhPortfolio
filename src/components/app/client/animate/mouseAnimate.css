@@ -1,0 +1,96 @@
+
+
+/* ---------------------------------------------- /*
+ * Mouse animate icon
+/* ---------------------------------------------- */
+.mouse-icon {
+    border: 2px solid black;
+    border-radius: 16px;
+    height: 2.5rem;
+    width: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  .mouse-icon.pop-in {
+    opacity: 1; /* Set opacity to 1 when the animation starts */
+    /* ... */
+  }
+  
+  .mouse-icon .wheel {
+    -webkit-animation-name: drop;
+    -webkit-animation-duration: 1.5s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+    -webkit-animation-name: drop;
+            animation-name: drop;
+    -webkit-animation-duration: 1.5s;
+            animation-duration: s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-delay: 0s;
+            animation-delay: 0s;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+    -webkit-animation-play-state: running;
+            animation-play-state: running;
+  }
+  .mouse-icon .wheel {
+    position: relative;
+    border-radius: 10px;
+    background: #0f0f0f;
+    width: 4px;
+    height: 4px;
+    margin: 0 auto;
+    top: 0px;
+  
+  }
+   @-webkit-keyframes drop {
+    0% {
+      top: 10px;
+      opacity: 0;
+    }
+    30% {
+      top: 40px;
+      opacity: 1;
+    }
+    100% {
+      top: 25px;
+      opacity: 0;
+    }
+  }
+  @keyframes drop {
+    0% {
+      top:10px;
+      opacity: 0;
+    }
+    30% {
+      top: 20px;
+      opacity: 1;
+    }
+    100% {
+      top: 25px;
+      opacity: 0;
+    }
+  } 
+  
+  .mouse-icon.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+  /* Animations */
+  
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }

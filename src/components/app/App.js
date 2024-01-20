@@ -1,28 +1,68 @@
 import React from 'react';
-import Navbar from '../navBar/navBar';
-import LandingPage from '../pages/landing/landing';
+import Navbar from '../app/client/components/navBar/navBar';
+import LandingPage from '../app/client/pages/landing/landing';
+import About from '../app/client/pages/about/about';
+import Projects from '../app/client/pages/projects/projects';
+import Contact from '../app/client/pages/contact/contact';
+import Footer from '../app/client/components/footer/footer';
 
-import './App.css';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-
+import {
+	BrowserRouter,
+	Route,
+	Routes,
+} from 'react-router-dom';
 
 function App() {
-  return (
-    <BrowserRouter>
-      <div className="App">
-        <Navbar />
+	const [darkMode, setDarkMode] =
+		React.useState(true);
 
-        <div id="section" className="section">
-          <LandingPage />
-        </div>
+	function toggleDarkMode() {
+		setDarkMode((prevDarkMode) => !prevDarkMode);
+	}
 
-       
-        <Routes>
-          <Route path="/paprback" />
-        </Routes>
-      </div>
-    </BrowserRouter>
-  );
+	return (
+		<BrowserRouter>
+			<div className='App m-w-screen'>
+				<Navbar
+					darkMode={darkMode}
+					toggleDarkMode={toggleDarkMode}
+				/>
+
+				<section
+					id='section'
+					className='section'>
+					<LandingPage />
+				</section>
+				<section
+					href='#about'
+					id='about'
+					className='section'>
+					<About />
+				</section>
+				<section
+					href='#projects'
+					id='projects'
+					className='section'>
+					<Projects />
+				</section>
+				<section
+					href='#contact'
+					id='contact'
+					className='section'>
+					<Contact />
+				</section>
+				<section
+					id='section'
+					className='section'>
+					<Footer />
+				</section>
+
+				<Routes>
+					<Route path='/paprback' />
+				</Routes>
+			</div>
+		</BrowserRouter>
+	);
 }
 
 export default App;

@@ -16,22 +16,22 @@ const About = () => {
 					<h1 class='text-2xl text-indigo-600 font-bold sm:text-3xl'>
 						hello!
 					</h1>
-					<p class='w-5/6 mx-auto mt-4 text-l dark:text-gray-300 text-zinc-700'>
+					<p class='w-5/6 mx-auto mt-4 text-l dark:text-gray-300 text-zinc-600'>
 						I’m a Junior Software Developer
 						trained with a focus on Full Stack
 						Development.
 					</p>
-					<p class='w-5/6 mx-auto mt-4 text-zinc-700 dark:text-gray-300'>
+					<p class='w-5/6 mx-auto mt-4 text-zinc-600 dark:text-gray-300'>
 						During my young developer journey,
 						I’ve primarily focused on React,
 						JavaScript, TypeScript,
 					</p>
-					<p class='w-5/6 mx-auto mt-4 text-zinc-700 dark:text-gray-300'>
+					<p class='w-5/6 mx-auto mt-4 text-zinc-600 dark:text-gray-300'>
 						Now I'm all set to bring my creative
 						skills and tech know-how together for
 						this exciting new
 					</p>
-					<p class='w-5/6 mx-auto mt-4 text-zinc-700 dark:text-gray-300'>
+					<p class='w-5/6 mx-auto mt-4 text-zinc-600 dark:text-gray-300'>
 						Looking forward to making things
 						happen!
 					</p>
@@ -41,7 +41,6 @@ const About = () => {
 						contact
 					</a>
 					<TechStack />
-				
 				</div>
 			</div>
 		</section>

@@ -86,7 +86,7 @@ const Contact = () => {
 						</div>
 
 						<div className='text-center mt-6 space-y-8 md:mt-8'>
-							<p className='text-gray-600 w-full dark:text-gray-300'>
+							<p className='text-zinc-600 w-full dark:text-gray-300'>
 								Feel free to contact me using the
 								form or find me through one of the
 								socials above!

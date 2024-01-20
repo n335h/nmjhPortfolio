@@ -142,14 +142,14 @@ const Carousel = () => {
 							/>
 						</a>
 					</span>
-					<p className=' dark:text-zinc-300'>
+					<p className='text-zinc-600 dark:text-zinc-300'>
 						{currentSlide.description}
 					</p>
 					<div className='techStack mt-4'>
-						<h3 className='text-lg dark:text-zinc-400 font-semibold'>
+						<h3 className='text-lg text-zinc-400 dark:text-zinc-400 font-semibold'>
 							tech stack
 						</h3>
-						<p className='dark:text-zinc-400'>
+						<p className='text-zinc-400 dark:text-zinc-400'>
 							{currentSlide.techStack}
 						</p>
 					</div>

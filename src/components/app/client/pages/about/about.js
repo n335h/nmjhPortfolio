@@ -3,7 +3,7 @@ import TechStack from '../../components/techStack/techStack';
 
 const About = () => {
 	return (
-		<section class='relative bg-gray-200 dark:bg-zinc-900 flex flex-wrap lg:h-screen lg:items-center'>
+		<section class='relative bg-zinc-200 dark:bg-zinc-900 flex flex-wrap lg:h-screen lg:items-center'>
 			<div class='relative h-64 w-full sm:h-96 lg:h-full lg:w-1/2'>
 				<img
 					alt='Welcome'
@@ -41,7 +41,7 @@ const About = () => {
 						contact
 					</a>
 					<TechStack />
-					{/* <%- include('../partials/techStack.ejs') %> */}
+				
 				</div>
 			</div>
 		</section>

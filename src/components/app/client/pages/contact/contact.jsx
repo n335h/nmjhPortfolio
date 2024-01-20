@@ -34,7 +34,7 @@ const Contact = () => {
 	};
 
 	return (
-		<section className='bg-white h-1/3 w-full bg-zinc-200 dark:bg-zinc-800'>
+		<section className='bg-white h-1/3 w-full bg-zinc-100 dark:bg-zinc-800'>
 			<div className='container items-center px-6 py-12 mx-auto'>
 				<div className='lg:flex lg:items-center lg:-mx-6'>
 					<div className='text-center h-full lg:w-1/2 lg:mx-6 mx-auto '>

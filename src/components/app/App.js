@@ -28,31 +28,34 @@ function App() {
 					toggleDarkMode={toggleDarkMode}
 				/>
 
-				<div
+				<section
 					id='section'
 					className='section'>
 					<LandingPage />
-				</div>
-				<div
-					id='section'
+				</section>
+				<section
+					href='#about'
+					id='about'
 					className='section'>
 					<About />
-				</div>
-				<div
-					id='section'
+				</section>
+				<section
+					href='#projects'
+					id='projects'
 					className='section'>
 					<Projects />
-				</div>
-				<div
-					id='section'
+				</section>
+				<section
+					href='#contact'
+					id='contact'
 					className='section'>
 					<Contact />
-				</div>
-				<div
+				</section>
+				<section
 					id='section'
 					className='section'>
 					<Footer />
-				</div>
+				</section>
 
 				<Routes>
 					<Route path='/paprback' />

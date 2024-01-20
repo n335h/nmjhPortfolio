@@ -109,8 +109,8 @@ const Carousel = () => {
 
 	return (
 		<div className='ProjectContainer bg-gray-200 dark:bg-zinc-900 py-16'>
-			<div className='main flex items-center justify-center'>
-				<div className='swiper w-full max-w-2xl'>
+			<div className='main flex p-10 w-full items-center justify-center'>
+				<div className='swiper w-4/6 max-w-2xl'>
 					<div className='swiper-wrapper'>
 						{slideData.map((slide, index) => (
 							<div
@@ -125,9 +125,9 @@ const Carousel = () => {
 					<div className='swiper-pagination'></div>
 				</div>
 
-				<div className='slideInfo ml-4'>
+				<div className='slideInfo w-1/2 ml-4'>
 					<span className='slideHeader'>
-						<h2 className='slideTitle text-2xl font-bold'>
+						<h2 className='slideTitle dark:text-indigo-600 text-2xl font-bold'>
 							{currentSlide.title}
 						</h2>
 						<a
@@ -142,14 +142,16 @@ const Carousel = () => {
 							/>
 						</a>
 					</span>
-					<p className='text-gray-700'>
+					<p className=' dark:text-zinc-300'>
 						{currentSlide.description}
 					</p>
 					<div className='techStack mt-4'>
-						<h3 className='text-lg font-semibold'>
+						<h3 className='text-lg dark:text-zinc-400 font-semibold'>
 							tech stack
 						</h3>
-						<p>{currentSlide.techStack}</p>
+						<p className='dark:text-zinc-400'>
+							{currentSlide.techStack}
+						</p>
 					</div>
 					<a
 						className='liveSite mt-4 text-indigo-600 underline'

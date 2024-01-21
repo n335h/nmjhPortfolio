@@ -1,6 +1,6 @@
 const techStack = () => {
 	return (
-		<div class='container text-zinc-700 mt-4 mx-auto dark:text-white'>
+		<div class='container text-zinc-700 lg:mt-6 mt-4 mx-auto dark:text-zinc-300'>
 			<ul class='grid grid-cols-6 xl:grid-cols-6 gap-1'>
 				{/* <!-- HTML --> */}
 				<li class='p-1 rounded-md text-center'>

@@ -73,21 +73,21 @@ function NavBar(props) {
 				} overflow-hidden transition-all duration-300 basis-full grow sm:block`}>
 				<div className='flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5'>
 					<button
-						className='font-sm text-zinc-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+						className='font-m text-zinc-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
 						onClick={() =>
 							handleLinkClick('about')
 						}>
 						about
 					</button>
 					<button
-						className='font-sm text-zinc-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+						className='font-m text-zinc-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
 						onClick={() =>
 							handleLinkClick('projects')
 						}>
 						projects
 					</button>
 					<button
-						className='font-sm text-zinc-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
+						className='font-m text-zinc-600 hover:text-indigo-600 dark:text-gray-300 dark:hover:text-indigo-600 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600'
 						onClick={() =>
 							handleLinkClick('contact')
 						}>

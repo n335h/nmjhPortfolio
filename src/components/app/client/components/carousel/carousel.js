@@ -118,7 +118,7 @@ const Carousel = () => {
 						projects!
 					</h1>
 					<span className='flex items-center w-full'>
-						<h2 className='slideTitlet dark:text-indigo-600 text-2xl mb-2 font-bold'>
+						<h2 className='slideTitlet dark:text-indigo-600 text-2xl mb-2 pt-2 font-bold'>
 							{currentSlide.title}
 						</h2>
 						<a
@@ -140,7 +140,7 @@ const Carousel = () => {
 						</a>
 					</span>
 
-					<p className='text-zinc-600 w-5/6 text-lg  dark:text-zinc-300'>
+					<p className='text-zinc-600 lg:w-5/6 w-full text-lg  dark:text-zinc-300'>
 						{currentSlide.description}
 					</p>
 					<div className='techStack mt-2'>

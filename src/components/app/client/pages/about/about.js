@@ -11,7 +11,7 @@ const About = () => {
 					className='absolute inset-0 w-full h-full object-cover transition-transform transform scale-100  lg:scale-155'
 				/>
 			</div>
-			<div className='w-full px-4 py-12 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-16 flex items-center justify-center'>
+			<div className='w-full px-4 py-2 sm:px-6 sm:py-16 lg:w-1/2 lg:px-8 lg:py-16 flex items-center justify-center'>
 				<div className='mx-auto lg:w-5/6 text-center'>
 					<h1 className='text-2xl text-indigo-600 m-2 font-bold sm:text-3xl'>
 						hello!

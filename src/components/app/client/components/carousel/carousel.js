@@ -108,24 +108,9 @@ const Carousel = () => {
 	const currentSlide = slideData[activeSlide];
 
 	return (
-		<div className='ProjectContainer bg-gray-200 dark:bg-zinc-900 py-16'>
-			<div className='main flex p-10 w-full items-center justify-center'>
-				<div className='swiper w-4/6 max-w-2xl'>
-					<div className='swiper-wrapper'>
-						{slideData.map((slide, index) => (
-							<div
-								key={index}
-								className={`swiper-slide swiper-slide--${
-									index + 1
-								}`}>
-								{/* Your slide content */}
-							</div>
-						))}
-					</div>
-					<div className='swiper-pagination'></div>
-				</div>
-
-				<div className='slideInfo w-1/2 ml-4'>
+		<div className='ProjectContainer items-center justify-center bg-gray-200 dark:bg-zinc-900 py-16'>
+			<div className='main flex  p-10 w-full items-center justify-center'>
+				<div className='slideInfo w-1/3 ml-4'>
 					<span className='slideHeader'>
 						<h2 className='slideTitle dark:text-indigo-600 text-2xl font-bold'>
 							{currentSlide.title}
@@ -142,14 +127,14 @@ const Carousel = () => {
 							/>
 						</a>
 					</span>
-					<p className='text-zinc-600 dark:text-zinc-300'>
+					<p className='text-zinc-600 text-lg dark:text-zinc-300'>
 						{currentSlide.description}
 					</p>
 					<div className='techStack mt-4'>
 						<h3 className='text-lg text-zinc-400 dark:text-zinc-400 font-semibold'>
 							tech stack
 						</h3>
-						<p className='text-zinc-400 dark:text-zinc-400'>
+						<p className='text-zinc-400 text-lg  dark:text-zinc-400'>
 							{currentSlide.techStack}
 						</p>
 					</div>
@@ -160,6 +145,20 @@ const Carousel = () => {
 						rel='noopener noreferrer'>
 						live site
 					</a>
+				</div>
+				<div className='swiper w-4/6 max-w-2xl'>
+					<div className='swiper-wrapper'>
+						{slideData.map((slide, index) => (
+							<div
+								key={index}
+								className={`swiper-slide swiper-slide--${
+									index + 1
+								}`}>
+								{/* Your slide content */}
+							</div>
+						))}
+					</div>
+					<div className='swiper-pagination'></div>
 				</div>
 			</div>
 		</div>

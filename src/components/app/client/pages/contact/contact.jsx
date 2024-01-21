@@ -6,6 +6,11 @@ const Contact = () => {
 		useState(false);
 	const form = useRef();
 
+	const openResumeInNewWindow = () => {
+		const pdfUrl = '/assets/resume.pdf'; // Replace with the correct path to your PDF
+		window.open(pdfUrl, '_blank');
+	};
+
 	const sendEmail = (e) => {
 		e.preventDefault();
 
@@ -45,7 +50,9 @@ const Contact = () => {
 							<div className='text-center flex justify-center w-full mt-4'>
 								<a
 									className='mx-1.5 dark:hover:text-indigo-400 text-gray-400 transition-colors duration-300 transform hover:text-indigo-600'
-									href='#'>
+									href='https://www.linkedin.com/in/nichhorishny'
+									target='_blank'
+									rel='noopener noreferrer'>
 									<svg
 										className='w-8 h-8'
 										viewBox='0 0 24 24'
@@ -69,7 +76,9 @@ const Contact = () => {
 
 								<a
 									className='mx-1.5 dark:hover:text-indigo-600 text-gray-400 transition-colors duration-300 transform hover:text-indigo-600'
-									href='#'>
+									href='https://github.com/n335h'
+									target='_blank'
+									rel='noopener noreferrer'>
 									<svg
 										className='w-8 h-8'
 										viewBox='0 0 24 24'
@@ -81,6 +90,25 @@ const Contact = () => {
 										/>
 									</svg>
 									/n335h
+								</a>
+								<a
+									className='mx-1.5 dark:hover:text-indigo-600 text-gray-400 transition-colors duration-300 transform hover:text-indigo-600'
+									href='#'
+									onClick={openResumeInNewWindow}>
+									<svg
+										className='w-8 h-8'
+										viewBox='0 0 24 24'
+										fill='none'
+										xmlns='http://www.w3.org/2000/svg'>
+										<path
+											d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 16c-3.313 0-6-2.687-6-6s2.687-6 6-6 6 2.687 6 6-2.687 6-6 6zm-1-10h2v4h-2zm1 4.906c-.547 0-1-.453-1-1s.453-1 1-1 1 .453 1 1-.453 1-1 1z'
+											fill='currentColor'
+										/>
+									</svg>
+									{/* Optional: Text for the link */}
+									<span className='ml-1'>
+										View Resume
+									</span>
 								</a>
 							</div>
 						</div>
@@ -111,6 +139,7 @@ const Contact = () => {
 									<input
 										title='name'
 										type='text'
+										name='name' // Add this line with the correct name attribute
 										placeholder='John Doe'
 										className='block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-200 dark:text-gray-300 dark:border-gray-700 focus:border-indigo-400 dark:focus:border-indigo-400 focus:ring-indigo-400 focus:outline-none focus:ring focus:ring-opacity-40'
 									/>
@@ -125,6 +154,7 @@ const Contact = () => {
 									<input
 										title='email'
 										type='email'
+										name='email' // Add this line with the correct name attribute
 										placeholder='johndoe@example.com'
 										className='block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-200 dark:text-gray-300 dark:border-gray-700 focus:border-indigo-400 dark:focus:border-indigo-400 focus:ring-indigo-400 focus:outline-none focus:ring focus:ring-opacity-40'
 									/>
@@ -139,6 +169,7 @@ const Contact = () => {
 									<textarea
 										title='userMessage'
 										type='text'
+										name='message' // Add this line with the correct name attribute
 										className='block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-200 dark:text-gray-300 '
 										placeholder='Message'></textarea>
 								</div>

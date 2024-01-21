@@ -2,15 +2,16 @@ import React, {
 	useState,
 	useEffect,
 } from 'react';
-
 import ThemeToggle from '../themeToggle';
+import HamburgerMenu from '../hamburgerMenu/hamburgerMenu';
 
 function NavBar(props) {
 	const { toggleDarkMode } = props;
 	const [isMenuOpen, setIsMenuOpen] =
 		useState(false);
-	const [isSocialHovered, setIsSocialHovered] =
-		useState(false);
+	const [windowWidth, setWindowWidth] = useState(
+		window.innerWidth
+	);
 
 	const handleLinkClick = (sectionId) => {
 		const section =
@@ -22,15 +23,49 @@ function NavBar(props) {
 		}
 	};
 
+	const handleToggleMenu = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
+
+	useEffect(() => {
+		const handleResize = () => {
+			setWindowWidth(window.innerWidth);
+		};
+
+		window.addEventListener(
+			'resize',
+			handleResize
+		);
+
+		return () => {
+			window.removeEventListener(
+				'resize',
+				handleResize
+			);
+		};
+	}, []);
+
 	return (
 		<nav
-			className={`drop-shadow-lg bg-white fixed top-0 left-0 p-2 z-50 w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between  dark:bg-zinc-950`}
+			className={`navbar ${
+				isMenuOpen ? 'open' : ''
+			} drop-shadow-lg bg-white fixed top-0 left-0 p-2 z-50 w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between  dark:bg-zinc-950`}
 			aria-label='Global'>
-			<div className='flex items-center justify-between'>
-				<ThemeToggle
-					toggleDarkMode={toggleDarkMode}
-				/>
+			<div className='flex items-center justify-between w-full'>
+				<div className='flex items-center'>
+					<ThemeToggle
+						toggleDarkMode={toggleDarkMode}
+					/>
+				</div>
+				{windowWidth <= 768 && (
+					<div className='flex items-center'>
+						<HamburgerMenu
+							handleToggleMenu={handleToggleMenu}
+						/>
+					</div>
+				)}
 			</div>
+
 			<div
 				id='navbar-image-and-text-2'
 				className={`hs-collapse ${
@@ -60,7 +95,6 @@ function NavBar(props) {
 					</button>
 				</div>
 			</div>
-			
 		</nav>
 	);
 }

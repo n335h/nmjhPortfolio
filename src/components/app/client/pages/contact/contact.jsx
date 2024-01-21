@@ -125,11 +125,11 @@ const Contact = () => {
 					</div>
 
 					<div className='mt-2 lg:mt-8 lg:w-1/2 lg:mx-6'>
-						<div className='w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-zinc-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50'>
+						<div className='w-full px-8 py-4 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-zinc-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50'>
 							<form
 								action='/send-email'
 								method='post'
-								className='mt-6'
+								className='mt-2 lg:mt-6'
 								ref={form}
 								onSubmit={sendEmail}>
 								<div className='flex-1'>

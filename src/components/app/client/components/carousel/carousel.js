@@ -108,7 +108,7 @@ const Carousel = () => {
 	const currentSlide = slideData[activeSlide];
 
 	return (
-		<div className='items-center justify-center pt-0 lg:pt-10 bg-zinc-200 dark:bg-zinc-900 py-5'>
+		<div className='items-center justify-center pt-5 lg:pt-5 bg-zinc-200 dark:bg-zinc-900 py-5'>
 			<h1 className='w-full mb-4 text-center lg:text-left text-2xl text-indigo-600 font-bold sm:text-3xl lg:hidden'>
 				projects!
 			</h1>
@@ -118,7 +118,7 @@ const Carousel = () => {
 						projects!
 					</h1>
 					<span className='flex items-center w-full'>
-						<h2 className='slideTitlet dark:text-indigo-600 text-2xl mb-2 pt-2 font-bold'>
+						<h2 className='slideTitlet text-indigo-600 text-2xl mb-2 pt-2 font-bold'>
 							{currentSlide.title}
 						</h2>
 						<a
@@ -127,8 +127,8 @@ const Carousel = () => {
 							target='_blank'
 							rel='noopener noreferrer'>
 							<svg
-								className='h-5 w-6'
-								fill='currentColor'
+								className='h-6 w-6'
+								fill='#4f46e5'
 								viewBox='0 0 24 24'
 								aria-hidden='true'>
 								<path

@@ -28,11 +28,11 @@ const LandingPage = () => {
 						</a>
 					</div>
 				</div>
-				<div class='mt-8 flex flex-wrap justify-center gap-4'>
+				{/* <div class='mt-8 flex flex-wrap justify-center gap-4'>
 					<div className='mouse-icon animate-pop-in mt-8'>
 						<div className='wheel'></div>
 					</div>
-				</div>
+				</div> */}
 			</div>
 		</section>
 	);

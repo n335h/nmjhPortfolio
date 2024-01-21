@@ -68,7 +68,7 @@ const techStack = () => {
 				</li>
 				{/* <!-- npm --> */}
 				<li class='p-1 rounded-md text-center'>
-					<i class='devicon-npm-original-wordmark text-4xl mb-2'></i>
+					<i class='devicon-npm-original-wordmark text-4xl'></i>
 				</li>
 			</ul>
 		</div>

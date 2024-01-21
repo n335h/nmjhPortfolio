@@ -108,11 +108,14 @@ const Carousel = () => {
 	const currentSlide = slideData[activeSlide];
 
 	return (
-		<div className='ProjectContainer items-center justify-center bg-gray-200 dark:bg-zinc-900 py-16'>
+		<div className='ProjectContainer items-center justify-center bg-white dark:bg-zinc-900 py-16'>
 			<div className='main flex  p-10 w-full items-center justify-center'>
 				<div className='slideInfo w-1/3 ml-4'>
+					<h1 className='w-1/3 mb-4 text-xl text-indigo-600 font-bold sm:text-3xl'>
+						projects!
+					</h1>
 					<span className='slideHeader'>
-						<h2 className='slideTitle dark:text-indigo-600 text-2xl font-bold'>
+						<h2 className='slideTitle dark:text-indigo-600 text-2xl mb-2 font-bold'>
 							{currentSlide.title}
 						</h2>
 						<a
@@ -130,7 +133,7 @@ const Carousel = () => {
 					<p className='text-zinc-600 text-lg dark:text-zinc-300'>
 						{currentSlide.description}
 					</p>
-					<div className='techStack mt-4'>
+					<div className='techStack mt-2'>
 						<h3 className='text-lg text-zinc-400 dark:text-zinc-400 font-semibold'>
 							tech stack
 						</h3>

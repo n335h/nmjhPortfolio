@@ -9,6 +9,8 @@ function NavBar(props) {
 	const { toggleDarkMode } = props;
 	const [isMenuOpen, setIsMenuOpen] =
 		useState(false);
+	const [isSocialHovered, setIsSocialHovered] =
+		useState(false);
 
 	const handleLinkClick = (sectionId) => {
 		const section =
@@ -58,6 +60,7 @@ function NavBar(props) {
 					</button>
 				</div>
 			</div>
+			
 		</nav>
 	);
 }

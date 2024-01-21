@@ -7,7 +7,7 @@ const Contact = () => {
 	const form = useRef();
 
 	const openResumeInNewWindow = () => {
-		const pdfUrl = '/assets/resume.pdf'; // Replace with the correct path to your PDF
+		const pdfUrl = '/resume.pdf'; // Update the path to point directly to the PDF file
 		window.open(pdfUrl, '_blank');
 	};
 
@@ -24,7 +24,7 @@ const Contact = () => {
 			.then(
 				(result) => {
 					console.log(result.text);
-					console.log('success');
+					console.log(form.current);
 					form.current.reset();
 					setMessageSent(true);
 					setTimeout(
@@ -107,7 +107,7 @@ const Contact = () => {
 									</svg>
 									{/* Optional: Text for the link */}
 									<span className='ml-1'>
-										View Resume
+										resume
 									</span>
 								</a>
 							</div>

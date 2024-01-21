@@ -5,6 +5,7 @@ import About from '../app/client/pages/about/about';
 import Projects from '../app/client/pages/projects/projects';
 import Contact from '../app/client/pages/contact/contact';
 import Footer from '../app/client/components/footer/footer';
+// import SocialTab from '../app/client/components/socialTab/socialTab';
 
 import {
 	BrowserRouter,
@@ -51,6 +52,7 @@ function App() {
 					className='section'>
 					<Contact />
 				</section>
+				{/* <SocialTab /> */}
 				<section
 					id='section'
 					className='section'>

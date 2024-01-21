@@ -1,5 +1,8 @@
 import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
+import dotenv from 'dotenv';
+
+dotenv.config();
 
 const Contact = () => {
 	const [messageSent, setMessageSent] =
@@ -16,10 +19,10 @@ const Contact = () => {
 
 		emailjs
 			.sendForm(
-				'service_pkd2rcg',
-				'template_dd9hxhc',
+				process.env.SERVICE_ID,
+				process.env.TEMPLATE,
 				form.current,
-				'5zGhg0yEoqXwH93ki'
+				process.env.PASSCODE
 			)
 			.then(
 				(result) => {

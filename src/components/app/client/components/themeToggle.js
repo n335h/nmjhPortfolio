@@ -33,7 +33,7 @@ const ThemeToggle = () => {
 			<img
 				src={darkMode ? sun : moon}
 				alt={darkMode ? 'Moon' : 'Sun'}
-				className='w-5 h-5' // Adjust the width and height as needed
+				className='w-5 h-5 drop-shadow-lg' // Adjust the width and height as needed
 			/>
 		</button>
 	);

@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react';
-import 'animate.css'; // Import animate.css library
 
 const LandingPage = () => {
 	useEffect(() => {
@@ -16,7 +15,9 @@ const LandingPage = () => {
 		<section
 			id='landing-section'
 			className='bg-gray-100 dark:bg-zinc-950 drop-shadow-lg'>
-			<div className='mx-auto max-w-full-xl px-4 py-32 lg:flex lg:h-screen lg:items-center'>
+			<div
+				className='mx-auto max-w-full-xl px-4 py-32 lg:flex lg:h-screen lg:items-center animate-fadeIn'
+				data-te-animation-start='load'>
 				<div className='mx-auto max-w-xl text-center'>
 					<h1 className='text-4xl text-zinc-600 dark:text-zinc-300 font-extrabold sm:text-5xl'>
 						Nicholas Horishny

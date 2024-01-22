@@ -108,13 +108,13 @@ const Carousel = () => {
 	const currentSlide = slideData[activeSlide];
 
 	return (
-		<div className='items-center justify-center pt-5 lg:pt-5 bg-zinc-200 dark:bg-zinc-900 py-5'>
+		<div className='items-center justify-center p-5 lg:p-10 bg-zinc-200 dark:bg-zinc-900 '>
 			<h1 className='w-full mb-4 text-center lg:text-left text-2xl text-indigo-600 font-bold sm:text-3xl lg:hidden'>
 				projects!
 			</h1>
 			<div className='main flex flex-col-reverse lg:flex-row p-5 pt-0 w-full items-center justify-center'>
 				<div className='slideInfo w-full lg:w-2/3 ml-4'>
-					<h1 className='w-full  text-center lg:text-left text-indigo-600 font-bold text-2xl lg:text-3xl hidden lg:block'>
+					<h1 className='w-full mb-10 text-center lg:text-left text-indigo-600 font-bold text-2xl lg:text-3xl hidden lg:block'>
 						projects!
 					</h1>
 					<span className='flex items-center w-full mt-5'>

@@ -4,6 +4,8 @@ import emailjs from '@emailjs/browser';
 const Contact = () => {
 	const [messageSent, setMessageSent] =
 		useState(false);
+	const [loading, setLoading] = useState(false);
+
 	const form = useRef();
 
 	const openResumeInNewWindow = () => {
@@ -13,6 +15,8 @@ const Contact = () => {
 
 	const sendEmail = (e) => {
 		e.preventDefault();
+
+		setLoading(true);
 
 		emailjs
 			.sendForm(
@@ -29,11 +33,12 @@ const Contact = () => {
 					setMessageSent(true);
 					setTimeout(
 						() => setMessageSent(false),
-						5000
-					);
+						1000
+					); // Change duration as needed
 				},
 				(error) => {
 					console.log(error.text);
+					setMessageSent(false);
 				}
 			);
 	};
@@ -143,7 +148,7 @@ const Contact = () => {
 										title='name'
 										type='text'
 										name='name' // Add this line with the correct name attribute
-										placeholder='John Doe'
+										placeholder='Name'
 										className='block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-200 dark:text-gray-300 dark:border-gray-700 focus:border-indigo-400 dark:focus:border-indigo-400 focus:ring-indigo-400 focus:outline-none focus:ring focus:ring-opacity-40'
 									/>
 								</div>
@@ -158,7 +163,7 @@ const Contact = () => {
 										title='email'
 										type='email'
 										name='email' // Add this line with the correct name attribute
-										placeholder='johndoe@example.com'
+										placeholder='Email'
 										className='block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-200 dark:text-gray-300 dark:border-gray-700 focus:border-indigo-400 dark:focus:border-indigo-400 focus:ring-indigo-400 focus:outline-none focus:ring focus:ring-opacity-40'
 									/>
 								</div>
@@ -185,6 +190,16 @@ const Contact = () => {
 							</form>
 						</div>
 					</div>
+
+					{messageSent && (
+						<div className='fixed inset-0 flex items-center justify-center'>
+							<div className='bg-white p-4 rounded-lg shadow-md'>
+								<p className='text-green-500'>
+									Email sent successfully!
+								</p>
+							</div>
+						</div>
+					)}
 				</div>
 			</div>
 		</section>

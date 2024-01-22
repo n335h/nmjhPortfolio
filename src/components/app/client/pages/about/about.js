@@ -37,7 +37,7 @@ const About = () => {
 					</p>
 					<a
 						href='/contact'
-						className='drop-shadow-lg lg:mt-6 mt-5 border border-2 text-lg inline-block rounded-full border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:border-indigo-600 hover:text-indigo-600 hover:bg-transparent dark:hover:bg-transparent dark:hover:text-indigo-600 focus:outline-none focus:ring active:bg-indigo-500'>
+						className='drop-shadow-lg lg:mt-6 mt-4 border border-2 text-lg inline-block rounded-full border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:border-indigo-600 hover:text-indigo-600 hover:bg-transparent dark:hover:bg-transparent dark:hover:text-indigo-600 focus:outline-none focus:ring active:bg-indigo-500'>
 						contact
 					</a>
 					<TechStack />

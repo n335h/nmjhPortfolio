@@ -43,10 +43,10 @@ const Contact = () => {
 			<div className='container items-center px-6 py-12 mx-auto'>
 				<div className='lg:flex lg:items-center lg:-mx-6'>
 					<div className='text-center flex flex-col items-center justify-center h-full lg:w-1/2 lg:mx-6 mx-auto '>
-						<h1 className=' mb-5 lg:mb-2 text-indigo-600 font-bold text-2xl lg:text-3xl'>
+						<h1 className=' lg:mb-2 text-indigo-600 font-bold text-2xl lg:text-3xl'>
 							get in touch!
 						</h1>
-						<div className='text-center items-center justify-center flex flex-row w-1/2'>
+						<div className='mt-5 text-center items-center justify-center flex flex-row w-1/2'>
 							<div className='flex flex-col items-center justify-center lg:mt-8 mt-4'>
 								<a
 									className='mx-1.5 dark:hover:text-indigo-400 text-gray-400 transition-colors duration-300 transform hover:text-indigo-600'
@@ -116,7 +116,7 @@ const Contact = () => {
 							</div>
 						</div>
 
-						<div className='text-center mt-4 space-y-8 lg:mt-8'>
+						<div className='text-center mt-2 space-y-8 lg:mt-8'>
 							<p className='text-zinc-600 w-full dark:text-gray-300'>
 								Feel free to contact me using the
 								form or find me through one of the
@@ -125,7 +125,7 @@ const Contact = () => {
 						</div>
 					</div>
 
-					<div className='mt-2 lg:mt-8 lg:w-1/2 lg:mx-6'>
+					<div className='mt-5 lg:mt-8 lg:w-1/2 lg:mx-6'>
 						<div className='w-full px-8 py-4 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-zinc-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50'>
 							<form
 								action='/send-email'

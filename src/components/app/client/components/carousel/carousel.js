@@ -112,7 +112,7 @@ const Carousel = () => {
 			<h1 className='w-full mb-4 text-center lg:text-left text-2xl text-indigo-600 font-bold sm:text-3xl lg:hidden'>
 				projects!
 			</h1>
-			<div className='main flex flex-col-reverse lg:flex-row p-5 pt-0 w-full items-center justify-center'>
+			<div className='main flex flex-col-reverse lg:flex-row p-0 pt-0 w-full items-center justify-center'>
 				<div className='slideInfo w-full lg:w-2/3 ml-4'>
 					<h1 className='w-full mb-10 text-center lg:text-left text-indigo-600 font-bold text-2xl lg:text-3xl hidden lg:block'>
 						projects!
@@ -152,7 +152,7 @@ const Carousel = () => {
 						</p>
 					</div>
 				</div>
-				<div className='swiper w-full lg:w-4/6  max-w-2xl'>
+				<div className='swiper w-full lg:w-4/6  '>
 					<div className='swiper-wrapper'>
 						{slideData.map((slide, index) => (
 							<div

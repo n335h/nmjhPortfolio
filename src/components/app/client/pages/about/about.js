@@ -26,11 +26,11 @@ const About = () => {
 						I’ve primarily focused on React,
 						JavaScript, TypeScript,
 					</p>
-					<p className='w-6/6 lg:w-5/6  mx-auto lg:mt-6 mt-5 text-m lg:text-xl  text-zinc-600 dark:text-gray-300'>
+					{/* <p className='w-6/6 lg:w-5/6  mx-auto lg:mt-6 mt-5 text-m lg:text-xl  text-zinc-600 dark:text-gray-300'>
 						Now I'm all set to bring my creative
 						skills and tech know-how together for
 						this exciting new
-					</p>
+					</p> */}
 					<p className='w-6/6 lg:w-5/6 mx-auto lg:mt-6 mt-5 text-m lg:text-xl  text-zinc-600 dark:text-gray-300'>
 						Looking forward to making things
 						happen!

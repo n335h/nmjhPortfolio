@@ -54,14 +54,14 @@
 }
 
 .swiper-slide--1 {
-  width: 70vw; /* Set width to take the full width of the viewport */
+  width: 80vw; /* Set width to take the full width of the viewport */
   height: 60vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://live.staticflickr.com/65535/53470588587_b22ab69209_b.jpg")
     no-repeat 50% 50% / cover;
 }
 .swiper-slide--2 {
-  width: 70vw; /* Set width to take the full width of the viewport */
+  width: 80vw; /* Set width to take the full width of the viewport */
   height: 60vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/soc_byteclub_paprback/blob/main/paprback.png?raw=true")
@@ -70,7 +70,7 @@
 
 
 .swiper-slide--3 {
-  width: 70vw; /* Set width to take the full width of the viewport */
+  width: 80vw; /* Set width to take the full width of the viewport */
   height: 60vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/portfolioSite/blob/main/Images/RPS.png?raw=true")
@@ -78,7 +78,7 @@
 }
 
 .swiper-slide--4 {
-  width: 70vw; /* Set width to take the full width of the viewport */
+  width: 80vw; /* Set width to take the full width of the viewport */
   height: 60vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     url("https://github.com/n335h/ReactWeatherApp/blob/main/Screenshot%202023-07-17%20135541.png?raw=true")

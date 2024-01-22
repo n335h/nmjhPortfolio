@@ -114,11 +114,11 @@ const Carousel = () => {
 			</h1>
 			<div className='main flex flex-col-reverse lg:flex-row p-5 pt-0 w-full items-center justify-center'>
 				<div className='slideInfo w-full lg:w-2/3 ml-4'>
-					<h1 className='w-full mb-4 text-center lg:text-left text-xl text-indigo-600 font-bold sm:text-3xl hidden lg:block'>
+					<h1 className='w-full mb-4 text-center lg:text-left text-indigo-600 font-bold text-2xl lg:text-3xl hidden lg:block'>
 						projects!
 					</h1>
 					<span className='flex items-center w-full'>
-						<h2 className='slideTitlet text-indigo-600 text-2xl mb-2 pt-2 font-bold'>
+						<h2 className='slideTitle text-2xl lg:text-3xl text-indigo-600  mb-2 pt-2 font-bold'>
 							{currentSlide.title}
 						</h2>
 						<a

@@ -43,7 +43,7 @@ const Contact = () => {
 			<div className='container items-center px-6 py-12 mx-auto'>
 				<div className='lg:flex lg:items-center lg:-mx-6'>
 					<div className='text-center flex flex-col items-center justify-center h-full lg:w-1/2 lg:mx-6 mx-auto '>
-						<h1 className='text-2xl text-indigo-600 font-bold sm:text-3xl'>
+						<h1 className=' mb-5 lg:mb-2 text-indigo-600 font-bold text-2xl lg:text-3xl'>
 							get in touch!
 						</h1>
 						<div className='text-center items-center justify-center flex flex-row w-1/2'>
@@ -179,7 +179,7 @@ const Contact = () => {
 
 								<button
 									type='submit'
-									className='mt-4 border border-4 inline-block rounded-full  border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:border-indigo-600  hover:text-indigo-600 hover:bg-transparent dark:hover:bg-transparent dark:hover:text-indigo-600 focus:outline-none focus:ring active:bg-indigo-500'>
+									className='mt-4 border border-2 inline-block rounded-full  border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:border-indigo-600  hover:text-indigo-600 hover:bg-transparent dark:hover:bg-transparent dark:hover:text-indigo-600 focus:outline-none focus:ring active:bg-indigo-500'>
 									submit
 								</button>
 							</form>

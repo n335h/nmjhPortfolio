@@ -1,10 +1,10 @@
 import React from 'react';
-import Navbar from '../app/client/components/navBar/navBar';
-import LandingPage from '../app/client/pages/landing/landing';
-import About from '../app/client/pages/about/about';
-import Projects from '../app/client/pages/projects/projects';
-import Contact from '../app/client/pages/contact/contact';
-import Footer from '../app/client/components/footer/footer';
+import Navbar from './client/components/navBar/navBar';
+import LandingPage from './client/pages/landing/landing';
+import About from './client/pages/about/about';
+import Projects from './client/projects/projects';
+import Contact from './client/pages/contact/contact';
+import Footer from './client/components/footer/footer';
 // import SocialTab from '../app/client/components/socialTab/socialTab';
 
 import {

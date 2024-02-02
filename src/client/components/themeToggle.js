@@ -4,8 +4,8 @@ import React, {
 	useEffect,
 } from 'react';
 
-import moon from '../../../../assets/moon.png';
-import sun from '../../../../assets/sun.png';
+import moon from '../../assets/moon.png';
+import sun from '../../assets/sun.png';
 
 const ThemeToggle = () => {
 	const [darkMode, setDarkMode] = useState(false);

@@ -22,7 +22,7 @@ const LandingPage = () => {
 					<h1 className='text-4xl text-zinc-600 dark:text-zinc-300 font-extrabold sm:text-5xl'>
 						Nicholas Horishny
 						<h2 className='font-bold text-indigo-700 text-2xl lg:text-3xl sm:block'>
-							Junior Software Developer
+							Software Developer
 						</h2>
 					</h1>
 

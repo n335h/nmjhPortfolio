@@ -1,16 +1,6 @@
 import React, { useEffect } from 'react';
 
 const LandingPage = () => {
-	useEffect(() => {
-		// Add the animate.css classes after the component mounts
-		const landingSection =
-			document.getElementById('landing-section');
-		landingSection.classList.add(
-			'animate__animated',
-			'animate__fadeIn'
-		);
-	}, []);
-
 	return (
 		<section
 			id='landing-section'
@@ -29,13 +19,13 @@ const LandingPage = () => {
 					<div className='mt-2 flex flex-wrap justify-center gap-4'>
 						<a
 							href='#projects'
-							className='mt-4 drop-shadow-lg border border-2 inline-block rounded-full  border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:border-indigo-600  hover:text-indigo-600 hover:bg-transparent dark:hover:bg-transparent dark:hover:text-indigo-600 focus:outline-none focus:ring active:bg-indigo-500'>
+							className='mt-4 drop-shadow-m border border-2 inline-block rounded-full  border-indigo-600 bg-indigo-600 px-12 py-3 text-sm font-medium text-white hover:border-indigo-600  hover:text-indigo-600 hover:bg-transparent dark:hover:bg-transparent dark:hover:text-indigo-600 focus:outline-none focus:ring active:bg-indigo-500'>
 							projects
 						</a>
 
 						<a
 							href='#contact'
-							className='mt-4 border drop-shadow-lg border-2 inline-block rounded-full  border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white dark:border-indigo-600 dark:hover:bg-indigo-600 dark:hover:text-gray-300  focus:outline-none focus:ring active:bg-indigo-500'>
+							className='mt-4 border drop-shadow-m border-2 inline-block rounded-full  border-indigo-600 px-12 py-3 text-sm font-medium text-indigo-600 hover:bg-indigo-600 hover:text-white dark:border-indigo-600 dark:hover:bg-indigo-600 dark:hover:text-gray-300  focus:outline-none focus:ring active:bg-indigo-500'>
 							contact
 						</a>
 					</div>

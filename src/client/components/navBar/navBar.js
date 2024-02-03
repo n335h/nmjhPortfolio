@@ -49,7 +49,7 @@ function NavBar(props) {
 		<nav
 			className={`navbar ${
 				isMenuOpen ? 'open' : ''
-			} drop-shadow-lg bg-white fixed top-0 left-0 p-2 z-50 w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between  dark:bg-zinc-950`}
+			} drop-shadow-m bg-white fixed top-0 left-0 p-2 z-50 w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between  dark:bg-zinc-950`}
 			aria-label='Global'>
 			<div className='flex items-center justify-between w-full'>
 				<div className='flex items-center'>

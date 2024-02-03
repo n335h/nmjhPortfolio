@@ -104,7 +104,6 @@ const Carousel = () => {
 				'https://main--nhweatherapi.netlify.app/',
 		},
 	];
-
 	const currentSlide = slideData[activeSlide];
 
 	return (

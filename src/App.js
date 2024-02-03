@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from './client/components/navBar/navBar';
 import LandingPage from './client/pages/landing/landing';
 import About from './client/pages/about/about';
-import Projects from './client/projects/projects';
+import Projects from './client/pages/projects';
 import Contact from './client/pages/contact/contact';
 import Footer from './client/components/footer/footer';
 // import SocialTab from '../app/client/components/socialTab/socialTab';

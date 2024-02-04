@@ -4,7 +4,6 @@
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
-    "@testing-library/jest-dom": "^5.16.5",
     "axios": "^1.6.5",
     "browser-router": "^0.2.0",
     "cors": "^2.8.5",

@@ -73,6 +73,8 @@ const Carousel = () => {
 			githubLink:
 				'https://github.com/n335h/doggystuff',
 			livesite: 'https://doggystuff.netlify.app/',
+			video:
+				'https://www.youtube.com/watch?v=3zvz5z3zvz',
 		},
 		{
 			title: 'paprback - Group Project (5)',
@@ -83,6 +85,8 @@ const Carousel = () => {
 			githubLink:
 				'https://github.com/n335h/soc_byteclub_paprback',
 			livesite: 'https://bcpaprback.netlify.app/',
+			video:
+				'https://www.youtube.com/watch?v=3zvz5z3zvz',
 		},
 		{
 			title:
@@ -92,6 +96,7 @@ const Carousel = () => {
 			techStack: 'HTML, CSS, React.js , Node.js',
 			githubLink: 'https://github.com/n335h/RPS',
 			livesite: 'https://nhrps.netlify.app',
+			gif: '/website/Images/RPS.gif',
 		},
 		{
 			title: 'open weather API - Solo Project',
@@ -102,6 +107,7 @@ const Carousel = () => {
 				'https://github.com/n335h/ReactWeatherApp/tree/main',
 			livesite:
 				'https://main--nhweatherapi.netlify.app/',
+			gif: '../../../../public/weatherApi.gif',
 		},
 	];
 	const currentSlide = slideData[activeSlide];
@@ -160,6 +166,14 @@ const Carousel = () => {
 									index + 1
 								}`}>
 								{/* Your slide content */}
+								<img
+									src={slide.gif}
+									alt={slide.title}
+									style={{
+										width: '100%',
+										height: 'auto',
+									}}
+								/>
 							</div>
 						))}
 					</div>

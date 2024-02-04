@@ -107,7 +107,7 @@ const Carousel = () => {
 				'https://github.com/n335h/ReactWeatherApp/tree/main',
 			livesite:
 				'https://main--nhweatherapi.netlify.app/',
-			gif: '../../../../public/weatherApi.gif',
+			gif: 'https://raw.githubusercontent.com/n335h/nmjhPortfolio/carouselTest/public/weatherApi.gif',
 		},
 	];
 	const currentSlide = slideData[activeSlide];

@@ -147,10 +147,10 @@ const Carousel = () => {
 						{currentSlide.description}
 					</p>
 					<div className='techStack mt-2'>
-						<h3 className='text-lg text-zinc-400 dark:text-zinc-400 font-semibold mt-5'>
+						<h3 className='text-lg text-zinc-500 dark:text-zinc-400 font-semibold mt-5'>
 							tech stack
 						</h3>
-						<p className='text-zinc-400 text-m lg:text-xl  dark:text-zinc-400'>
+						<p className='text-zinc-500 text-m lg:text-xl  dark:text-zinc-400'>
 							{currentSlide.techStack}
 						</p>
 					</div>
@@ -163,7 +163,6 @@ const Carousel = () => {
 								className={`swiper-slide swiper-slide--${
 									index + 1
 								}`}>
-								{/* Your slide content */}
 								<img
 									src={slide.gif}
 									alt={slide.title}

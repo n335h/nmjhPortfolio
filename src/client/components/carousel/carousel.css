@@ -1,83 +1,52 @@
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
+.swiper-pagination-bullet, .swiper-pagination-bullet-active {
   background: #fff;
   scale: 3;
 }
 
-.swiper-pagination-bullet
- {
+.swiper-pagination-bullet {
   background: #acacac;
   opacity: 0.5;
   margin: 0 0.5rem;
-  transform: scaleY(0.3) ScaleX(0.3);
- 
- }
+  transform: scaleY(0.3) scaleX(0.3);
+}
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
   opacity: 0.6;
   background: #f1f1f1;
-  transform: scaleY(0.45) ScaleX(0.45);
-
+  transform: scaleY(0.45) scaleX(0.45);
 }
+
 .swiper-container-pagination {
   z-index: 10;
   color: #dadada;
-  width: 20%; /* You can adjust this width as per your design */
+  width: 20%;
 }
 
-
-
-.swiper-slide-prev,
-.swiper-slide-next {
- 
-  opacity: 0.1; 
+.swiper-slide-prev, .swiper-slide-next {
+  opacity: 0.1;
 }
 
 .swiper-slide-active {
-
   z-index: 1;
   transform: scale(1);
-
 }
-
 
 .swiper-slide-active div {
   display: block;
   opacity: 1;
-  
 }
 
-.swiper-slide--1 {
-  width: 80vw; /* Set width to take the full width of the viewport */
-  height: auto; /* Set height to take the full height of the viewport */
-  background: linear-gradient(to top, #161616, #49494910, #86868623),
-    no-repeat 50% 50% / cover;
-}
-.swiper-slide--2 {
-  width: 80vw; /* Set width to take the full width of the viewport */
-  height: auto; /* Set height to take the full height of the viewport */
-  background: linear-gradient(to top, #161616, #49494910, #86868623),
-    no-repeat 50% 50% / cover;
+.swiper-slide--1, .swiper-slide--2, .swiper-slide--3, .swiper-slide--4 {
+  width: 80vw;
+  height: auto;
+  background: linear-gradient(to top, #161616, #49494910, #86868623) no-repeat 50% 50% / cover;
 }
 
-
-.swiper-slide--3 {
-  width: 80vw; /* Set width to take the full width of the viewport */
-  height: auto; /* Set height to take the full height of the viewport */
-  background: linear-gradient(to top, #161616, #49494910, #86868623),
-    no-repeat 50% 50% / fit;
+.swiper-slide--3, .swiper-slide--4 {
+  background: linear-gradient(to top, #161616, #49494910, #86868623) no-repeat 50% 50% / fit;
 }
 
-.swiper-slide--4 {
-  width: 80vw; /* Set width to take the full width of the viewport */
-  height: auto; /* Set height to take the full height of the viewport */
-  background: linear-gradient(to top, #161616, #49494910, #86868623),
-    no-repeat 50% 50% / fit;
-}
-
-.swiper-3d .swiper-slide-shadow-left,
-.swiper-3d .swiper-slide-shadow-right {
+.swiper-3d .swiper-slide-shadow-left, .swiper-3d .swiper-slide-shadow-right {
   background-image: none;
   transform: translate3d(-300px);
 }
-

@@ -96,7 +96,7 @@ const Carousel = () => {
 			techStack: 'HTML, CSS, React.js , Node.js',
 			githubLink: 'https://github.com/n335h/RPS',
 			livesite: 'https://nhrps.netlify.app',
-			gif: '/website/Images/RPS.gif',
+			gif: 'https://raw.githubusercontent.com/n335h/nmjhPortfolio/carouselTest/Images/rps.gif',
 		},
 		{
 			title: 'open weather API - Solo Project',
@@ -107,7 +107,7 @@ const Carousel = () => {
 				'https://github.com/n335h/ReactWeatherApp/tree/main',
 			livesite:
 				'https://main--nhweatherapi.netlify.app/',
-			gif: 'https://raw.githubusercontent.com/n335h/nmjhPortfolio/carouselTest/public/weatherApi.gif',
+			gif: 'https://raw.githubusercontent.com/n335h/nmjhPortfolio/carouselTest/Images/weatherApi.gif',
 		},
 	];
 	const currentSlide = slideData[activeSlide];

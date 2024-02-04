@@ -49,13 +49,13 @@
 
 .swiper-slide--1 {
   width: 80vw; /* Set width to take the full width of the viewport */
-  height: 60vh; /* Set height to take the full height of the viewport */
+  height: 50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     no-repeat 50% 50% / cover;
 }
 .swiper-slide--2 {
   width: 80vw; /* Set width to take the full width of the viewport */
-  height: 60vh; /* Set height to take the full height of the viewport */
+  height: 50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
     no-repeat 50% 50% / cover;
 }
@@ -63,16 +63,16 @@
 
 .swiper-slide--3 {
   width: 80vw; /* Set width to take the full width of the viewport */
-  height: 60vh; /* Set height to take the full height of the viewport */
+  height: 50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
-    no-repeat 50% 50% / cover;
+    no-repeat 50% 50% / fit;
 }
 
 .swiper-slide--4 {
   width: 80vw; /* Set width to take the full width of the viewport */
-  height: 60vh; /* Set height to take the full height of the viewport */
+  height: 50vh; /* Set height to take the full height of the viewport */
   background: linear-gradient(to top, #161616, #49494910, #86868623),
-    no-repeat 50% 50% / cover;
+    no-repeat 50% 50% / fit;
 }
 
 .swiper-3d .swiper-slide-shadow-left,

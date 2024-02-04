@@ -73,8 +73,7 @@ const Carousel = () => {
 			githubLink:
 				'https://github.com/n335h/doggystuff',
 			livesite: 'https://doggystuff.netlify.app/',
-			video:
-				'https://www.youtube.com/watch?v=3zvz5z3zvz',
+			gif: 'https://github.com/n335h/nmjhPortfolio/blob/carouselTest/Images/doggyStuff.gif?raw=true',
 		},
 		{
 			title: 'paprback - Group Project (5)',
@@ -85,8 +84,7 @@ const Carousel = () => {
 			githubLink:
 				'https://github.com/n335h/soc_byteclub_paprback',
 			livesite: 'https://bcpaprback.netlify.app/',
-			video:
-				'https://www.youtube.com/watch?v=3zvz5z3zvz',
+			gif: 'https://raw.githubusercontent.com/n335h/nmjhPortfolio/carouselTest/Images/paprback.gif',
 		},
 		{
 			title:

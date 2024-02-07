@@ -1,6 +1,6 @@
 import React from 'react';
 import TechStack from '../../components/techStack/techStack';
-import landing from '../../../assets/landing.jpg';
+import landing from '../../../assets/landing.webp';
 
 const About = () => {
 	React.useEffect(() => {
